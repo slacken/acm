@@ -1,0 +1,118 @@
+<!DOCTYPE html><html>
+				<head><meta charset=utf-8 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 1401</title></head>
+				<body><div id="content"><dl class="main-title-mod mb10">
+            <dt class="title-hd">
+                题目1401：阿里巴巴和N个强盗
+            </dt>
+            <dd class="title-bd">
+            	                <div class="pl20 mb10 f14 topic-desc-mod">
+                    <div class="topic-desc-hd">
+                        <p style="width:140px;"><b>时间限制：</b>1 秒</p>
+                        <p style="width:140px;"><b>内存限制：</b>32 兆</p>
+                        <p style="width:100px;"><b>特殊判题：</b>否</p>
+                        <p style="width:130px;"><b>提交：</b>165</p>
+                        <p style="width:130px;"><b>解决：</b>12</p>
+                    </div>
+                   	<div class="topic-desc-bd">
+                   	<dl>
+                       <dt>
+                           <b>题目描述：</b>
+                       </dt>
+                       <dd>
+                           <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 大家都读过《水浒传》吧？即使没有读过，也应该看过电视剧吧？如果上面两个问题你的回答都是否，那就赶快面壁思过吧。</div>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 好吧，我们今天要说的不是水浒传。</div>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 在很久很久以前，有一个人叫做阿里巴巴，自此开始了阿里巴巴和N个强盗的故事(此处省略一万字)。</div>
+<div style="text-align: center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img alt="" width="500" height="500" src="/upload/201202/image/Alibaba.jpg" /></div>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 好吧，我又卖关子了，今天的重点是N个强盗之间的故事。</div>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 水浒传中的108个好汉(及好女子)会有一个排名，N个强盗之间也要排出一个名次来。不可否认，有许多盗窃团伙很专业，其中也不乏严格的规矩。但这N个强盗是个无组织、无纪律的团伙，他们之间的排序完全是根据一场决斗来定的，比如在一场决斗中，强盗A战胜了强盗B，那么就说强盗A的排名高于强盗B。决斗是随机发生的，也就是哪天两个强盗互相看不惯对方了，那么就开始一场决斗。而这样产生的结果就是，有可能拿出两个强盗来，我们根本就不知道这两个强盗到底谁更厉害一些。这没有关系，今天你只要给出能根据我给你的信息来判断出某两个强盗谁的排名更靠前一些就行。</div>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 你需要注意的是，强盗之间的排名有传递性，比如强盗A的排名比强盗B靠前，而强盗B的排名又比强盗C的靠前，那么我们就认为强盗A的排名要比强盗C的靠前。</div>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 现在，我能给你的信息是强盗之间发生决斗的次数，以及每次参加决斗的两名强盗的姓名及最后决斗的结果。</div>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>输入：</b>
+                       </dt>
+                       <dd>
+                           <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 输入可能包括多组测试数据，对于每组测试数据，</div>
+<div>输入的第一行是一个整数N(2&lt;=N&lt;=100000)，代表强盗的个数，以及一个整数M(1 &lt;= M &lt;= 5*10^9)，表示强盗之间发生决斗的次数。</div>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 接下来的M行每行包括两个强盗的姓名(每个强盗的姓名为一个字符串，且字符串的长度不超过100)，以及最后决斗的结果。最后的结果为&rdquo;WIN&rdquo;表示前一个强盗取得了胜利，最后的结果为&rdquo;LOSE&rdquo;表示后一个强盗取得了胜利。</div>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 每组测试数据的最后一行包括我们要询问的两个强盗的姓名(每个强盗的姓名为一个字符串，且字符串的长度不超过100)。</div>
+                       </dd>
+                   	</dl>
+                       <dl>
+                       <dt>
+                           <b>输出：</b>
+                       </dt>
+                       <dd>
+                           <div style="text-indent: 21pt">对于每组测试数据，对于我们要询问的两个强盗，</div>
+<div style="text-indent: 21pt">如果前一个强盗的排名比后一个强盗的靠前，则输出&rdquo;WIN&rdquo;(注意，输出时不加双引号)；</div>
+<div style="text-indent: 21pt">如果后一个强盗的排名比前一个强盗的靠前，则输出&rdquo;LOSE&rdquo;(注意，输出时不加双引号)；</div>
+<div style="text-indent: 21pt">如果你通过我们给出的数据无法判断两个强盗的排名的先后关系，那么请输出&rdquo;MY GOD&rdquo;(注意，输出时不加双引号)。</div>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>样例输入：</b>
+                       </dt>
+                       <dd>
+                           <pre>5 3
+A B WIN
+B C WIN
+D E WIN
+D C
+5 3
+A B WIN
+B C WIN
+E F LOSE
+A C
+4 3
+A B WIN
+C D LOSE
+D A WIN
+A C
+3 3
+A B WIN
+B C WIN
+C A WIN
+A B</pre>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>样例输出：</b>
+                       </dt>
+                       <dd>
+                           <pre>LOSE
+WIN
+WIN
+MY GOD
+</pre>
+                       </dd>
+                   	</dl>
+                   	                   	<dl>
+                       <dt>
+                           <b>提示：</b>
+                       </dt>
+                       <dd class="lBlue">
+                           <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.如果强盗A战胜了强盗B，强盗B战胜了强盗C，那么我们说强盗A的排名要比强盗C的排名靠前。</div>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.如果强盗A战胜了强盗B，同时，强盗A战胜了强盗D，那么我们认为强盗B的排名要比强盗D靠前。也就是说，两个强盗都能被第三个强盗战胜(包括传递性的战胜，如提示1所说)，那么名字的字典序靠前的强盗排名较为靠前。同时，如果两个强盗在两个比较关系链中，例如Sample Input中第一组样例，两个比较关系链分别为：A-&gt;B-&gt;C, D-&gt;E，那么根据字典序靠前的强盗排名靠前原则，A的排名要比D靠前，接着往下看，B的排名也要比D靠前，同时，C的排名也要比D靠前。现在，我们如果换一下，两个比较关系链如果为A-&gt;F-&gt;C, D-&gt;E，那么结果就是：A的排名比D的靠前，但是D的排名比F的靠前，很显然，由于F的排名本身就比C靠前，所以D的排名也就比C靠前。</div>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.我们保证在每场决斗中两个强盗一定能分出胜负。</div>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.注意，虽然我们给出有N个强盗，但这N个强盗在下面给出的M场决斗中不一定会出现。</div>
+                       </dd>
+                   	</dl>
+                   	                   		             			                       <dl>
+	                       <dt>
+	                           <b>答疑：</b>
+	                       </dt>
+	                       <dd class="lBlue">
+	                           解题遇到问题?分享解题心得?讨论本题请访问：<a class="cBlue" href="http://t.jobdu.com/thread-8128-1-1.html" target="_blank">http://t.jobdu.com/thread-8128-1-1.html</a>
+	                       </dd>
+                       </dl>
+                                       	</div>
+                </div>
+                            </dd>
+		</dl></div></body></html>

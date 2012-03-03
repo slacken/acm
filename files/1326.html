@@ -1,0 +1,88 @@
+<!DOCTYPE html><html>
+				<head><meta charset=utf-8 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 1326</title></head>
+				<body><div id="content"><dl class="main-title-mod mb10">
+            <dt class="title-hd">
+                题目1326：Waiting in Line
+            </dt>
+            <dd class="title-bd">
+            	                <div class="pl20 mb10 f14 topic-desc-mod">
+                    <div class="topic-desc-hd">
+                        <p style="width:140px;"><b>时间限制：</b>1 秒</p>
+                        <p style="width:140px;"><b>内存限制：</b>32 兆</p>
+                        <p style="width:100px;"><b>特殊判题：</b>否</p>
+                        <p style="width:130px;"><b>提交：</b>111</p>
+                        <p style="width:130px;"><b>解决：</b>25</p>
+                    </div>
+                   	<div class="topic-desc-bd">
+                   	<dl>
+                       <dt>
+                           <b>题目描述：</b>
+                       </dt>
+                       <dd>
+                           <p>Suppose a bank has N windows open for service. There is a yellow line in front of the windows which devides the waiting area into two parts. The rules for the customers to wait in line are:</p>
+<ul>
+    <li>The space inside the yellow line in front of each window is enough to contain a line with M customers. Hence when all the N lines are full, all the customers after (and including) the (NM+1)st one will have to wait in a line behind the yellow line.</li>
+    <li>Each customer will choose the shortest line to wait in when crossing the yellow line. If there are two or more lines with the same length, the customer will always choose the window with the smallest number.</li>
+    <li>Customer[i] will take T[i] minutes to have his/her transaction processed.</li>
+    <li>The first N customers are assumed to be served at 8:00am.</li>
+</ul>
+<p>Now given the processing time of each customer, you are supposed to tell the exact time at which a customer has his/her business done.</p>
+<p>For example, suppose that a bank has 2 windows and each window may have 2 custmers waiting inside the yellow line. There are 5 customers waiting with transactions taking 1, 2, 6, 4 and 3 minutes, respectively. At 08:00 in the morning, customer<sub><font size="2">1</font></sub> is served at window<sub><font size="2">1</font></sub> while customer<sub><font size="2">2</font></sub> is served at window<sub><font size="2">2</font></sub>. Customer<sub><font size="2">3</font></sub> will wait in front of window<sub><font size="2">1</font></sub> and customer<sub><font size="2">4</font></sub> will wait in front of window<sub><font size="2">2</font></sub>. Customer<sub><font size="2">5</font></sub> will wait behind the yellow line.</p>
+<p>At 08:01, customer<sub><font size="2">1</font></sub> is done and customer<sub><font size="2">5</font></sub> enters the line in front of window<sub><font size="2">1</font></sub> since that line seems shorter now. Customer<sub><font size="2">2</font></sub> will leave at 08:02, customer<sub><font size="2">4</font></sub> at 08:06, customer<sub><font size="2">3</font></sub> at 08:07, and finally customer<sub><font size="2">5</font></sub> at 08:10.</p>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>输入：</b>
+                       </dt>
+                       <dd>
+                           <p>Each input file contains one test case. Each case starts with a line containing 4 positive integers: N (&lt;=20, number of windows), M (&lt;=10, the maximum capacity of each line inside the yellow line), K (&lt;=1000, number of customers), and Q (&lt;=1000, number of customer queries).</p>
+<p>The next line contains K positive integers, which are the processing time of the K customers.</p>
+<p>The last line contains Q positive integers, which represent the customers who are asking about the time they can have their transactions done. The customers are numbered from 1 to K.</p>
+                       </dd>
+                   	</dl>
+                       <dl>
+                       <dt>
+                           <b>输出：</b>
+                       </dt>
+                       <dd>
+                           <p>For each of the Q customers, print in one line the time at which his/her transaction is finished, in the format HH:MM where HH is in [08, 17] and MM is in [00, 59]. Note that since the bank is closed everyday after 17:00, for those customers who cannot be served before 17:00, you must output &quot;Sorry&quot; instead.</p>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>样例输入：</b>
+                       </dt>
+                       <dd>
+                           <pre>2 2 7 5
+1 2 6 4 3 534 2
+3 4 5 6 7</pre>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>样例输出：</b>
+                       </dt>
+                       <dd>
+                           <pre>08:07
+08:06
+08:10
+17:00
+Sorry</pre>
+                       </dd>
+                   	</dl>
+                   	                   		             			                       <dl>
+	                       <dt>
+	                           <b>答疑：</b>
+	                       </dt>
+	                       <dd class="lBlue">
+	                           解题遇到问题?分享解题心得?讨论本题请访问：<a class="cBlue" href="http://t.jobdu.com/thread-8049-1-1.html" target="_blank">http://t.jobdu.com/thread-8049-1-1.html</a>
+	                       </dd>
+                       </dl>
+                                       	</div>
+                </div>
+                            </dd>
+		</dl></div></body></html>

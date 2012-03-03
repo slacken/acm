@@ -1,0 +1,88 @@
+<!DOCTYPE html><html>
+				<head><meta charset=utf-8 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 1343</title></head>
+				<body><div id="content"><dl class="main-title-mod mb10">
+            <dt class="title-hd">
+                题目1343：城际公路网
+            </dt>
+            <dd class="title-bd">
+            	                <div class="pl20 mb10 f14 topic-desc-mod">
+                    <div class="topic-desc-hd">
+                        <p style="width:140px;"><b>时间限制：</b>1 秒</p>
+                        <p style="width:140px;"><b>内存限制：</b>32 兆</p>
+                        <p style="width:100px;"><b>特殊判题：</b>否</p>
+                        <p style="width:130px;"><b>提交：</b>120</p>
+                        <p style="width:130px;"><b>解决：</b>34</p>
+                    </div>
+                   	<div class="topic-desc-bd">
+                   	<dl>
+                       <dt>
+                           <b>题目描述：</b>
+                       </dt>
+                       <dd>
+                           <div>为了加快城市之间的通行和物资流动速度，A国政府决定在其境内的N个大中型城市之间，增加修建K条公路。已知这N个城市中的任意两个都能相互连通，且已知其最短的路径长度。为了时刻监测修建新路对A国城市的影响，特任命你为观察员，负责在每修建完一条公路之后，就向该国领导汇报当前N个城市间的最短路之和。</div>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>输入：</b>
+                       </dt>
+                       <dd>
+                           <div>测试数据包括多个，每个测试数据包含四个部分</div>
+<div>首先第一行将输入整数N，其中2 &lt;= N &lt;= 300，代表城市的个数。</div>
+<div>第二部分是是一个N * N大小的整数矩阵，代表A国城市之间的一个最短路长度情况。矩阵的第i行，第j列代表从城镇i到城镇j的最短路d<sub>ij</sub>的长度。输入数据保证当i == j时，d<sub>ij</sub> = 0；同时还保证d<sub>ij</sub> = d<sub>ji</sub>。</div>
+<div>第三部分是一个整数K，1 &lt;= K &lt;= 300， 即计划修建的公路数量。</div>
+<div>第四部分包括K行，每行由三个整数a、b、w组成，整数之间由空格隔开。其中a、b代表城镇的编号（1 &lt;= a、b &lt;= N）, w为该条公路的长度（1 &lt;= w&lt;=1000）。注意：所建公路都为双向公路。</div>
+                       </dd>
+                   	</dl>
+                       <dl>
+                       <dt>
+                           <b>输出：</b>
+                       </dt>
+                       <dd>
+                           <div>对于每个测试案例，输出K行，即修建了公路之后的N个城市的最短路径之和。例如，第i行则代表修建完1、2、3 &hellip;、i条公路之后的城市最短路径之和。</div>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>样例输入：</b>
+                       </dt>
+                       <dd>
+                           <pre>2
+0 7
+7 0
+1
+1 2 3
+3
+0 4 5
+4 0 9
+5 9 0
+2
+2 3 8
+1 2 1</pre>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>样例输出：</b>
+                       </dt>
+                       <dd>
+                           <pre>3
+17
+12</pre>
+                       </dd>
+                   	</dl>
+                   	                   		             			                       <dl>
+	                       <dt>
+	                           <b>答疑：</b>
+	                       </dt>
+	                       <dd class="lBlue">
+	                           解题遇到问题?分享解题心得?讨论本题请访问：<a class="cBlue" href="http://t.jobdu.com/thread-8066-1-1.html" target="_blank">http://t.jobdu.com/thread-8066-1-1.html</a>
+	                       </dd>
+                       </dl>
+                                       	</div>
+                </div>
+                            </dd>
+		</dl></div></body></html>

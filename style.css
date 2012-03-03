@@ -1,0 +1,108 @@
+/*style sheet*/
+/*
+*By Slacken Zeng(xinkiang@gmail.com)
+*http://www.creatist.cn
+*/
+body{
+	background:url('files/body_bg.png') repeat;
+	
+}
+body,pre,button,input{
+	font-family:'Microsoft Yahei',Verdana,Arial,sans-serif;
+	font-size:13px;
+	line-height:20px;
+}
+body,dt,dd,dl,form{
+	margin:0;
+	border:none;
+	padding:0;
+}
+
+#content{
+	width:900px;
+	margin:0 auto;
+	background-color:white;
+	margin-top:20px;
+}
+.main-title-mod{
+	
+}
+a{
+	text-decoration:none;
+}
+a:hover{
+	color:#aa0000;
+}
+b{
+	font-size:1.2em;
+}
+.title-hd{
+	font-size:2em;
+	font-weight:bold;
+	background-color:blue;
+	color:white;
+	padding:8px 5px;
+}
+.topic-desc-hd{
+	background-color:#f4f4f4;
+	padding:3px 5px;
+}
+.topic-desc-hd,.topic-desc-bd{
+	
+}
+.topic-desc-hd p{display:inline-block;}
+.topic-desc-bd p{
+	font-size:12px;
+}
+.topic-desc-bd dt {
+	background-color:blue;
+	color:white;
+	display:block;
+}
+.topic-desc-bd dt,.topic-desc-bd dd{
+	padding:3px 5px;
+}
+
+
+
+#index_link{
+	border:1px solid #aaa;
+	border-radius:0 0 3px 3px;
+	background-color:white;
+	padding:3px 0;
+	-webkit-box-shadow:0 0 5px #ccc;
+	-moz-box-shadow:0 0 5px #ccc;
+	box-shadow:0 0 5px #ccc;
+}
+#index_link a{
+	display:inline-block;
+	width:42px;
+	text-align:center;
+	text-shadow:1px 1px 1px rgba(0,0,0,0.3);
+}
+#index_link a:visited{
+	color:green;
+	font-weight:bold;
+}
+#index_link a.key{
+	color:red;
+	font-size:1.2em;
+}
+#footer p{
+	margin:0;
+}
+#footer input{
+	width:50px;
+	padding:1px 2px;
+}
+
+#footer button{
+	padding:1px 2px;
+	margin-left:10px;
+	width:250px;
+}
+.download{
+	font-size:0.9em;
+	color:#666;
+	text-align:right;
+}

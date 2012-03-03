@@ -1,0 +1,105 @@
+<!DOCTYPE html><html>
+				<head><meta charset=utf-8 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 1365</title></head>
+				<body><div id="content"><dl class="main-title-mod mb10">
+            <dt class="title-hd">
+                题目1365：贝多芬第九交响曲
+            </dt>
+            <dd class="title-bd">
+            	                <div class="pl20 mb10 f14 topic-desc-mod">
+                    <div class="topic-desc-hd">
+                        <p style="width:140px;"><b>时间限制：</b>1 秒</p>
+                        <p style="width:140px;"><b>内存限制：</b>32 兆</p>
+                        <p style="width:100px;"><b>特殊判题：</b>否</p>
+                        <p style="width:130px;"><b>提交：</b>140</p>
+                        <p style="width:130px;"><b>解决：</b>33</p>
+                    </div>
+                   	<div class="topic-desc-bd">
+                   	<dl>
+                       <dt>
+                           <b>题目描述：</b>
+                       </dt>
+                       <dd>
+                           <p class="MsoNormal"><span lang="EN-US"><span style="mso-tab-count:1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">也许不是所有人都知道贝多芬的&ldquo;第九交响曲&rdquo;，但是所有人都一定知道《欢乐颂》这首歌，它就是来自于贝多芬第九交响曲《合唱》的第四乐章，玄影游侠受朋友推荐听了这部交响曲，并且被这部交响曲深深地打动。</span></p>
+<p class="MsoNormal"><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal"></p>
+<p class="MsoNormal" style="text-align: center; "><img width="377" height="405" alt="" src="/upload/201112/image/%E8%B4%9D%E5%A4%9A%E8%8A%AC%E7%AC%AC%E4%B9%9D%E4%BA%A4%E5%93%8D%E6%9B%B2.jpg" /></p>
+<p class="MsoNormal"><span lang="EN-US"><span style="mso-tab-count:1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>2012</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">年的</span><span lang="EN-US">1</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">月</span><span lang="EN-US">1</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">日上午，在奥地利首都维也纳新年音乐会上，音乐家们会演奏这首交响曲，他现在非常想去现场感受一下。但是他还是学生，并没有很多积蓄。音乐会的举办方考虑到一些学生的实际情况，他们专门安排了一个智力挑战赛，完成挑战赛的人将免费获得一张维也纳音乐会的门票。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal"><span lang="EN-US"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">挑战赛规则如下：</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal"><span lang="EN-US"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">现在在一块空的场地上会有一个大的二维棋盘，裁判会给你指定初始位置及一座贝多芬雕像所处的位置，你开始时就站在裁判指定的初始位置处，你的目标是跳到贝多芬雕像的位置。为了给比赛增加一定的难度，你在棋盘上行走时，必须按照中国象棋中的马的走步方式来走。玩过中国象棋的人都知道，马走&ldquo;日&rdquo;，象走&ldquo;田&rdquo;。最后，你只需要告诉裁判最少多少步能到达贝多芬的雕像。如果根本就到不了贝多芬的雕像处，你直接告诉裁判就可以了。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal"><span lang="EN-US"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">玄影游侠站在棋盘的某一个位置，不知道该如何走，他知道你们都学过程序设计，所以想请你们帮帮忙编一个程序来帮助他找到想要到达贝多芬的雕像处所需要的最少的步数。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p></p>
+<p></p>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>输入：</b>
+                       </dt>
+                       <dd>
+                           <p class="MsoNormal"><span lang="EN-US"><span style="mso-tab-count:1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">每组测试数据可能有多组输入，对于每一组输入，</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal"><span lang="EN-US"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">输入的第一行包括一个整数</span><span lang="EN-US">N(1&lt;=N&lt;=100)</span><span style="font-family:宋体;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri">，代表棋盘的大小是</span><span lang="EN-US">N*N</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal"><span lang="EN-US"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">输入的第二行包括四个数</span><span lang="EN-US">start_x, start_y, end_x, end_y(1 &lt;= start_x,start_y,end_x,end_y &lt;= N)</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">，分别代表你开始时的位置的</span><span lang="EN-US">x</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">坐标和</span><span lang="EN-US">y</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">坐标以及贝多芬雕像的</span><span lang="EN-US">x</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">坐标和</span><span lang="EN-US">y</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">坐标。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p></p>
+                       </dd>
+                   	</dl>
+                       <dl>
+                       <dt>
+                           <b>输出：</b>
+                       </dt>
+                       <dd>
+                           <p class="MsoNormal"><span lang="EN-US"><span style="mso-tab-count:1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">如果你能够到达贝多芬雕像的位置，请输出最少需要多少步。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal"><span lang="EN-US"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">如果不能到达，则输出</span><span lang="EN-US">-1</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p></p>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>样例输入：</b>
+                       </dt>
+                       <dd>
+                           <pre>3
+1 1 3 2
+3
+1 1 2 2</pre>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>样例输出：</b>
+                       </dt>
+                       <dd>
+                           <pre>1
+-1</pre>
+                       </dd>
+                   	</dl>
+                   	                   	<dl>
+                       <dt>
+                           <b>提示：</b>
+                       </dt>
+                       <dd class="lBlue">
+                           <p class="MsoNormal"><span lang="EN-US"><span style="mso-tab-count:1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">注意，棋盘并不是中国象棋的棋盘，你可以把它理解成</span><span lang="EN-US">N*N</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">的类似于五子棋的棋盘。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p></p>
+                       </dd>
+                   	</dl>
+                   	                   		             			                       <dl>
+	                       <dt>
+	                           <b>答疑：</b>
+	                       </dt>
+	                       <dd class="lBlue">
+	                           解题遇到问题?分享解题心得?讨论本题请访问：<a class="cBlue" href="http://t.jobdu.com/thread-8088-1-1.html" target="_blank">http://t.jobdu.com/thread-8088-1-1.html</a>
+	                       </dd>
+                       </dl>
+                                       	</div>
+                </div>
+                            </dd>
+		</dl></div></body></html>
