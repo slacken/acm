@@ -3,6 +3,13 @@
 *By Slacken Zeng(xinkiang@gmail.com)
 *http://www.creatist.cn
 */
+
+.f{
+	text-decoration:underline;
+}
+.u:after{
+	content:"*";
+}
 body{
 	background:url('files/body_bg.png') repeat;
 	
@@ -84,7 +91,7 @@ b{
 	color:green;
 	font-weight:bold;
 }
-#index_link a.key{
+#index_link a.k{
 	color:red;
 	font-size:1.2em;
 }
