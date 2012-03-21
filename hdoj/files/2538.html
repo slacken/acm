@@ -1,0 +1,17 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 2538</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>确定排名</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 5000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 34&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 19<br><font color=red>Special Judge</font></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>今年的NBA西部的竞争是如此激烈，以至于在最后一轮之前，前8的球队里多达6只球队还没有确定自己的排名。在本题中，给出了在最后一轮之前各只球队的胜场数以及最后一轮的对阵情况，要求给出各只球队排在第几名的概率。假设每场比赛两方获胜的概率各是50%。<br>在本题中，与NBA不同的是，排名的唯一标准是胜场数，当几只球队胜场数相同时，算这几只球队并列排在(可能)最靠前的位置上。<br><img src=../../../data/images/2538-1.JPG><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>输入包含多组数据。第一行是一个整数N(2&lt;=N&lt;=24，偶数)，表示球队的数目，N=0代表输入结束。随后有1行包含N个整数，分别代表N只球队的胜场数（不超过200）。每组数据的最后一行是N只球队最后一轮的对阵情况(格式参考样例)，球队的序号从1开始，共有N/2场比赛，每只球队出现且仅出现一次。</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>对每组数据，输出N行，每行有N个小数，第i行的第j个数代表序号为i的队排在第j名的概率。<br>误差不超过0.001的结果都将被视为正确。<br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+2 0
+1-2
+4
+3 2 1 0
+1-2 3-4
+0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">1.0000 0.0000
+0.0000 1.0000
+1.0000 0.0000 0.0000 0.0000
+0.5000 0.5000 0.0000 0.0000
+0.0000 0.2500 0.7500 0.0000
+0.0000 0.0000 0.5000 0.5000
+
+提示：
+建议输出保留到小数点后4位。
+输出格式要求不是很严格，只要保证能够区分出每个数，而且结果都正确，就应该会被判为正确。
+输出数据较多，尽量用printf代替cout。</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=UESTC 6th Programming Contest Online&source=1&searchmode=source'> UESTC 6th Programming Contest Online </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2538'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2538'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2538">Discuss</a> | <a href='note/note.php?pid=2538'>Note</a><br></td></tr></div></body></html>

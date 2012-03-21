@@ -1,0 +1,28 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 3692</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Shade of Hallelujah Mountain</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 273&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 61<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>On the planet Pandora, huge rocks are floating in the sky. Despite the beautiful scenery, these rocks bring some critical problem: they block the sunshine, and shade on the ground. Na'vi (&quot;people&quot; living on the planet) cannot grow plants in the shade because of the lack of sunshine. In order to predicate the amount of food they can get, they have to calculate the area of the shade.<br><br>Let¡¯s assume the &quot;sun&quot; as a point-source of light, and the ground as a infinite flat plane. Also, to simplify this problem, assume all rocks are convex polyhedrons.<br><br>Now here is a mathematical problem. Given the position of the point-source of light, the position of a convex polyhedron and the position of an infinite plane, you are required to calculate the area of the shade. Please note that light travels in a strictly straight line and the light source and the convex polyhedron are on the same side of the plane. The light source is not placed in the convex polyhedron, nor on the polyhedron or on the plane.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input contains no more than 100 cases.<br><br>Each case contains several lines which are formatted as follows.<br><br>a b c d<br><br>n<br><br>x<sub>1</sub> y<sub>1</sub> z<sub>1</sub><br><br>x<sub>2</sub> y<sub>2</sub> z<sub>2</sub><br><br>......<br><br>x<sub>n</sub> y<sub>n</sub> z<sub>n</sub><br><br>x<sub>0</sub> y<sub>0</sub> z<sub>0</sub><br><br>a, b, c and d means that the plane is ax+by+cz=d. n means the number of vertex of the convex polyhedron. It is guaranteed that n is no more than 100. Following it are n lines. Each line contains three float numbers, indicating the position of a point which is a vertex of the polyhedron. The last line also contains three float numbers, which means the position of the point-source of light.<br><br>The input is ended by a=0, b=0, c=0 and d=0.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each case, if there is no shade on the plane, print ¡°0.00¡±.<br><br>If the area of the shade is infinite, print ¡°Infi¡±.<br><br>Otherwise, print out the area of the shade. Please round the result to two digits after the decimal point. <br><br><div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div><br>Here are some hints to help you implement rotation in 3-dimensional space.<br><br>Assume that there is a plane ax+by+cz=0 , and our task is to rotate the whole space so that the plane will be in the position z=0 .<br><br>As we all know, the normal vector of the plane is (a,b,c) , so after we rotate the space, the normal vector will be the z-axis. So we can only consider how to rotate the vector to the position <img src=../../data/images/3692-1.jpg>.<br>We can divide the process into 2 steps. First step, rotate the normal vector to <img src=../../data/images/3692-2.jpg>. Second step, rotate <img src=../../data/images/3692-2.jpg> to <img src=../../data/images/3692-1.jpg>. Then apply the two rotation steps on the whole space, we can rotate the plane to a given position.<br><br>It is easy to implement the two steps. In first step, the third number in the normal vector does not change, so this is like rotation in a 2-dimensional space. Similarly, we implement the second step. <br><br></div></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">0 0 1 0
+8
+1 1 1
+1 -1 1
+-1 1 1
+-1 -1 1
+1 1 0
+1 -1 0
+-1 1 0
+-1 -1 0
+2 2 1
+1 0 0 -2
+8
+1 1 1
+1 1 -1
+1 -1 1
+1 -1 -1
+-1 1 1
+-1 1 -1
+-1 -1 1
+-1 -1 -1
+2 0 0
+1 1 1 1
+0
+0 0 0
+0 0 0 0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Infi
+64.00
+0.00</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2010 Asia Fuzhou Regional Contest&source=1&searchmode=source'> 2010 Asia Fuzhou Regional Contest </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>axubiao</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3692'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3692'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3692">Discuss</a> | <a href='note/note.php?pid=3692'>Note</a><br></td></tr></div></body></html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 1534</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Schedule Problem</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 528&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 187<br><font color=red>Special Judge</font></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>A project can be divided into several parts. Each part should be completed continuously. This means if a part should take 3 days, we should use a continuous 3 days do complete it. There are four types of constrains among these parts which are FAS, FAF, SAF and SAS. A constrain between parts is FAS if the first one should finish after the second one started. FAF is finish after finish. SAF is start after finish, and SAS is start after start. Assume there are enough people involved in the projects, which means we can do any number of parts concurrently. You are to write a program to give a schedule of a given project, which has the shortest time. </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input file consists a sequences of projects.<br><br>Each project consists the following lines:<br><br>the count number of parts (one line) (0 for end of input)<br><br>times should be taken to complete these parts, each time occupies one line<br><br>a list of FAS, FAF, SAF or SAS and two part number indicates a constrain of the two parts<br><br>a line only contains a '#' indicates the end of a project <br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>Output should be a list of lines, each line includes a part number and the time it should start. Time should be a non-negative integer, and the start time of first part should be 0. If there is no answer for the problem, you should give a non-line output containing &quot;impossible&quot;.<br><br>A blank line should appear following the output for each project.<br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">3
+2
+3
+4
+SAF 2 1
+FAF 3 2
+#
+3
+1
+1
+1
+SAF 2 1
+SAF 3 2
+SAF 1 3
+#
+0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Case 1:
+1 0
+2 2
+3 1
+
+Case 2:
+impossible</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=Asia 1996, Shanghai (Mainland China)&source=1&searchmode=source'> Asia 1996, Shanghai (Mainland China) </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>LL</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1534'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1534'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1534">Discuss</a> | <a href='note/note.php?pid=1534'>Note</a><br></td></tr></div></body></html>

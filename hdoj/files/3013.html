@@ -1,0 +1,32 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 3013</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Tetris</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 116&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 30<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Tetris is a famous puzzle video game.A random sequence of tetrominoes ¡ªshapes composed of four square blocks each¡ªfall down the playing field (a rectangular vertical well). The object of the game is to manipulate these tetrominoes, by moving each one sideways and rotating it by 90 degree units, with the aim of creating a horizontal line of blocks without gaps. When such a line is created, it disappears, and any block above the deleted line will fall. As the game progresses, the tetrominoes fall, and the game ends when the stack of tetrominoes reaches the top of the playing field and no new tetrominoes are able to enter. Here we consider only a simple variation of tetris. The playing field consists of 20 rows and 10 columns. There¡¯re 7 kinds of tetrominoes: <br><center><img src=../../../data/images/exe3013-1.JPG></center><br>Each kind of tetrominoes may have 4 kind of rotation,ie, rotating by 0,90,180,270 degrees.Here is a sample rotation of type 2 Tetromino: <br><center><img src=../../../data/images/exe3013-2.JPG></center><br>We define the initial position of a tetromino in the falling sequences as the leftmost occupied column of the tetromino after rotation. For example,for a type 2 tetromino with 180 degree rotation and a initial position of 3 is just like: <br><br><center><img src=../../../data/images/exe3013-3.JPG></center><br>After one move down, it will look likes:<br><center><img src=../../../data/images/exe3013-4.JPG></center><br>You will be given a sequence of tetrominoes with their rotation degrees and their initial position.And in this game there is no player manipulating tetrominoes. Once their rotation degree and initial position are determined,the ending of the game is unique. You just simulate as the original Tetris and are required to output the playing field right before the end of game(if the game ends before the end of sequences,you should output the the playing field right before its ends.).Note if there are some horizontal line that are fully covered by blocks,we should first delete such lines then judging the end of game.<br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>Input contains multiple cases.Test cases are separated by several blank lines.<br>    Each test case starts with a integer M(1&lt;=N&lt;=300) ,indicating that there are M tetrominoes in the input sequence.Follow by M lines,each line contains three integers id,degree,pos(1&lt;=id&lt;=7,degree¡Ê{0,90,180,270},1&lt;=pos&lt;=10),as described before.It guarantees that their inputs are legal.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case, output the playing field right before the end of game.ie,the playing field right before entering the last tetromino.For output,you should add a boarder to the playing field and output the rows in decreasing order,ie first output Row 20, then Row 19 and so on.If a block is occupied ,output ¡°[]¡±,otherwise you should ouput '..' . Output a blank line after each Case.You may refer to the sample output for more details. </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">10
+3 90 1
+6 270 2
+5 90 1
+4 90 1
+7 90 5
+1 0 7
+1 0 7
+1 0 7
+3 90 4
+2 90 3</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">+--------------------+
+|....................|
+|....................|
+|....................|
+|....................|
+|....................|
+|....................|
+|....................|
+|....................|
+|....................|
+|....................|
+|....................|
+|....................|
+|....................|
+|....................|
+|[][]................|
+|[][][][]............|
+|[]..[][]............|
+|[][][][]............|
+|[][][]..[][][][][][]|
+|[][][]..[]..[][][][]|
++--------------------+</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2009 Multi-University Training Contest 12 - Host by FZU&source=1&searchmode=source'> 2009 Multi-University Training Contest 12 - Host by FZU </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>gaojie</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3013'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3013'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3013">Discuss</a> | <a href='note/note.php?pid=3013'>Note</a><br></td></tr></div></body></html>

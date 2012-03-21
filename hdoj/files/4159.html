@@ -1,0 +1,30 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 4159</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Indomie</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 186&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 81<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>During recession, Amjad needs to queue for SembakoPlus. Sembako, as we all know, stands for ¡°Sembilan Bahan Pokok¡± which consists of 9 kinds of item: Rice, Sugar, Cooking-oil,Meat, Egg, Milk, Corn, Kerosene and Iodized Salt. SembakoPlus consists of Sembako and one more item: Indomie! Amjad¡¯s favorite of all time!! (therefore, no wonder why he could stand for this long queue).<br>Each person in the queue is allowed to pick only one item. No need to ask, Amjad wants only Indomie. Unfortunately, they are running out of SembakoPlus stock and currently there are three kinds of item left: Rice, Sugar and Indomie. As he could see from afar, he is quite sure that Rice and Sugar will be enough for everybody.<br>Given the number of remaining Indomie and the number of people queuing in front of Amjad, your task is to count the probability that he will get his Indomie. Amjad can¡¯t do programming right now as he is very nervous so he can¡¯t think logically. He needs your help!<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>There will be multiple test cases for this problem. Each test case contains two integers N (1 ¡Ü N ¡Ü 50) and S (0 ¡Ü S ¡Ü 50), where N is the number of people queuing in front of Amjad and S is the remaining number of Indomie.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each case, print in a single line the probability in percentage that he will get his Indomie with 5 digits precision (he¡¯s being paranoid)<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2 1
+3 2
+4 0
+4 1
+10 10
+14 9
+30 14</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">50.00000
+76.92308
+0.00000
+33.33333
+99.99831
+98.65515
+95.16071
+
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>
+Explanation for 1st sample test case:
+There are two peoples queuing in front of Amjad, so those two peoples could pick of the
+following combination {1st people, 2nd people}:
+1. Rice, Rice
+2. Rice, Sugar
+3. Rice, Indomie
+4. Sugar, Rice
+5. Sugar, Sugar
+6. Sugar, Indomie
+7. Indomie, Rice
+8. Indomie, Sugar
+Since there is only one Indomie left, there are only 4 out of 8 combinations that ensure Amjad
+to get his Indomie (1, 2, 4 and 5), hence the probability is 4/8 = 50%.
+</div><i style='font-size:1px'> </i></div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=The 2011 Syrian Collegiate Programming Contest&source=1&searchmode=source'> The 2011 Syrian Collegiate Programming Contest </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=4159'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=4159'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=4159">Discuss</a> | <a href='note/note.php?pid=4159'>Note</a><br></td></tr></div></body></html>

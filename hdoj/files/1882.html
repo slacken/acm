@@ -1,0 +1,38 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 1882</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Strange Billboard</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 3000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 650&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 286<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>The marketing and public-relations department of the Czech Technical University has designed a new reconfigurable mechanical Flip-Flop  Bill-Board  (FFBB).  The billboard is a regular two-dimensional grid of R ¡ÁC square tiles made of plastic.  Each plastic tile is white on one side and black on the other.  The idea of the billboard is that you can create various pictures by flipping individual tiles over.  Such billboards will hang above all entrances to the university and will be used to display simple pictures and advertise upcoming academic events. <br><br>To change pictures, each billboard is equipped with a ¡±reconfiguration  device¡±.  The device is just an ordinary long wooden stick that is used to tap the tiles. if you tap a tile, it flips over to the other side, i.e., it changes from white to black or vice versa.  Do you agree this idea is very clever? <br><br>Unfortunately, the billboard makers did not realize one thing. The tiles  are very close to each other and their sides touch.  Whenever a tile is tapped, it takes all neighboring tiles with it and all of them flip over together.  Therefore, if you want to change the color of a tile, all neighboring tiles  change  their  color  too. Neighboring  tiles  are  those  that  touch  each  other  with  the  whole side.  All inner tiles have 4 neighbors, which means 5 tiles are flipped over when tapped.  Border tiles have less neighbors, of course. <br><br><center><img src=../../../data/images/C106-1001-1.JPG></center><br><br>For example, if you have the billboard configuration shown in the left picture above and tap the tile marked with the cross, you will get the picture on the right. As you can see, the billboard reconfiguration  is  not  so  easy  under  these  conditions.    Your  task  is  to  find  the  fastest  way  to ¡±clear¡± the billboard, i.e., to flip all tiles to their white side. <br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The  input  consists  of  several  billboard  descriptions.   Each  description  begins  with  a  line  containing two integer numbers R and C  (1 ¡Ü R, C ¡Ü 16) specifying the billboard size.  Then there are R lines, each containing C  characters.  The characters can be either an uppercase letter ¡°X¡± (black) or a dot ¡°.¡±  (white).  There is one empty line after each map.  <br>The input is terminated by two zeros in place of the board size. </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each billboard, print one line containing the sentence ¡°You        have   to  tap   T  tiles.¡±, where T is  the  minimal  possible  number  of  taps  needed  to make all squares white. if the situation cannot be solved, output the string ¡°Damaged billboard.¡± instead. <br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">5 5
+XX.XX
+X.X.X
+.XXX.
+X.X.X
+XX.XX
+5 5
+.XX.X
+.....
+..XXX
+..X.X
+..X..
+
+1 5
+...XX
+
+5 5
+...X.
+...XX
+.XX..
+..X..
+.....
+
+8 9
+..XXXXX..
+.X.....X.
+X..X.X..X
+X.......X
+X.X...X.X
+X..XXX..X
+.X.....X.
+..XXXXX..
+
+0 0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">You have to tap 5 tiles.
+Damaged billboard.
+You have to tap 1 tiles.
+You have to tap 2 tiles.
+You have to tap 25 tiles.</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2008 ¡°Shun Yu Cup¡± Zhejiang Collegiate Programming Contest - Warm Up£¨2£©&source=1&searchmode=source'> 2008 ¡°Shun Yu Cup¡± Zhejiang Collegiate Programming Contest - Warm Up£¨2£© </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>linle</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1882'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1882'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1882">Discuss</a> | <a href='note/note.php?pid=1882'>Note</a><br></td></tr></div></body></html>

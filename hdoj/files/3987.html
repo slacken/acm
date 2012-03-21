@@ -1,0 +1,27 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 3987</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Harry Potter and the Forbidden Forest</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 5000/3000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/65536 K (Java/Others)<br>Total Submission(s): 665&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 247<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Harry Potter notices some Death Eaters try to slip into Castle. The Death Eaters hide in the most depths of Forbidden Forest. Harry need stop them as soon as.<br><center><img src=../../data/images/C360-1006-1.jpg></center><br>The Forbidden Forest is mysterious. It consists of N nodes numbered from 0 to N-1. All of Death Eaters stay in the node numbered 0. The position of Castle is node n-1. The nodes connected by some roads. Harry need block some roads by magic and he want to minimize the cost. But it¡¯s not enough, Harry want to know how many roads are blocked at least.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>Input consists of several test cases.<br><br>The first line is number of test case.<br><br>Each test case, the first line contains two integers n, m, which means the number of nodes and edges of the graph. Each node is numbered 0 to n-1.<br><br>Following m lines contains information about edges. Each line has four integers u, v, c, d. The first two integers mean two endpoints of the edges. The third one is cost of block the edge. The fourth one means directed (d = 0) or undirected (d = 1).<br><br>Technical Specification<br><br>1. 2 &lt;= n &lt;= 1000<br>2. 0 &lt;= m &lt;= 100000<br>3. 0 &lt;= u, v &lt;= n-1<br>4. 0 &lt; c &lt;= 1000000<br>5. 0 &lt;= d &lt;= 1<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case:<br>Output the case number and the answer of how many roads are blocked at least.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">3
+
+4 5
+0 1 3 0
+0 2 1 0
+1 2 1 1
+1 3 1 1
+2 3 3 1
+
+6 7
+0 1 1 0
+0 2 1 0
+0 3 1 0
+1 4 1 0
+2 4 1 0
+3 5 1 0
+4 5 2 0
+
+3 6
+0 1 1 0
+0 1 2 0
+1 1 1 1
+1 2 1 0
+1 2 1 0
+2 1 1 1</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Case 1: 3
+Case 2: 2
+Case 3: 2</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>aMR @ WHU</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2011 Multi-University Training Contest 15 - Host by WHU&source=1&searchmode=source'> 2011 Multi-University Training Contest 15 - Host by WHU </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3987'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3987'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3987">Discuss</a> | <a href='note/note.php?pid=3987'>Note</a><br></td></tr></div></body></html>

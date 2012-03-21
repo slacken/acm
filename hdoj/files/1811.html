@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 1811</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Rank of Tetris</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 1000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 1883&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 514<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>自从Lele开发了Rating系统，他的Tetris事业更是如虎添翼，不久他遍把这个游戏推向了全球。<br><br>为了更好的符合那些爱好者的喜好，Lele又想了一个新点子：他将制作一个全球Tetris高手排行榜，定时更新，名堂要比福布斯富豪榜还响。关于如何排名，这个不用说都知道是根据Rating从高到低来排，如果两个人具有相同的Rating，那就按这几个人的RP从高到低来排。<br><br>终于，Lele要开始行动了，对N个人进行排名。为了方便起见，每个人都已经被编号，分别从0到N-1,并且编号越大，RP就越高。<br>同时Lele从狗仔队里取得一些（M个）关于Rating的信息。这些信息可能有三种情况，分别是&quot;A &gt; B&quot;,&quot;A = B&quot;,&quot;A &lt; B&quot;，分别表示A的Rating高于B,等于B,小于B。<br><br>现在Lele并不是让你来帮他制作这个高手榜，他只是想知道，根据这些信息是否能够确定出这个高手榜，是的话就输出&quot;OK&quot;。否则就请你判断出错的原因，到底是因为信息不完全（输出&quot;UNCERTAIN&quot;），还是因为这些信息中包含冲突（输出&quot;CONFLICT&quot;）。<br>注意，如果信息中同时包含冲突且信息不完全，就输出&quot;CONFLICT&quot;。<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>本题目包含多组测试，请处理到文件结束。<br>每组测试第一行包含两个整数N,M(0&lt;=N&lt;=10000,0&lt;=M&lt;=20000),分别表示要排名的人数以及得到的关系数。<br>接下来有M行，分别表示这些关系<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>对于每组测试，在一行里按题目要求输出</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">3 3
+0 > 1
+1 &lt; 2
+0 > 2
+4 4
+1 = 2
+1 > 3
+2 > 0
+0 > 1
+3 3
+1 > 0
+1 > 2
+2 &lt; 1</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">OK
+CONFLICT
+UNCERTAIN</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>linle</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=HDOJ 2007 Summer Exercise（2）&source=1&searchmode=source'> HDOJ 2007 Summer Exercise（2） </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1811'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1811'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1811">Discuss</a> | <a href='note/note.php?pid=1811'>Note</a><br></td></tr></div></body></html>

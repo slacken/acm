@@ -1,0 +1,66 @@
+/*style sheet*/
+/*
+*By Slacken Zeng(xinkiang@gmail.com)
+*http://www.creatist.cn
+*/
+body{
+	background:url('files/body_bg.png') repeat;
+	font-family:Verdana,Arial,sans-serif;
+	font-size:13px;
+	line-height:20px;
+}
+body,a{
+	
+}
+
+
+#content{
+	width:900px;
+	margin:0 auto;
+	
+}
+a{
+	text-decoration:none;
+}
+a:hover{
+	color:#aa0000;
+}
+body br{
+	display:none;
+}
+#content .panel_content br{
+	display:block;
+}
+.panel_title{
+	font-size:1.2em;
+	background-color:blue;
+	color:white;
+	padding:3px 5px;
+	font-weight:bold;
+	
+}
+.panel_content{
+	background-color:#f0f0f0;
+	padding:1px 5px 4px 5px;
+	word-break:break-all;
+	word-wrap:break-word;
+	margin-bottom:10px;
+}
+.panel_bottom{
+	display:none;
+}
+#index_link{
+	border:1px solid #999;
+	border-radius:0 0 3px 3px;
+	background-color:white;
+	padding:3px 0;
+	-webkit-box-shadow:0 0 5px #ccc;
+}
+#index_link a{
+	display:inline-block;
+	padding:1px 2px;
+}
+#index_link a:visited{
+	color:red;
+	font-weight:bold;
+}

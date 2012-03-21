@@ -1,0 +1,24 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 1208</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Pascal's Travels </h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 852&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 364<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>An n x n game board is populated with integers, one nonnegative integer per square. The goal is to travel along any legitimate path from the upper left corner to the lower right corner of the board. The integer in any one square dictates how large a step away from that location must be. If the step size would advance travel off the game board, then a step in that particular direction is forbidden. All steps must be either to the right or toward the bottom. Note that a 0 is a dead end which prevents any further progress. <br><br><br>Consider the 4 x 4 board shown in Figure 1, where the solid circle identifies the start position and the dashed circle identifies the target. Figure 2 shows the three paths from the start to the target, with the irrelevant numbers in each removed. <br><br><center><img src=/data/images/1208-1.jpg> </center><br><center>Figure 1 </center><br><center><img src=/data/images/1208-2.jpg></center><br><center> Figure 2</center></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input contains data for one to thirty boards, followed by a final line containing only the integer -1. The data for a board starts with a line containing a single positive integer n, 4 &lt;= n &lt;= 34, which is the number of rows in this board. This is followed by n rows of data. Each row contains n single digits, 0-9, with no spaces between them.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>The output consists of one line for each board, containing a single integer, which is the number of paths from the upper left corner to the lower right corner. There will be fewer than 2^63 paths for any board. <br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">4
+2331
+1213
+1231
+3110
+4
+3332
+1213
+1232
+2120
+5
+11101
+01111
+11111
+11101
+11101
+-1</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">3
+0
+7
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>Hint</div><i style='font-size:1px'> </i>
+Brute force methods examining every path will likely exceed the allotted time limit. 
+64-bit integer values are available as "__int64" values using the Visual C/C++ or "long long" values 
+using GNU C/C++ or "int64" values using Free Pascal compilers. </div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=Mid-Central USA 2005&source=1&searchmode=source'> Mid-Central USA 2005 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>mcqsmall</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1208'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1208'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1208">Discuss</a> | <a href='note/note.php?pid=1208'>Note</a><br></td></tr></div></body></html>

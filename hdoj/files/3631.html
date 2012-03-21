@@ -1,0 +1,28 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 3631</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'> Shortest Path</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 3000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 2403&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 588<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>When YY was a boy and LMY was a girl, they trained for NOI (National Olympiad in Informatics) in GD team. One day, GD team¡¯s coach, Prof. GUO asked them to solve the following shortest-path problem.<br>There is a weighted directed multigraph G. And there are following two operations for the weighted directed multigraph:<br>(1) Mark a vertex in the graph.<br>(2) Find the shortest-path between two vertices only through marked vertices.<br>For it was the first time that LMY faced such a problem, she was very nervous. At this moment, YY decided to help LMY to analyze the shortest-path problem. With the help of YY, LMY solved the problem at once, admiring YY very much. Since then, when LMY meets problems, she always calls YY to analyze the problems for her. Of course, YY is very glad to help LMY. Finally, it is known to us all, YY and LMY become programming lovers.<br>Could you also solve the shortest-path problem?<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input consists of multiple test cases. For each test case, the first line contains three integers N, M and Q, where N is the number of vertices in the given graph, N¡Ü300; M is the number of arcs, M¡Ü100000; and Q is the number of operations, Q ¡Ü100000. All vertices are number as 0, 1, 2, ¡­ , N - 1, respectively. Initially all vertices are unmarked. Each of the next M lines describes an arc by three integers (x, y, c): initial vertex (x), terminal vertex (y), and the weight of the arc (c). (c &gt; 0) Then each of the next Q lines describes an operation, where operation ¡°0 x¡± represents that vertex x is marked, and operation ¡°1 x y¡± finds the length of shortest-path between x and y only through marked vertices. There is a blank line between two consecutive test cases.<br>End of input is indicated by a line containing N = M = Q = 0.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>Start each test case with &quot;Case #:&quot; on a single line, where # is the case number starting from 1.<br>For operation ¡°0 x¡±, if vertex x has been marked, output ¡°ERROR! At point x¡±.<br>For operation ¡°1 x y¡±, if vertex x or vertex y isn¡¯t marked, output ¡°ERROR! At path x to y¡±; if y isn¡¯t reachable from x through marked vertices, output ¡°No such path¡±; otherwise output the length of the shortest-path. The format is showed as sample output.<br>There is a blank line between two consecutive test cases.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">5 10 10
+1 2 6335
+0 4 5725
+3 3 6963
+4 0 8146
+1 2 9962
+1 0 1943
+2 1 2392
+4 2 154
+2 2 7422
+1 3 9896
+0 1
+0 3
+0 2
+0 4
+0 4
+0 1
+1 3 3
+1 1 1
+0 3
+0 4
+0 0 0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Case 1:
+ERROR! At point 4
+ERROR! At point 1
+0
+0
+ERROR! At point 3
+ERROR! At point 4</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2010 Asia Regional Tianjin Site ¡ª¡ª Online Contest&source=1&searchmode=source'> 2010 Asia Regional Tianjin Site ¡ª¡ª Online Contest </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3631'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3631'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3631">Discuss</a> | <a href='note/note.php?pid=3631'>Note</a><br></td></tr></div></body></html>

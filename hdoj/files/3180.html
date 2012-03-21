@@ -1,0 +1,23 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 3180</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Furion's Sprout</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 80&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 36<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content><img src=../../data/images/C241-1006-1.gif><img src=../../data/images/C241-1006-2.gif>  Furion is the leader of all Night Elves in DOTA. He has a powerful and interesting skill: Szzprout. After he used this skill, several trees will grow quickly to form a square and trap enemy in this square. Now, give you the size of square and map of DOTA, please trap as many enemies as you can. If there are several solutions, show me the topmost one. If there's still a tie, show me the leftmost one.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The first line contains an integer T indicating the number of test cases, and then follows T cases. The first line of each case contains three integer : X, the size of square, and N, the row number of map, and M, the column number of map. The rest of a case contains N lines, each contains M characters, which '.' indicating an empty grid, and 'x' indicating an grid occupied by an enemy.<br>0 &lt; T &lt;= 20, 1 &lt; N &lt;= 10, 1 &lt; M &lt;= 10, 1 &lt; x &lt;= min (N, M).<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>Print N + 1 lines for each case. In the first line, print the number of trapped enemies Y in this format &quot;Trapped Y enemy(ies).¡±<br>Then print a map with N lines and each line contains M characters. In each grip:<br>a)  '.' stands for an empty grid;<br>b)  'T' stands for a grid occupied by a tree;<br>c)  'x' stands for a grip occupied by  an enemy;<br>d)  'I' stands for a grip occupied by a tree and an enemy meanwhile.<br>Print a blank line after each case.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+
+2 2 6
+x.x.x.
+x.xx..
+
+3 6 3
+.x.
+xx.
+...
+.x.
+.xx
+..x</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Trapped 3 enemy(ies).
+x.ITx.
+x.II..
+
+Trapped 4 enemy(ies).
+.x.
+xx.
+...
+TIT
+TxI
+TTI</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=HDU 2009-10 Programming Contest&source=1&searchmode=source'> HDU 2009-10 Programming Contest </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3180'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3180'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3180">Discuss</a> | <a href='note/note.php?pid=3180'>Note</a><br></td></tr></div></body></html>

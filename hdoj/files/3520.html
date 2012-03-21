@@ -1,0 +1,21 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 3520</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Draw</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 339&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 123<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>huicpc0860 likes drawing,but not good at drawing.One day, he gets a software of drawing.<br>The software provides a eraser B,you can consider it like a convex hull. Yet, the eraser can make your draw from black to white.Now give you a black convex hull A which you can consider like a drawing, and a white convex hull which is a eraser.Now, we only know the angle a between the eraser's moving direction and the x-axis,and I want to move the eraser the least distance to make the remaind part area of the drawing is K percent of the original's.<br><br><br><center><img src=../../data/images/C299-1004-1.jpg></center> <br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>First line is the number of soiled area A's vectors NA(3&lt;=NA&lt;=100).Follows NA lines, describes the convex polygon counterclockwise, each line has two decimal xi, yi ( -10000 ¡Ü xi, yi ¡Ü 10000) representatives one vector's coordinate.<br>Then, another line is the number of soiled area B's vectors NB(3&lt;=NB&lt;=100).Follows NB lines, describes the convex polygon counterclockwise, each line has two decimal xi, yi ( -10000 ¡Ü xi, yi ¡Ü 10000) representatives one vector's coordinate.<br>Lastest line has two decimal, a and K.a (0 ¡Üa&lt; 360)is the direction's angle with x positive axis and K is the rate.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>Only one line for each case,the minimum distance D (retain four digitals after decimal point).<br>If it's impossible to get,output -1.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">4
+0 0
+2 0
+2 2
+0 2
+4
+-2 0
+-1 0
+-1 1
+-2 1
+0 0.75
+3
+-2 -1
+-1 0
+-2 1
+3
+1 -1
+2 0
+1 1
+180 0.5</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2.0000
+2.7071</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2010 ACM-ICPC Multi-University Training Contest£¨9£©¡ª¡ªHost by HNU&source=1&searchmode=source'> 2010 ACM-ICPC Multi-University Training Contest£¨9£©¡ª¡ªHost by HNU </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>zhengfeng</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3520'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3520'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3520">Discuss</a> | <a href='note/note.php?pid=3520'>Note</a><br></td></tr></div></body></html>

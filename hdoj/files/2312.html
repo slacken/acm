@@ -1,0 +1,53 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 2312</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Cliff Climbing</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 6000/2000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 23&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 17<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>At 17:00, special agent Jack starts to escape from the enemy camp. There is a cliff in between the camp and the nearest safety zone. Jack has to climb the almost vertical cliff by stepping his feet on the blocks that cover the cliff. The cliff has slippery blocks where Jack has to spend time to take each step. He also has to bypass some blocks that are too loose to support his weight. Your mission is to write a program that calculates the minimum time to complete climbing.<br><br>Figure D-1 shows an example of cliff data that you will receive. The cliff is covered with square blocks. Jack starts cliff climbing from the ground under the cliff, by stepping his left or right foot on one of the blocks marked with 'S' at the bottom row. The numbers on the blocks are the &quot;slippery levels&quot;. It takes t time units for him to safely put his foot on a block marked with t, where 1 ¡Ü t ¡Ü 9. He cannot put his feet on blocks marked with 'X'. He completes the climbing when he puts either of his feet on one of the blocks marked with 'T' at the top row. <br> <img src=../../../data/images/2312-1.png> <br>Figure D-1: Example of Cliff Data<br><br>Jack's movement must meet the following constraints. After putting his left (or right) foot on a block, he can only move his right (or left, respectively) foot. His left foot position (lx, ly) and his right foot position (rx, ry) should satisfy lx &lt; rx and | lx - rx | + | ly - ry | ¡Ü 3. This implies that, given a position of his left foot in Figure D-2 (a), he has to place his right foot on one of the nine blocks marked with blue color. Similarly, given a position of his right foot in Figure D-2 (b), he has to place his left foot on one of the nine blocks marked with blue color.<br> <img src=../../../data/images/2312-2.png> <br>Figure D-2: Possible Placements of Feet </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input is a sequence of datasets. The end of the input is indicated by a line containing two zeros separated by a space. Each dataset is formatted as follows:<br><br>    w h<br>    s(1,1) ... s(1,w)<br>    s(2,1) ... s(2,w)<br>    ...<br>    s(h,1) ... s(h,w)<br><br>The integers w and h are the width and the height of the matrix data of the cliff. You may assume 2 ¡Ü w ¡Ü 30 and 5 ¡Ü h ¡Ü 60. Each of the following h lines consists of w characters delimited by a space. The character s(y, x) represents the state of the block at position (x, y) as follows:<br><br>    * 'S': Jack can start cliff climbing from this block.<br>    * 'T': Jack finishes climbing when he reaches this block.<br>    * 'X': Jack cannot put his feet on this block.<br>    * '1' - '9' (= t): Jack has to spend t time units to put either of his feet on this block. <br><br>¡¡<br><br>You can assume that it takes no time to put a foot on a block marked with 'S' or 'T'. </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each dataset, print a line only having a decimal integer indicating the minimum time required for the cliff climbing, when Jack can complete it. Otherwise, print a line only having &quot;-1&quot; for the dataset. Each line should not have any characters other than these numbers.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">6 6
+4 4 X X T T
+4 7 8 2 X 7
+3 X X X 1 8
+1 2 X X X 6
+1 1 2 4 4 7
+S S 2 3 X X
+2 10
+T 1
+1 X
+1 X
+1 X
+1 1
+1 X
+1 X
+1 1
+1 X
+S S
+2 10
+T X
+1 X
+1 X
+1 X
+1 1
+1 X
+1 X
+1 1
+1 X
+S S
+10 10
+T T T T T T T T T T
+X 2 X X X X X 3 4 X
+9 8 9 X X X 2 9 X 9
+7 7 X 7 3 X X 8 9 X
+8 9 9 9 6 3 X 5 X 5
+8 9 9 9 6 X X 5 X 5
+8 6 5 4 6 8 X 5 X 5
+8 9 3 9 6 8 X 5 X 5
+8 3 9 9 6 X X X 5 X
+S S S S S S S S S S
+10 7
+2 3 2 3 2 3 2 3 T T
+1 2 3 2 3 2 3 2 3 2
+3 2 3 2 3 2 3 2 3 4
+3 2 3 2 3 2 3 2 3 5
+3 2 3 1 3 2 3 2 3 5
+2 2 3 2 4 2 3 2 3 5
+S S 2 3 2 1 2 3 2 3
+0 0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">12
+5
+-1
+22
+12</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=Japan 2007 Domestic&source=1&searchmode=source'> Japan 2007 Domestic </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>teddy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2312'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2312'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2312">Discuss</a> | <a href='note/note.php?pid=2312'>Note</a><br></td></tr></div></body></html>

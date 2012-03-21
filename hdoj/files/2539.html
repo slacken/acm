@@ -1,0 +1,26 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 2539</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>点球大战</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 1150&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 413<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>在足球比赛中，有不少赛事，例如世界杯淘汰赛和欧洲冠军联赛淘汰赛中，当比赛双方经过正规比赛和加时赛之后仍然不分胜负时，需要进行点球大战来决定谁能够获得最终的胜利。点球大战的规则非常简单，两方轮流派出球员罚点球，每方各罚5个。当5轮点球结束以后如果仍然不分胜负，则进入一轮定胜负的阶段。两方各派一名球员罚点球，直到有一方罚进而另一方没有进为止。<br>在北美职业冰球联赛中，也有点球大战。与足球的规则不同的是，它只先罚3轮点球，随后就进入一轮定胜负的阶段，而其他的规则完全一样。<br>在本题中，输入将给出每次点球是否罚进，而你的任务则是输出一个“比分板”。<br><br><br><img src=../../../data/images/2539-1.JPG><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>输入包含多组数据。每组数据的第一行包含一个整数N(1&lt;=N&lt;=18)，表示双方总共罚了多少个点球，N=0表示输入结束。随后有N行，每行是一个如下形式的字符串：<br>XXXX good：表示这个点球罚进<br>或者XXXX no good：表示这个点球没有罚进<br>其中XXXX表示球员名字（全部由字母和空格组成，保证不会出现歧义）<br>每一行保证不超过100个字符。<br>XXXX和good以及XXXX和no、no和good之间保证有且只有1个空格。<br>good、no good都是小写。本题是大小写相关的。<br>数据不保证点球大战一定结束，也不保证在结束以后立即结束这组数据（即：不用判断点球大战是否结束，只用把罚进的点球往比分上加即可）。<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>对每组数据，输出一个比分板。一个点球如果罚进，则在对应的地方标上’O’，如果没有进则标上’X’。先罚球的队伍的信息在上面，后罚的在下面。最右边标上两队的比分。具体格式参考样例输出。注意如果一轮点球只罚了一个，则后面那个点球对应的地方写上’-’。</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">6
+Riise good
+Ballack good
+Gerrard no good
+Lampard no good
+Fernando Torres good
+Malouda good
+9
+Christiano Ronaldo no good
+Messi no good
+Giggs good
+Abidal no good
+Carrick good
+Ronaldinho good
+Rooney good
+Henry no good
+Tevez good
+0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">1 2 3 Score
+O X O 2
+O X O 2
+1 2 3 4 5 Score
+X O O O O 4
+X X O X - 1
+
+提示：
+空格数要和样例输出一样，否则很可能会被判为“格式错误”(Presentation Error)。</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=UESTC 6th Programming Contest Online&source=1&searchmode=source'> UESTC 6th Programming Contest Online </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2539'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2539'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2539">Discuss</a> | <a href='note/note.php?pid=2539'>Note</a><br></td></tr></div></body></html>

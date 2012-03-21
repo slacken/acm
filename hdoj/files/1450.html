@@ -1,0 +1,24 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 1450</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Pollution</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 51&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 22<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>The managers of a chemical plant, which is notorious for its high pollution, plan to adopt a newly developed device in order to reduce the amount of contaminants emitted. However, engineers in the plant are against this plan, as they doubt the usefulness of the device. As engineers only believe in experimental results, managers decide to hire programmers to make a numerical experiment to convince the engineers. <br><br>The new pollution-reducing device consists of several tanks with pipes connecting the tanks. You may assume there is at most one pipe between two tanks. Two tanks are called adjacent if a pipe connects them. When operating, the contaminant circulates in the device among these tanks. <br><br><img src=/data/images/1450-1.jpg><br><br>As shown in the Figure-1, the contaminant in one tank in time t, will equally distribute into all adjacent tanks in the time t+1. In other words, if we use Xit to denote the amount of contaminant in tank i at time t, we can use the following formula: <br><br><img src=/data/images/1450-2.jpg><br><br>where Iij=1 if tank i and tank j are adjacent, otherwise Iij=0, and where dj is the number of tanks adjacent to tank j. If no tank is adjacent to tank i, we have Xit+1=Xit. The managers, as well as the engineers, want to know that given the initial amount of contaminant in each tank, how the contaminant will be distributed in all the tanks after a long period of time in circulation. Namely, given Xi0 for all i, what are Xit when the difference between Xit and Xit+1 is so small that it can be ignored. You may assume that this condition will ALWAYS be attained from an initial case in this problem. <br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The first line of the input contains one integer T (1 &lt;= T &lt;= 10), the number of test cases. T cases then follow. For each test case, the first line consists of two integers: N and M where(1 &lt;= N &lt;= 100, 0 &lt;= M &lt;= N*(N-1)/2), is the number of tanks and pipes. The following N lines give the initial amount of contaminant for each tank, which are nonnegative real numbers and no larger than 100. Then the next M lines give the tanks that each pipe connects, as &quot;A B&quot; (1 &lt;= A, B &lt;= N, A != B) denotes there is a pipe between tank A and tank B.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case, output the final amount of contaminant Xit+1 (one per line), followed by a blank line. The number should be rounded to three digits after the decimal point.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+3 3
+1
+0
+0
+1 2
+2 3
+3 1
+4 4
+1
+0
+0
+1
+1 2
+2 3
+3 1
+3 4</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">0.333
+0.333
+0.333
+
+0.500
+0.500
+0.750
+0.250</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=ACM暑期集训队练习赛（六）&source=1&searchmode=source'> ACM暑期集训队练习赛（六） </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1450'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1450'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1450">Discuss</a> | <a href='note/note.php?pid=1450'>Note</a><br></td></tr></div></body></html>

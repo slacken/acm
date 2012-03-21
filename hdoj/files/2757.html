@@ -1,0 +1,25 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 2757</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Ocean Currents</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 6000/3000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 725&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 247<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>For a boat on a large body of water, strong currents can be dangerous, but with careful planning, they can be harnessed to help the boat reach its destination. Your job is to help in that planning.<br><br>At each location, the current flows in some direction. The captain can choose to either go with the flow of the current, using no energy, or to move one square in any other direction, at the cost of one energy unit. The boat always moves in one of the following eight directions: north, south, east, west, northeast, northwest, southeast, southwest. The boat cannot leave the boundary of the lake. You are to help him devise a strategy to reach the destination with the minimum energy consumption. </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The lake is represented as a rectangular grid. The first line of each test chunk contains two integers r and c, the number of rows and columns in the grid. The grid has no more than 1000 rows and no more than 1000 columns. Each of the following r lines contains exactly c characters, each a digit from 0 to 7 inclusive. The character 0 means the current flows north (i.e. up in the grid, in the direction of decreasing row number), 1 means it flows northeast, 2 means east (i.e. in the direction of increasing column number), 3 means southeast, and so on in a clockwise manner:<br><br>7 0 1<br>    \|/<br>6-*-2<br>    /|\<br>5 4 3<br><br>The line after the grid contains a single integer n, the number of trips to be made, which is at most 50. Each of the following n lines describes a trip using four integers rs, cs, rd, cd, giving the row and column of the starting point and the destination of the trip. Rows and columns are numbered starting with 1. <br><br>Please process to the end of the data file.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each trip, output a line containing a single integer, the minimum number of energy units needed to get from the starting point to the destination. </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">5 5
+04125
+03355
+64734
+72377
+02062
+3
+4 2 4 2
+4 5 1 4
+5 3 3 4
+5 5
+04125
+03355
+64734
+72377
+02062
+3
+4 2 4 2
+4 5 1 4
+5 3 3 4</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">0
+2
+1
+0
+2
+1</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=University of Waterloo Local Contest 2009.02.08&source=1&searchmode=source'> University of Waterloo Local Contest 2009.02.08 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2757'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2757'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2757">Discuss</a> | <a href='note/note.php?pid=2757'>Note</a><br></td></tr></div></body></html>

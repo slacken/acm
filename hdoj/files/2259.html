@@ -1,0 +1,21 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 2259</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Continuous Same Game (2)</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 6000/3000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 33&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 9<br><font color=red>Special Judge</font></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>After repeated attempts, LL finds the greedy strategy is very awful in practice. Even there is no apparent evidence to proof it is better than a random one. So he has to drop this strategy and try to discover a better one. <br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>There are 100 test cases. Each test case begins with two integers n,m ( 5&lt;=n,m&lt;=20 ), which is the size of the board. Then n lines follow, each contains m characters, indicating the color of the block. There are 5 colors, and each with equal probability. </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case, first output a single line containing the number of steps S. Then S lines follow, each contains two integers indicating the position of an arbitrary block of the group you want to remove. <br><br>For the i-th test case, let Ai is the total point of your scheme and Bi is the total point of the greedy strategy . Then I will calculate the average of (Ai/Bi), 1&lt;=i&lt;=100. You will get WA if your ouput is invalid or this average is less than 1.5. </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">5 5
+35552
+31154
+33222
+21134
+12314</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">5
+2 2
+0 0
+1 1
+2 1
+4 4
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>
+35552    35000    00000    00000    00000    00000
+31154    31552    05552    00002    00002    00000
+33222    33154    01154    01104    00004    00000
+21134    21134    21134    21134    20034    20030
+12314    12314    12314    12314    12314    12312
+
+The total point is 6+12+12+12+6=48.
+</div><i style='font-size:1px'> </i></div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2259'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2259'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2259">Discuss</a> | <a href='note/note.php?pid=2259'>Note</a><br></td></tr></div></body></html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 3314</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Trouble with Election!</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 6000/2000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/65536 K (Java/Others)<br>Total Submission(s): 288&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 108<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Taman and his friends are going to arrange an election for their club. The rule of this election is simple. Every member of the club can cast a single vote for one person. Even one can vote for himself too. If A casts his vote for B and B casts his vote for C then it means that C gets both the votes of A and B. It means if a man casts his vote for someone then the votes he got will also be added to the person he votes for. Now there is a problem if A¡¯s vote goes for B and B¡¯s vote for A. In this case, both of them have the same number of votes and it is a tie! So a tiebreaker will be needed. In this situation, all the votes of A and B and their <b>supporters</b> will be cancelled. If one¡¯s vote goes for another then one is considered as the supporter of another.<br>Now you are elected as the election commissioner for the election of the club. It is your duty to publish the result of the election. If you find no possible winner or if two or more members have same number of votes then you should declare the situation as ¡°Trouble¡±, print the name of the winner otherwise. Instead of name, a unique number for each member identifies the members of this club and the number should always be non-negative and less than the total number of members of the club.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>There will be multiple test cases. Every test case starts with a single integer N on a line. 0&lt;N&lt;= 100000. N denotes the number of members of the club. N lines following. Each I¡¯th line will be consisting of a single integer J; denoting I¡¯th member casts his vote for J¡¯th member. 0&lt;=I, J&lt;N.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>The output for every case consists of a single integer, which denotes that the M¡¯th member is the winner or a single word, ¡°Trouble¡±, if a unique winner can not be determined. Here quotes are for clarity.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">3
+1
+2
+2
+4
+1
+2
+0
+3
+2
+1
+0
+5
+1
+2
+0
+2
+3
+10
+7
+6
+1
+8
+9
+2
+7
+9
+5
+4</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+3
+Trouble
+Trouble
+Trouble</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>Muhammed Hedayetul Islam</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=HDOJ Monthly Contest ¨C 2010.02.06 &source=1&searchmode=source'> HDOJ Monthly Contest ¨C 2010.02.06  </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>wxl</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3314'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3314'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3314">Discuss</a> | <a href='note/note.php?pid=3314'>Note</a><br></td></tr></div></body></html>

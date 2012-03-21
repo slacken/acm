@@ -1,0 +1,23 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 2479</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Kingdoms</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 16000/8000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 17&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 4<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>The former king of Gridland -- CR -- has just passed away, leaving his K sons that all desire the throne. Then the war of succession breaks out and the K-King era begins.<br>Gridland is a rectangle of N*M, with each grid unit as a city. Each city supports one and only one of the K kings as its leader. Cities supporting the same king will always endeavor to establish a kingdom through fighting the rival, and they will not stop until they establish a kingdom satisfying the following rules:<br>1. The kingdom is a rectangle on the map.<br>2. Every city on the Gridland supporting that king should be inside the kingdom.<br>Sadly, through the process of establishing a kingdom, once the opposite cities find that an overlapping of domain is unavoidable, they will inevitably engage in a conflict.<br>Sometimes for a temporary benefit a bunch of kings may ally into a party.  It is certain that one king can only take part in one party at one time, and the cities following a king will correspondingly support the party he joins.<br>Rather than fighting each other fiercely, cities supporting the same party cooperate and strive to establish a kingdom of the whole party.<br>Such kingdoms follow the similar rules:<br>1. The kingdom is a rectangle on the map.<br>2. Every city on the Gridland supporting that party should be inside the kingdom.<br>And the fighting trigger with other kingdoms is exactly the same as the above one.<br>A established kingdom is called stable if and only if:<br>1. No city in the kingdom has to fight with another kingdom..<br>2. If the kingdom stands for a party, the party must never have more than R kings.<br>Now, your job is to find the largest possible stable kingdom. By 'largest' we mean the one with the largest number of cities.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>Input contains multiple cases. Each case consists of:<br>Line 1:Two integers : N and M  (1&lt;= N, M &lt;=1000)<br>Line 2:Two integers : K and R  (1&lt;=K&lt;=1000)<br>Line 3..N+2: M integers each line. the jth integer on the i+2th line will be between 1 and k, indicating which king that city supports.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each case, output one line containing an integer that is the area of the largest possible stable kingdom.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">3 3
+5 3
+4 1 1
+2 3 1
+2 2 5
+10 10
+13 5
+1 1 1 4 4 4 4 4 3 11
+1 1 1 4 4 4 4 4 11 3
+1 1 1 2 2 2 2 2 3 3
+1 1 1 2 2 2 2 2 3 11
+1 1 1 2 2 2 2 2 11 11
+1 1 1 2 2 2 2 2 3 11
+1 1 1 6 6 6 7 7 3 3
+1 1 1 6 6 6 7 7 3 3
+5 5 5 5 10 13 8 12 9 9
+5 5 5 5 13 10 8 8 9 9
+2 2
+2 1
+2 2
+2 1</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">1
+64
+0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2008 Asia Regional Chengdu&source=1&searchmode=source'> 2008 Asia Regional Chengdu </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2479'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2479'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2479">Discuss</a> | <a href='note/note.php?pid=2479'>Note</a><br></td></tr></div></body></html>

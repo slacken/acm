@@ -1,0 +1,24 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 1515</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Anagrams by Stack</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 559&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 288<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>How can anagrams result from sequences of stack operations? There are two sequences of stack operators which can convert TROT to TORT: <br><br>[<br>i i i i o o o o<br>i o i i o o i o<br>]<br><br>where i stands for Push and o stands for Pop. Your program should, given pairs of words produce sequences of stack operations which convert the first word to the second.<br><br>A stack is a data storage and retrieval structure permitting two operations: <br><br>Push - to insert an item and<br>Pop - to retrieve the most recently pushed item <br>We will use the symbol i (in) for push and o (out) for pop operations for an initially empty stack of characters. Given an input word, some sequences of push and pop operations are valid in that every character of the word is both pushed and popped, and furthermore, no attempt is ever made to pop the empty stack. For example, if the word FOO is input, then the sequence: <br><br>i i o i o o is valid, but <br>i i o  is not (it's too short), neither is <br>i i o o o i (there's an illegal pop of an empty stack) <br><br>Valid sequences yield rearrangements of the letters in an input word. For example, the input word FOO and the sequence i i o i o o produce the anagram OOF. So also would the sequence i i i o o o. You are to write a program to input pairs of words and output all the valid sequences of i and o which will produce the second member of each pair from the first.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input will consist of several lines of input. The first line of each pair of input lines is to be considered as a source word (which does not include the end-of-line character). The second line (again, not including the end-of-line character) of each pair is a target word. The end of input is marked by end of file.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each input pair, your program should produce a sorted list of valid sequences of i and o which produce the target word from the source word. Each list should be delimited by <br><br>[<br>]<br><br>and the sequences should be printed in &quot;dictionary order&quot;. Within each sequence, each i and o is followed by a single space and each sequence is terminated by a new line.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">madam
+adamm
+bahama
+bahama
+long
+short
+eric
+rice</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">[
+i i i i o o o i o o 
+i i i i o o o o i o 
+i i o i o i o i o o 
+i i o i o i o o i o 
+]
+[
+i o i i i o o i i o o o 
+i o i i i o o o i o i o 
+i o i o i o i i i o o o 
+i o i o i o i o i o i o 
+]
+[
+]
+[
+i i o i o i o o 
+]</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=Zhejiang University Local Contest 2001&source=1&searchmode=source'> Zhejiang University Local Contest 2001 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>LL</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1515'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1515'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1515">Discuss</a> | <a href='note/note.php?pid=1515'>Note</a><br></td></tr></div></body></html>

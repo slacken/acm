@@ -1,0 +1,33 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 2975</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Find a Minor</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 20000/10000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 2&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 0<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>In a graph G , contraction of an edge e with endpoints u , v is the replacement of u and v with a single vertex such that edges incident to the new vertex are the edges other than e that were incident with u or v . The resulting graph has one less edge than G . A graph H is a minor of a graph G if a copy of H can be obtained from G via repeated edge deletion, edge contraction and isolated node deletion. <br><br>Minors play an important role in graph theory. For example, every non-planar graph contains either the graph K3, 3 (i.e., the complete bipartite graph on two sets of three vertices) or the complete graph K5 as a graph minor. <br><br>Write a program to find a graph minor Kn, m or Kn in an undirected connected simple graph. <br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input consists of several test cases. The first line of each case contains an integers V (3&lt;=V&lt;=12) , the number of vertices in the graph, followed by a string in format ``Kn &quot; or ``Kn ,m &quot; (1&lt;=n, m&lt;=V) , the graph minor you're finding. The following V lines contain the adjacency matrix of the graph (1 means directly connected, 0 means not directly connected). <br><br>The diagonal elements of the matrix will always be 0, and the element in row i column j is always equal to the element in row j column i . The last test case is followed by a single zero, which should not be processed. <br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case, print the case number and the string ``Found&quot; or ``Not found&quot;. <br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">5 K2,2 
+0 1 1 1 1
+1 0 0 0 0
+1 0 0 0 0
+1 0 0 0 0
+1 0 0 0 0
+4 K3 
+0 1 0 1 
+1 0 1 0 
+0 1 0 1 
+1 0 1 0 
+4 K2,2 
+0 1 0 1 
+1 0 1 1 
+0 1 0 1 
+1 1 1 0 
+5 K2,2 
+0 1 0 0 1
+1 0 0 0 1
+0 0 0 1 1
+0 0 1 0 1
+1 1 1 1 0
+5 K4 
+0 1 0 1 1
+1 0 1 1 0
+0 1 0 1 1
+1 1 1 0 1
+1 0 1 1 0
+0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Case 1: Not found 
+Case 2: Found 
+Case 3: Found 
+Case 4: Not found 
+Case 5: Found</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2007 Asia Regional Beijing &source=1&searchmode=source'> 2007 Asia Regional Beijing  </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>gaojie</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2975'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2975'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2975">Discuss</a> | <a href='note/note.php?pid=2975'>Note</a><br></td></tr></div></body></html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 3386</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Hauling Ore</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 81&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 26<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Administrator Selfridge is analyzing possible mining routes on Pandora. He has collected some data in the form of a graph. The latest ore carriers can visit exactly 3 mining camps. Your goal is to help him find out which mines may be visited from other mines with 2 stops (but not fewer).</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>Connections between mines are described beginning with the line ¡±GRAPH BEGIN¡±. Additional lines lists individual mines (nodes), followed (on the same line) by their neighboring mines (edges). The line ¡±GRAPH END¡± ends the list of path descriptions. The next lines list mines for which answers need to be calculated, each on a single line. Following these lines, a completely new instance of the problem can be given, starting from scratch.<br><br>Some mines may appear only as neighboring mines, without being described on a separate line. Mine names can be arbitrary strings, as long as they don¡¯t contain any whitespace.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>Your output should consist one line (for each mine analyzed), consisting of the name of the mine, followed by the mines, in alphabetical order, that can be visited with exactly 2 stops but not fewer, starting from the given mine.<br><center><img src=../../../data/images/C282-1011-1.JPG></center> </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">GRAPH BEGIN
+a b c
+b c d
+d e f
+GRAPH END
+a
+b
+c
+d
+e
+f</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">d
+e f
+d
+a c
+b f
+b e</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2010 MHSPC&source=1&searchmode=source'> 2010 MHSPC </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3386'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3386'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3386">Discuss</a> | <a href='note/note.php?pid=3386'>Note</a><br></td></tr></div></body></html>

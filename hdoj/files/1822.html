@@ -1,0 +1,19 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 1822</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Earn more money</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 10000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 119&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 46<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>渴望占有愈多而愈脆弱。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—— 安妮宝贝<br><br>古有Bill gates辍学创业，今有Wiskey创作卖书。但是如今网络写手太多，Wiskey愁着自己写的书没人买，所以特地到网络上搜集了许多信息，最后发现最大的竞争对手是来自距离地球有一亿亿光年的伽玛星球的U.F.O集团，据说都是吃泡面不眨眼的家伙。为了使自己的利益最大化，Wiskey开始思考着对策，但是U.F.O集团也不是专吃方便面的，她们也会往自己利益最大化的方向前进，两者轮流决策，不能改变对方的决策，并且两者的决策信息是公开的。请各位看官预测下Wiskey和U.F.O竞争的最后结果。<br><img src=../../data/images/C90-1001-1.JPG><br><br>假如U.F.O和Wiskey从（400，400）开始，U.F.O先开始。对于U.F.O来说，（600，400）能是她们最大利益为50，轮到Wiskey决策，他会选择（600，800）收益45，U.F.O继续选择（800，800），而Wiskey再选择（800，600），此时Wiskey收益50，而U.F.O收益45。但对于U.F.O来说（800，600）这也是她们在Wiskey选择600的前提下自己的最优决策。这样U.F.O和Wiskey的竞争会稳定下来，最终的利益分配为（45，50）。当两者的利益已经最大化了，决策就会停止，这个点在博弈中就是Nash均衡点。<br>给你两人的收益表，请计算出Nash均衡点。<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>第一个数字T，表示测试数据数目。每个测试数据包含X和Y，表示U.F.O有X种决策，Wiskey有Y种决策，接下来是X×Y的矩阵，表示U.F.O的收益表，最后是Y×X的矩阵，表示Wiskey的收益表。<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>如果只有一个点请输出最终利益分配，其余答案则输出“Have XX Nash Points.”，一个答案一行。<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+3 3
+10 15 10
+50 40 15
+40 45 35
+
+45 15 10
+50 40 50
+40 45 35
+
+3 3
+10 15 10
+50 40 50
+40 45 35
+
+45 15 10
+50 40 50
+40 45 35</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">45 50
+Have 2 Nash Points.</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>威士忌</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=HDOJ 2007 Summer Exercise（3）- Hold by Wiskey&source=1&searchmode=source'> HDOJ 2007 Summer Exercise（3）- Hold by Wiskey </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>威士忌</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1822'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1822'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1822">Discuss</a> | <a href='note/note.php?pid=1822'>Note</a><br></td></tr></div></body></html>

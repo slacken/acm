@@ -1,0 +1,24 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 1507</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Uncle Tom's Inherited Land*</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 824&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 347<br><font color=red>Special Judge</font></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Your old uncle Tom inherited a piece of land from his great-great-uncle. Originally, the property had been in the shape of a rectangle. A long time ago, however, his great-great-uncle decided to divide the land into a grid of small squares. He turned some of the squares into ponds, for he loved to hunt ducks and wanted to attract them to his property. (You cannot be sure, for you have not been to the place, but he may have made so many ponds that the land may now consist of several disconnected islands.)<br><br>Your uncle Tom wants to sell the inherited land, but local rules now regulate property sales. Your uncle has been informed that, at his great-great-uncle's request, a law has been passed which establishes that property can only be sold in rectangular lots the size of two squares of your uncle's property. Furthermore, ponds are not salable property.<br><br>Your uncle asked your help to determine the largest number of properties he could sell (the remaining squares will become recreational parks). <br><img src=/data/images/1507-1.gif><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>Input will include several test cases. The first line of a test case contains two integers N and M, representing, respectively, the number of rows and columns of the land (1 &lt;= N, M &lt;= 100). The second line will contain an integer K indicating the number of squares that have been turned into ponds ( (N x M) - K &lt;= 50). Each of the next K lines contains two integers X and Y describing the position of a square which was turned into a pond (1 &lt;= X &lt;= N and 1 &lt;= Y &lt;= M). The end of input is indicated by N = M = 0.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case in the input your program should first output one line, containing an integer p representing the maximum number of properties which can be sold. The next p lines specify each pair of squares which can be sold simultaneity. If there are more than one solution, anyone is acceptable. there is a blank line after each test case. See sample below for clarification of the output format.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">4 4
+6
+1 1
+1 4
+2 2
+4 1
+4 2
+4 4
+4 3
+4
+4 2
+3 2
+2 2
+3 1
+0 0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">4
+(1,2)--(1,3)
+(2,1)--(3,1)
+(2,3)--(3,3)
+(2,4)--(3,4)
+
+3
+(1,1)--(2,1)
+(1,2)--(1,3)
+(2,3)--(3,3)</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=South America 2002 -  Practice&source=1&searchmode=source'> South America 2002 -  Practice </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>LL</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1507'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1507'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1507">Discuss</a> | <a href='note/note.php?pid=1507'>Note</a><br></td></tr></div></body></html>

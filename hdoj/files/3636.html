@@ -1,0 +1,31 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 3636</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Escape from Zirong forest</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 20000/10000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 210&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 44<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Now SuSu and his companions arrived at Xiangling's hometown - ZiRong Forest. To drive SuSu out of these area, &quot;Piaorou Bro&quot; Lingduan set the forest on fire. To prevent the trees from burning down, SuSu must find the exit of the forest as quickly as possible and kill Lingduan. If he could not kill Lingduan in TIME seconds, the forest will suffer too much damage to be recovered. What was worse, there are some horrible monsters in the forest. SuSu would suffer a certain damage when he kill a monster on his way to the exit. For the purpose of save energy and to kill Lingduan more easily, the damage SuSu suffer from the monsters should be the fewer the better. Please help SuSu to find a reasonable path which can lead him to the exit in TIME seconds, and suffers the minimum damage at the same time.<br><center><img src=../../../data/images/C308_1005_1.png></center><br>To represents the ZiRong forest, we use a n * m maze:<br>'S' and 'L' represents the position of SuSu and Lingduan at the very beginning. Each of them appears in the maze once and only once.<br>'F' represents fire where SuSu can not step into.<br>A number (from 0 to 9) indicates there is one monster in this grid ,and it's attack is the corresponding number.<br><br>Every second SuSu can choose a direction and go forward 1 ~ K steps, and for all monsters' attack in the grids he passed by(if the grid do exist a monster), we accumulate them and get a sum. The damage SuSu will suffer is the square of this sum.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The first line of input should give the number of cases, T(1&lt;=T&lt;=50).<br>The first line of each case are four numbers N, M, TIME, K. (2 &lt;= N, M &lt;= 100, 1 &lt;= TIME, K &lt;= 100)<br>Followed by N lines each with M characters, described the ZiRong forest.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>If SuSu can reach the position &quot;Piaorou Bro&quot; stands in time, output the minimum damage.<br>Otherwise output &quot;胜败兵家事不期 卷土重来是大侠&quot;.<br>Following the case number (start with 1).</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">5
+3 3 2 2
+S19
+111
+F1L
+3 3 3 2
+S19
+111
+F1L
+5 4 5 1
+S111
+9FF1
+9FF1
+9111
+FFLF
+5 4 4 100
+S111
+9FF1
+9FF1
+9111
+FFLF
+5 4 100 1
+S111
+9FF1
+9FF1
+9111
+FFLF</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Case 1: 101
+Case 2: 5
+Case 3: 胜败兵家事不期 卷土重来是大侠
+Case 4: 19
+Case 5: 7</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>NotOnlySuccess</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2010 ACM-ICPC Multi-University Training Contest（19）——Host by HDU&source=1&searchmode=source'> 2010 ACM-ICPC Multi-University Training Contest（19）——Host by HDU </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3636'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3636'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3636">Discuss</a> | <a href='note/note.php?pid=3636'>Note</a><br></td></tr></div></body></html>

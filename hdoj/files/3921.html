@@ -1,0 +1,27 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 3921</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Clear All of Them II</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 10000/5000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 122768/62768 K (Java/Others)<br>Total Submission(s): 167&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 61<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Acmers have been the Earth Protector against the evil enemy for a long long time, now it¡¯s your second turn to protect our home.<br>&nbsp;&nbsp;There are 4 * n enemies in the map. Your task is to clear all of them with your super laser gun at the fixed position (x, y).<br>&nbsp;&nbsp;For each laser shot, your laser beam can reflect 3 times (must be 3 times), which means it can kill 4 enemies at one time. And the energy this shot costs is the total length <br>of the laser path.<br>For example, if you are at (0, 0), and use one laser shot kills the 4 enemies in the order of (3, 4), (6, 0), (3, 0), (0, 4), then the energy this shot costs is 5.0 + 5.0 + 3.0 + 5.0<br> = 18. 00.<br>To save the energy, you decide to use the Greedy Algorithm, which means for each shot, you select four existed enemies and decide the reflect order, so that this shot¡¯s<br> energy cost is minimum. If there is a tie, we assure that choosing the shot whose four enemies¡¯ average distance to you is smallest can avoid a tie. (See the sample for <br>more details)<br>Now, telling you your position and the 4n enemies¡¯ position, can you tell me how much energy you need in total to clear all of them?<br>&nbsp;&nbsp;Note that:<br>&nbsp;&nbsp;    &gt; Each enemy can only be attacked once.<br>&nbsp;&nbsp;    &gt; All the positions will be unique.<br>&nbsp;&nbsp;    &gt; You must attack 4 different enemies in one shot.<br>&nbsp;&nbsp;    &gt; You can¡¯t change your position.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The first line contains a single positive integer T( T &lt;= 20 ), indicates the number of test cases.<br>For each case:<br>&nbsp;&nbsp;There are 2 integers x and y in the first line, which means your position.<br>&nbsp;&nbsp;The second line is an integer n(1 &lt;= n &lt;= 50), denote there are 4n enemies.<br>&nbsp;&nbsp;Then there following 4n lines, each line have 2 integers denote the position of an enemy.<br>&nbsp;&nbsp;All the position integers are between -1000 and 1000.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case: output the case number as shown and then print a decimal v, which is the energy you need in total to clear all of them (round to 2 decimal places).<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+
+0 0
+1
+6 0
+3 0
+3 4
+0 4
+
+0 0
+2
+1 0
+2 0
+3 0
+4 0
+1 1
+1 2
+1 3
+1 4</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Case #1: 14.00
+Case #2: 13.00
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>Case #2: 
+For the first shot, 
+(0, 0)->(1, 0)->(2, 0)->(3, 0)->(4, 0) cost 4 energy;
+and (0, 0)->(1, 0)->(1, 1)->(1, 2)->(1, 3) cost 4 energy, too.
+But (0, 0)->(1, 0)->(1, 1)->(1, 2)->(1, 3)¡¯s average distance to you(0, 0) is smallest(which is about 1.9531398), so we choose (0, 0)->(1, 0)->(1, 1)->(1, 2)->(1, 3) 
+for the first shot.</div><i style='font-size:1px'> </i></div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2011 Multi-University Training Contest 9 - Host by BJTU&source=1&searchmode=source'> 2011 Multi-University Training Contest 9 - Host by BJTU </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>xubiao</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3921'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3921'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3921">Discuss</a> | <a href='note/note.php?pid=3921'>Note</a><br></td></tr></div></body></html>

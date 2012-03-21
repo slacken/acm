@@ -1,0 +1,49 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 1240</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Asteroids!</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 1686&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 1121<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>You're in space.<br>You want to get home.<br>There are asteroids.<br>You don't want to hit them.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>Input to this problem will consist of a (non-empty) series of up to 100 data sets. Each data set will be formatted according to the following description, and there will be no blank lines separating data sets.<br><br>A single data set has 5 components:<br><br>Start line - A single line, &quot;START N&quot;, where 1 &lt;= N &lt;= 10.<br><br>Slice list - A series of N slices. Each slice is an N x N matrix representing a horizontal slice through the asteroid field. Each position in the matrix will be one of two values:<br><br>'O' - (the letter &quot;oh&quot;) Empty space<br><br>'X' - (upper-case) Asteroid present<br><br>Starting Position - A single line, &quot;A B C&quot;, denoting the &lt;A,B,C&gt; coordinates of your craft's starting position. The coordinate values will be integers separated by individual spaces.<br><br>Target Position - A single line, &quot;D E F&quot;, denoting the &lt;D,E,F&gt; coordinates of your target's position. The coordinate values will be integers separated by individual spaces.<br><br>End line - A single line, &quot;END&quot;<br><br>The origin of the coordinate system is &lt;0,0,0&gt;. Therefore, each component of each coordinate vector will be an integer between 0 and N-1, inclusive.<br><br>The first coordinate in a set indicates the column. Left column = 0.<br><br>The second coordinate in a set indicates the row. Top row = 0.<br><br>The third coordinate in a set indicates the slice. First slice = 0.<br><br>Both the Starting Position and the Target Position will be in empty space.<br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each data set, there will be exactly one output set, and there will be no blank lines separating output sets.<br><br>A single output set consists of a single line. If a route exists, the line will be in the format &quot;X Y&quot;, where X is the same as N from the corresponding input data set and Y is the least number of moves necessary to get your ship from the starting position to the target position. If there is no route from the starting position to the target position, the line will be &quot;NO ROUTE&quot; instead.<br><br>A move can only be in one of the six basic directions: up, down, left, right, forward, back. Phrased more precisely, a move will either increment or decrement a single component of your current position vector by 1.<br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">START 1
+O
+0 0 0
+0 0 0
+END
+START 3
+XXX
+XXX
+XXX
+OOO
+OOO
+OOO
+XXX
+XXX
+XXX
+0 0 1
+2 2 1
+END
+START 5
+OOOOO
+OOOOO
+OOOOO
+OOOOO
+OOOOO
+OOOOO
+OOOOO
+OOOOO
+OOOOO
+OOOOO
+XXXXX
+XXXXX
+XXXXX
+XXXXX
+XXXXX
+OOOOO
+OOOOO
+OOOOO
+OOOOO
+OOOOO
+OOOOO
+OOOOO
+OOOOO
+OOOOO
+OOOOO
+0 0 0
+4 4 4
+END</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">1 0
+3 4
+NO ROUTE</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=South Central USA 2001&source=1&searchmode=source'> South Central USA 2001 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>zf</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1240'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1240'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1240">Discuss</a> | <a href='note/note.php?pid=1240'>Note</a><br></td></tr></div></body></html>

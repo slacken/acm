@@ -1,0 +1,21 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 3080</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>The plan of city rebuild</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 536&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 183<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>News comes!~City W will be rebuilt with the expectation to become a center city. There are some villages and roads in the city now, however. In order to make the city better, some new villages should be built and some old ones should be destroyed. Then the officers have to make a new plan, now you , as the designer, have the task to judge if the plan is practical, which means there are roads(direct or indirect) between every two villages(of course the village has not be destroyed), if the plan is available, please output the minimum cost, or output&quot;what a pity!&quot;.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>Input contains an integer T in the first line, which means there are T cases, and then T lines follow.<br>Each case contains three parts. The first part contains two integers l(0&lt;l&lt;100), e1, representing the original number of villages and roads between villages(the range of village is from 0 to l-1), then follows e1 lines, each line contains three integers a, b, c (0&lt;=a, b&lt;l, 0&lt;=c&lt;=1000), a, b indicating the village numbers and c indicating the road cost of village a and village b . The second part first contains an integer n(0&lt;n&lt;100), e2, representing the number of new villages and roads(the range of village is from l to l+n-1), then follows e2 lines, each line contains three integers x, y, z (0&lt;=x, y&lt;l+n, 0&lt;=z&lt;=1000), x, y indicating the village numbers and z indicating the road cost of village x and village y. The third part contains an integer m(0&lt;m&lt;l+n), representing the number of deserted villages, next line comes m integers, p1,p2,¡­,pm,(0&lt;=p1,p2,¡­,pm&lt;l+n) indicating the village number. <br>Pay attention: if one village is deserted, the roads connected are deserted, too.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case, If all villages can connect with each other(direct or indirect), output the minimum cost, or output &quot;what a pity!&quot;.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+4 5
+0 1 10
+0 2 20
+2 3 40
+1 3 10
+1 2 70
+1 1
+4 1 60
+2
+2 3
+3 3
+0 1 20
+2 1 40
+2 0 70
+2 3
+0 3 10
+1 4 90
+2 4 100
+0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">70
+160</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>wangjing</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=HDU 2nd ¡°Vegetable-Birds Cup¡± Programming Open Contest&source=1&searchmode=source'> HDU 2nd ¡°Vegetable-Birds Cup¡± Programming Open Contest </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3080'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3080'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3080">Discuss</a> | <a href='note/note.php?pid=3080'>Note</a><br></td></tr></div></body></html>

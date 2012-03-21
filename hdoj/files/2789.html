@@ -1,0 +1,24 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 2789</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Wooden Fence</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 4000/2000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 71&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 26<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Did you ever wonder what happens to your money when you deposit them to a bank account? All banks hold such deposits in various assets, such as gold, stocks, obligations, deposits in other banks, loans, bonds, and many others. Due to the financial crisis and instability of the stock exchanges, many banks find out that stocks are not very reliable and their possession may be too risky.<br><br>Therefore, the banks now prefer other assets, especially gold. The main trouble with gold is that there is only a limited amount of it in the whole world. And it is not enough to cover all money held by all banks. (Wait, isn't this the real reason of the crisis?)<br><br>If there is not enough gold, other commodities must be exploited instead. The International Bank of Monetania (IBM) has recently come up with an idea of using very old and valuable trees as their assets. They bought a piece of land with several such trees and now expect their value to grow. Literally, of course.<br><br>Unfortunately, the trees are threatened by wildlife, because animals do not understand their value and nibble them. Moreover, there is a permanent danger of theft. As a result, it is absolutely necessary to build a good solid fence around the trees.<br><br>The IBM quickly realized that the only suitable material available to build the fence is the wood from the trees themselves. In other words, it is necessary to cut down some trees in order to build a fence around the remaining ones. Of course, to keep the maximum value, we want to minimize the value of the trees that had to be cut. You are to write a program that solves this problem.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input contains several test cases, each of which describes one piece of land. Each test case begins with a line containing a single integer N, 2 ¡Ü N ¡Ü 16, the total number of trees. Each of the subsequent N lines contains 4 integers Xi, Yi, Vi, Li separated by at least one space.<br><br>The four numbers describe a single tree. (Xi, Yi) is the position of the tree in the plane, Vi is its value, and Li is the length of fence that can be built using the wood of the tree. You may assume that 0 ¡Ü Vi, Li ¡Ü 10000 and -10000 ¡Ü Xi, Yi ¡Ü 10000. No two trees in a test case will grow at the same position.<br><br>The input ends with a line containing zero in place of N.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case, compute a subset of the trees such that, using the wood from that subset, the remaining trees can be enclosed in a single continuous fence. Find the subset with the minimal total value. For simplicity, regard the trees as having zero diameter.<br><br>Output one line with the sentence &quot;The lost value is T.&quot;, where T is the minimal value of the trees that must be cut.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">6
+0 0 8 3
+1 4 3 2
+2 1 7 1
+4 1 2 3
+3 5 4 6
+2 3 9 8
+3
+3 0 10 3
+5 -3 20 25
+7 -3 30 32
+2
+100 0 5 4
+0 100 4 5
+5
+0 0 10 10
+0 1 10 10
+1 0 10 10
+1 1 10 10
+50 50 8 4
+0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">The lost value is 9.
+The lost value is 20.
+The lost value is 4.
+The lost value is 8.</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=CTU Open 2008&source=1&searchmode=source'> CTU Open 2008 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2789'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2789'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2789">Discuss</a> | <a href='note/note.php?pid=2789'>Note</a><br></td></tr></div></body></html>

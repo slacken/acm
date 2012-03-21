@@ -1,0 +1,24 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 1958</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Word Encoding</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 5000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 1&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 1<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>In any language, certain combinations of letters do not appear (or at least appear so seldom that they can be considered non-existent). For instance, there are no English words containing the three letter combination buv as a substring. Given a list of letter combinations that do not exist, the number of possible ¡°words¡± in a language can be reduced a lot (a ¡°word¡± here means any combination of letters that doesn¡¯t contain any of the given letter combinations as a substring). If we order all such words by increasing length, ordering words of the same length alphabetically, we can enumerate them starting from 1. Assume that the alphabet always consists of the lower case letters ¡¯a¡¯ to ¡¯z¡¯.<br><br>For instance, if the list only contains the combinations q, ab and aaa, the words would be<br>enumerated like this:<br>1. a<br>2. b<br>...<br>16. p<br>17. r<br>...<br>26. aa<br>27. ac<br>...<br>649. zz<br>650. aac<br>Given the list of letter combinations, write a program that for a given word outputs its number, and for a given number ouputs its word. You can assume that none of the words will exceed 20 characters and no number will be greater than 2 000 000 000 (for both input and output).<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input will contain several test cases. The number of test cases T appears on a line by itself. Then follow T test cases. Each test case starts with a line containing two integers, N (the number of letter combinations, non-negative, at most 1 000) and M (the number of queries for this list, positive, at most 100). Then follow N lines, each containing a lower case letter combination (between 1 and 3 letters, inclusive). After that follow M lines, each containing either a positive integer or a lower case word. If it¡¯s a word, it will not contain any of the combinations of letters in the list for this test case. If it¡¯s a number, it will not be greater than the number of words in the language.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each query, output a single line containing either the word¡¯s corresponding number, or the number¡¯s corresponding word.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+3 4
+q
+ab
+aaa
+16
+r
+27
+aac
+7 2
+a
+b
+c
+d
+ef
+ghi
+ijk
+102345678
+ksvfuw</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">p
+17
+ac
+650
+xexgun
+39174383</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=NWERC2004&source=1&searchmode=source'> NWERC2004 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>wangye</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1958'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1958'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1958">Discuss</a> | <a href='note/note.php?pid=1958'>Note</a><br></td></tr></div></body></html>

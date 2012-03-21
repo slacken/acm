@@ -1,0 +1,32 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 3704</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Gem Combining</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 4&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 0<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>In the game &quot;Gem Craft&quot;, we create gems in the item bar.<br>There are N grids in the item bar, each grid can only accomodate one gem.<br>Each gem has its level.<br>When the level of a gem upgrade by 1, the power of the gem will be doubled.<br>The key to win the game is to get a high level gem.<br>Gems with level 0 are available directly.<br>To get gems with higher level, the only way is to combine low level gems.<br>Suppose we have 2*N gems with level K now, they can be turned into N gems with level (K+1) afert a combining operation.<br>Your task is to get at least one gem with level M in minimum steps of operation.<br>For one step of operation, you can do one of the following two things:<br>(1) Get gems with level 0 directly, filling up the empty grids.<br>(2) Combine even number of gems with same level.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input contain some test cases.<br>Each test case contains two integers N and M (1&lt;=N&lt;=36, 0&lt;=M&lt;=20).<br>The input ends when N=M=0, this test case doesn't need processing.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case, output one line.<br>The line contains only one integer, the minimum steps of operation.<br>If there is no solution to get a gem with level M, output -1 instead.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">4 3
+8 3
+0 0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">9
+4
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>We use dots to present empty grid, use number to present the level of a gem.
+
+The first sample can be solved like this:
+
+****        Initial
+0000        Get level 0 gems
+**11        Combine level 0 gems
+***2        Combine level 1 gems
+0002        Get level 0 gems
+*012        Combine level 0 gems
+0012        Get level 0 gems
+*112        Combine level 0 gems
+**22        Combine level 1 gems
+***3        Combine level 2 gems
+
+In total of 9 steps of operation.
+
+The second sample can be solved like this:
+
+********        Initial
+00000000        Get level 0 gems
+****1111        Combine level 0 gems
+******22        Combine level 1 gems
+*******3        Combine level 2 gems
+
+It only takes 4 steps of operation.
+</div><i style='font-size:1px'> </i></div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>YY &amp; LMY @ FDU</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=HDOJ 5th Anniversary Contest&source=1&searchmode=source'> HDOJ 5th Anniversary Contest </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3704'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3704'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3704">Discuss</a> | <a href='note/note.php?pid=3704'>Note</a><br></td></tr></div></body></html>

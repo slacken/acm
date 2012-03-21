@@ -1,0 +1,23 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 3055</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Mine</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65535/65535 K (Java/Others)<br>Total Submission(s): 72&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 12<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Some mines are buried in the minefield. You need to find them all. The whole minefield is divided into n*m square regions. Each region has at most one mine. If there is no mine in a region, you can use a detector in this square area. The detector will tell you the total number buried mines in the eight regions around it. Now some regions of the entire minefield have been confirmed to be clear, and in these regions detector results are known too. The total number of mines in minefield is also known. And I hope you can determine the specific location of all buried mines.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>There are multiple test cases.<br><br>The first line contains a case number t.<br><br>For each case, the first line contains three integers. The size of the minefield , n (2&lt;n&lt;10) and m (2&lt;m&lt;10), the total number of the mines buried in the minefield k(1&lt;k&lt;=10).<br><br>The next n lines contains m characters which describe the situation of the minefield. Each character corresponds to a region. The character '#' means the region is unknown, otherwise it is '0 '~ '8', showing the detector results in this region. The input data are legitimate, which means the results of detectors are accurate and reliable.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each case, if we can 100% determine the specific location of all the mines, then output an n*m character matrix similar to the input. If there is no mines in a region, then output the result of the detector, otherwise output '*'. If you can not 100% determine all the specific location of mines, then output &quot;NO&quot; (quotes not included).<br><br>Output a blank line at the end of each case.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">3
+4 4 3
+####
+#111
+111#
+001#
+3 3 2
+##1
+#21
+#10
+3 3 2
+1#1
+2#2
+1#1 </div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">111*
+*111
+1111
+001*
+
+NO
+
+1*1
+222
+1*1 </div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2009 Multi-University Training Contest 15 - Host by BUAA&source=1&searchmode=source'> 2009 Multi-University Training Contest 15 - Host by BUAA </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>gaojie</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3055'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3055'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3055">Discuss</a> | <a href='note/note.php?pid=3055'>Note</a><br></td></tr></div></body></html>

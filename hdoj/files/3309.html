@@ -1,0 +1,30 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 3309</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Roll The Cube</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 3000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 244&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 92<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>This is a simple game.The goal of the game is to roll two balls to two holes each.<br>'B' -- ball<br>'H' -- hole<br>'.' -- land<br>'*' -- wall<br>Remember when a ball rolls into a hole, they(the ball and the hole) disappeared, that is , 'H' + 'B' = '.'.<br>Now you are controlling two balls at the same time.Up, down , left , right --- once one of these keys is pressed, balls exist roll to that direction, for example , you pressed up , two balls both roll up. <br>A ball will stay where it is if its next point is a wall, and balls can't be overlap.<br>Your code should give the minimun times you press the keys to achieve the goal.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>First there's an integer T(T&lt;=100) indicating the case number.<br>Then T blocks , each block has two integers n , m (n , m &lt;= 22) indicating size of the map.<br>Then n lines each with m characters.<br>There'll always be two balls(B) and two holes(H) in a map.<br>The boundary of the map is always walls(*).</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>The minimum times you press to achieve the goal.<br>Tell me &quot;Sorry , sir , my poor program fails to get an answer.&quot; if you can never achieve the goal.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">4
+6 3
+***
+*B*
+*B*
+*H*
+*H*
+***
+
+4 4
+****
+*BB*
+*HH*
+****
+
+4 4
+****
+*BH*
+*HB*
+****
+
+5 6
+******
+*.BB**
+*.H*H*
+*..*.*
+******</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">3
+1
+2
+Sorry , sir , my poor program fails to get an answer.</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>MadFroG</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=HDOJ Monthly Contest ¨C 2010.02.06 &source=1&searchmode=source'> HDOJ Monthly Contest ¨C 2010.02.06  </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>wxl</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3309'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3309'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3309">Discuss</a> | <a href='note/note.php?pid=3309'>Note</a><br></td></tr></div></body></html>

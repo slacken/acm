@@ -1,0 +1,28 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 2738</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Frugal Search</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 50&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 30<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>For this problem you will write a search engine that takes a query, searches a collection of words, and finds the lexicographically smallest word that matches the query (i.e., the matching word that would appear first in an English dictionary). A query is a sequence of one or more terms separated by single vertical bars (&quot;|&quot;). A term is one or more letters followed by zero or more signed letters. A signed letter is either +s (&quot;positive&quot; s) or -s (&quot;negative&quot; s), where s is a single letter. All letters are lowercase, and no letter will appear more than once within a term. A query will not contain spaces. A term matches a word if the word contains at least one of the unsigned letters, all of the positive letters, and none of the negative letters; a query matches a word if at least one of its terms matches the word.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input consists of one or more test cases followed by a line containing only &quot;#&quot; that signals the end of the input. Each test case consists of 1¨C100 words, each on a line by itself, followed by a line containing only &quot;*&quot; that marks the end of the word list, followed by one or more queries, each on a line by itself, followed by a line containing only &quot;**&quot; that marks the end of the test case. Each word will consist of 1¨C20 lowercase letters. All words within a test case will be unique. Each query will be as defined above and will be 1¨C79 characters long.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each query, output a single line containing the lexicographically smallest word within that test case that matches the query, or the word NONE if there is no matching word. At the end of each test case, output a dollar sign on a line by itself.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">elk
+cow
+bat
+*
+ea
+acm+e
+nm+o|jk+l
+**
+debian
+slackware
+gentoo
+ubuntu
+suse
+fedora
+mepis
+*
+yts
+cab-e+n
+r-e|zjq|i+t|vs-p+e-u-c
+**
+#</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">bat
+NONE
+elk
+$
+gentoo
+ubuntu
+NONE
+$</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=Mid-Central USA 2006&source=1&searchmode=source'> Mid-Central USA 2006 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>teddy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2738'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2738'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2738">Discuss</a> | <a href='note/note.php?pid=2738'>Note</a><br></td></tr></div></body></html>

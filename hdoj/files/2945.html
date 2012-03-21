@@ -1,0 +1,28 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 2945</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Wires</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 5000/2000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 82&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 30<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Engineer Bob is a strange man, and he makes his floor a simple polygon and installs various fantastic machines on his floor.<br><br>On Bob¡¯s floor, there are n machines and n sockets. Each machine is fixed at a certain location and each socket is fixed at a certain position. Different machines and socket may be located at the same position.<br><br>Bob wants to connect one machine with exactly one socket by using wire and he hopes that the total length of the wires is minimal.<br>In addition, we assume that:<br>Bob¡¯s floor can be described by m vertices in a 2-dimentional coordinate system. The m vertices are always given by clockwise or counter-clockwise. For simplicity, the edges of the polygon are always horizontal or vertical. For example, (0,0) (0,4) (4,4) (4,0) (2,0) (2,1) (3, 1) (3,2) (1,2) (1,0) describe the polygon which is shown in Figure 1, in which M1 and M2 are machines, S1 and S2 are sockets.<br><br>Wires can only be equipped within the polygon or on the edges of the polygon. Wires can be intercrossed.<br><br><br><center><img src=../../../data/images/con210-1008-1.JPG></center> <br><br><br>Now please find out the minimal length of all the wires needed.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input contains several cases. The first line of each case contains one integer m (1 ¡Ü m ¡Ü 100) indicating the number of vertices of the polygon. This is then followed by m lines, in which the ith line contains two integers x (0 ¡Ü x ¡Ü 10,000) and y (0 ¡Ü y ¡Ü 10,000), indicating the coordinate of the ith vertex of the polygon. And this is followed by one line, containing one integer n (1 ¡Ü n ¡Ü 16), indicating the number of machines (and also sockets). <br>This is followed by n lines, in which the ith line contains two integers x (0 ¡Ü x ¡Ü 10,000) and y (0 ¡Ü y ¡Ü 10,000), indicating the coordinate of the ith machine. And this is followed by n lines, in which the ith line contains two integers x (0 ¡Ü x ¡Ü 10,000) and y (0 ¡Ü y ¡Ü 10,000), indicating the coordinate of the ith socket. The input ends with m=0. It is guaranteed that the coordinates of all machines and sockets are always given within the polygon or on the edges of the polygon.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each case, output a floating-point number to two decimal places, indicating the minimal length of wires needed.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">10
+0 0
+0 4
+4 4
+4 0
+2 0
+2 1
+3 1
+3 2
+1 2
+1 0
+2
+2 3
+1 0
+3 3
+2 0
+0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">7.41
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>
+Hint
+For the sample input:
+M1 ->S1 distance = 1.000
+M1 -> S2 distance = 3.828
+M2 -> S1 distance = 4.236
+M2 -> S2 distance = 6.414
+Connecting machine M1 to socket S1 and machine M2 to socket S2, we will get the minimal length of wires 7.41.ting the minimal length of wires needed.
+
+</div><i style='font-size:1px'> </i></div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2006 Asia Regional Xi-An £¨Preliminary£©&source=1&searchmode=source'> 2006 Asia Regional Xi-An £¨Preliminary£© </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2945'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2945'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2945">Discuss</a> | <a href='note/note.php?pid=2945'>Note</a><br></td></tr></div></body></html>

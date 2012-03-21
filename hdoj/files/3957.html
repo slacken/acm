@@ -1,0 +1,27 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 3957</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Street Fighter</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 20000/10000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 843&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 319<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Street Fighter is a popular Fighting game. In the game, you could choose many roles to fight. <br>Each role has some models, in different model the role has different super skill. Such as Ryu, he has two model -- &quot;Metsu Hadoken&quot; and &quot;Metsu Shoryuken&quot;. In &quot;Metsu Hadoken&quot; model, Ryu could beat Chun-Li easyly and in &quot;Metsu Shoryuken&quot; he could beat Ken.<br><center><img src=http://acm.hdu.edu.cn/data/images/C361_1007_1.jpg></center><br>Giving the information of which role in which model could beat which role in which model. Your task is choosing minimum roles in certain model to beat other roles in any model.(each role could only be chosen once)</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The first line is a number T(1&lt;=T&lt;=30), represents the number of case. The next T blocks follow each indicates a case.<br>The first line of each case contains a integers N(2&lt;=N&lt;=25), indication the number of roles. (roles numbered from 0 to N - 1).<br>Then N blocks follow, each block contain the information of a role.<br>The first of each block contains a integer M(1&lt;=M&lt;=2), indication the number of model of this role.(models numbered from 0 to M - 1)<br>Then M lines follow, each line contain a number K(1&lt;=K&lt;=10), then K pairs integers(role id and model id) follow, indicating the current role in this model could beat that role in such model.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each case, output the number of case and the minimum roles have to choose to reach the goal.(as shown in the sample output)</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+2
+2
+1 1 0
+1 1 1
+2
+1 0 0
+1 0 1
+
+4
+2
+2 1 0 1 1
+1 2 0
+2
+2 3 0 0 1
+1 2 0
+2
+2 0 0 0 1
+1 1 0
+2
+2 2 0 2 1
+1 1 0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Case 1: 2
+Case 2: 2
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>
+In the first sample, you must select all of roles, because one role couldn't beat the other role in any model.
+In the second sample, you can select role 0 with its model 0, and role 3 with its model 0, then role 1 and role 2 will to be defeated no matter which model they use.
+</div><i style='font-size:1px'> </i></div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>NotOnlySuccess</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2011 Alibaba Programming Contest&source=1&searchmode=source'> 2011 Alibaba Programming Contest </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3957'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3957'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3957">Discuss</a> | <a href='note/note.php?pid=3957'>Note</a><br></td></tr></div></body></html>

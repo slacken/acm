@@ -1,0 +1,32 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 1682</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Mineshaft</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 3000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 0&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 0<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>A plumber has been hired to build an air pipe through a mineshaft from the bottom to the surface. The mineshaft was built without modern technology, so it winds its way up through the earth. Because it is very time consuming to bring the tools necessary to bend the pipe below the surface, the plumber wants to minimize the number of bends in the pipeline.<br><br>For example, for the mineshaft in the first picture below, the minimal number of bends in a pipeline from the bottom to the surface is two. Different optimal solutions exist, one of which is shown in the second picture. The bullets indicate the bends in the pipeline.<br><br><img src=/data/images/1682_1.jpg><br><br>The two walls of the mineshaft are formed by sequences of straight segments. The numbers of segments in the two sequences may be different. Further, the horizontal distance between the walls of the mineshaft may vary, but is always positive. Both walls start at the same level and end at the same level.<br><br>On the way from the bottom of the mineshaft to the surface, the level (the y-coordinate) increases with every segment of a wall. Hence, the mineshaft does not have horizontal plateaus or ‘ceilings’, and at no point does it go back down again.<br><br>For the purpose of this task, you may assume the diameter of the pipeline to be 0. At no point may the pipeline cross the walls. In order to attach the pipeline firmly to the wall, each segment of the pipeline has to touch the walls at (at least) two different places. However, the bending points of the pipeline are weak. They cannot be used to attach the pipeline to the walls. The end points of the pipeline, though, at the bottom and the top of the mineshaft, may be used to attach a segment to the walls.<br><br>Hence, the solution in the third picture above (also having two bends) is not allowed, because the lowest segment of the pipeline can be attached to the walls at only one place: at the bottom of the right wall.<br><br>The pipeline must start anywhere at the bottom of the mineshaft, and must end anywhere on the imaginary line between the top of the left wall and the top of the right wall. Note, however, that the endpoints of the pipeline may only be used to attach the pipeline, if they touch a wall. In particular, the endpoint at the bottom cannot be attached to any position at the bottom which is not the bottom of a wall.<br><br>Finally, the angle that the pipeline makes at a bending point can take any value satisfying &amp;#8722;180° &lt; α &lt; 180° and (of course) α ≠ 0.<br><br>Note that sometimes it may be useful to have the pipeline intersect with itself. For example, in the mineshaft below, this is needed to get from the bottom to the top of the mineshaft with only three bends.<br><br><img src=/data/images/1682_2.jpg><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The first line of the input file contains a single number: the number of test cases to follow. Each test case has the following format:<br><br>One line with one integer N1 (2 ≤ N1 ≤ 25): the number of points describing the left wall of the mineshaft.<br><br>N1 lines with the coordinates of the points describing the left wall of the mineshaft, from the bottom to the top. The ith line contains two integers xi and yi (-1,000 ≤ xi ≤ 1,000 and 0 ≤ yi ≤ 1,000) separated by a single space: the x- and y-coordinate of the point, respectively.<br><br>The y-coordinates are monotonically increasing: y1 &lt; y2 &lt; … &lt; yN1.<br><br>One line with one integer N2 (2 ≤ N2 ≤ 25): the number of points describing the right wall of the mineshaft.<br><br>N2 lines with the coordinates of the points describing the right wall of the mineshaft, from the bottom to the top. The ith line contains two integers x′i and y′i (-1,000 ≤ x′i ≤ 1,000 and 0 ≤ y′i ≤ 1,000) separated by a single space: the x- and y-coordinate of the point, respectively.<br><br>The y-coordinates are monotonically increasing: y′1 &lt; y′2 &lt; … &lt; y′N2.<br><br>We always have x1 &lt; x′1, y1 = y′1, xN1 &lt; x′N2, and yN1 = y′N2. The walls described by the sequences of points do not cross or even touch each other.<br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For every test case in the input file, the output should contain a single number, on a single line: the minimum number of bends in the pipeline to make it from the bottom of the mineshaft to the top, under the conditions from the problem description.<br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+7
+4 0
+8 2
+3 7
+5 9
+3 12
+6 14
+4 16
+5
+7 0
+10 2
+6 6
+10 12
+8 16
+6
+-10 10
+-10 20
+10 22
+5 27
+0 37
+5 47
+8
+-8 10
+-8 16
+3 17
+9 19
+14 24
+18 32
+18 40
+11 47</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+3</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=华东区大学生程序设计邀请赛_热身赛&source=1&searchmode=source'> 华东区大学生程序设计邀请赛_热身赛 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1682'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1682'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1682">Discuss</a> | <a href='note/note.php?pid=1682'>Note</a><br></td></tr></div></body></html>

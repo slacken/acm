@@ -1,0 +1,31 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 3648</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Median Filter</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 4000/2000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 749&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 175<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Median filter is a cornerstone of modern image processing and is used extensively in <br><br><center><img src=../../data/images/3648-1.jpg></center> <br><br>Given a black and white image of n by n pixels, the algorithm works as follow:<br>For each pixel p at the i©\th row and the j©\th column (1+ r &lt;= i, j &lt;= n ¨C r), its gray level g[i,j] is replace by the median of gray levels of pixels in the (2r+1) by (2r+1) square centered at p. The square is called the filtering window and r is its radius.<br><br><center><img src=../../data/images/3648-2.jpg></center> <br><br>Considering the above example, the gray level of the pixel at center will be changed from 150 to 124, which is the median of a filtering window of radius 1.<br><br>Note that the algorithm won¡¯t be applied on the pixels near the boundary, for the filtering window lies outside the image. So you are actually asked to output the filtered sub-image which contains the pixels from (r+1, r+1) to (n-r, n-r).<br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input contains several test cases.<br>For each test case:<br><br>  (a) The first line contains two integers, n and r, meaning that the size of image is n * n (3 &lt;= n &lt;= 500) and the radius of filtering window is r ( 3 &lt;= 2r + 1 &lt;= n). <br><br>  (b) The following n lines contains the n by n gray level matrix presenting the image<br><br>  (c) The gray level ranges from 0 to 1000000 The input ends by double 0s.<br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case output a (n ¨C 2r) by (n ¨C 2r) matrix presenting the sub-image after filtered.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">3 1
+1 1 1
+1 1 1
+1 1 1
+3 1
+1 9 6
+4 5 2
+3 7 8
+3 1
+0 0 0
+255 255 255
+0 255 0
+5 1
+0 0 1 1 0
+1 0 1 0 1
+0 0 1 1 1
+1 1 1 0 1
+1 0 0 0 1
+0 0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">1
+5
+0
+0 1 1
+1 1 1
+1 0 1
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>
+The definition of ¡°median¡±: One type of average, found by arranging the values in order and then selecting the one in the middle. 
+If the total number of values in the sample is even, then the median is the mean of the two middle numbers. 
+The median is a useful number in cases where the distribution has very large extreme values which would otherwise skew the data.
+
+</div><i style='font-size:1px'> </i></div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2010 Asia Regional Hangzhou Site ¡ª¡ª Online Contest&source=1&searchmode=source'> 2010 Asia Regional Hangzhou Site ¡ª¡ª Online Contest </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3648'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3648'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3648">Discuss</a> | <a href='note/note.php?pid=3648'>Note</a><br></td></tr></div></body></html>

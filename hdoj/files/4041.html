@@ -1,0 +1,32 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 4041</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Eliminate Witches!</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 535&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 226<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Kaname Madoka is a Magical Girl(Mahou Shoujo/Puella Magi). The duty of a Magical Girl is to eliminate Witches(Majo). Though sounds horrific, it is not a hard job for her as a powerful magical girl. <br><br>One day Madoka is eliminating Witches as usual. This time she is facing a maze full of Witches. The maze consists of rooms, each lives exactly one Witch. And there is exactly one path from one room to another. So you see, the maze can be represented as a tree, with rooms regarded as nodes on the tree. <br><br>Madoka eliminates Witches according to the following rules: <br>1. At first, Madoka enters the root node room of the maze. <br>2. If the room Madoka enters lives a Witch, Madoka will eliminate it at once, and the Witch disappear. <br>3. If the room has child node rooms with Witches, Madoka will choose the leftmost one and enter it. <br>4. Madoka won't go back to the parent node room of a room X until Witches living in child node rooms of X are all eliminated. <br><br>See the figure below for details about a sample maze. The numbers inside nodes indicate the order of elimination of the corresponding Witches, the strings below nodes are names of Witches, and the arrow shows the tracks Madoka travels: <br><center><img src=../../data/images/4041.jpg></center>  <br>After finishes her task, Madoka just make a brief log like this: <br>&quot;walpurgis(charlotte(patricia,gertrud),elly,gisela)&quot; <br>which represents the tree-like maze identifying rooms by the names of Witches living in them. <br><br>Akemi Homura, a classmate of Madoka, also a Magical Girl, is a mad fan of her. She wants to take detailed notes of everything Madoka do! Apparently the log Madoka made is hard to read, so Homura decide to make a new one of her own. <br><br>The new log should contain the following information: <br>1. The number of rooms of the maze <br>2. Names of Witches in all rooms. <br>3. The tracks Madoka travels. (represented by the number identifying the node) <br><br>So the new log should be like this: <br>6 <br>walpurgis <br>charlotte <br>patricia <br>gertrud <br>elly <br>gisela <br>1 2 <br>2 3 <br>3 2 <br>2 4 <br>4 2 <br>2 1 <br>1 5 <br>5 1 <br>1 6 <br>6 1 <br><br>However, the maze may be very large, so Homura nees a program to help her. <br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The first line contains an integer T(T&lt;=20), indicating the number of test cases. <br>For each case there is only one string on a line, Madoka's log. <br>It is guaranteed that the maze consists of at most 50000 rooms, and the names of Witches is a string consists of at most 10 lowercase characters, while the string of Madoka's log consists of at most 1000000 characters, which are lowercase characters, '(', ')' or ','. <br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each case, you should output the detailed log. <br>The first line an integer N, the number of rooms of the maze. <br>The following N lines, each line a string, the name of the Witches, in the order of elimination. <br>The following 2(N-1) lines, each line two integers, the number of two nodes indicating the path Madoka passes. <br>Output a blank line after each case. <br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">3 
+walpurgis(charlotte(patricia,gertrud),elly,gisela) 
+wuzetian 
+nanoha(fate(hayate)) </div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">6 
+walpurgis 
+charlotte 
+patricia 
+gertrud 
+elly 
+gisela 
+1 2 
+2 3 
+3 2 
+2 4 
+4 2 
+2 1 
+1 5 
+5 1 
+1 6 
+6 1 
+
+1 
+wuzetian 
+
+3 
+nanoha 
+fate 
+hayate 
+1 2 
+2 3 
+3 2 
+2 1</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=The 36th ACM/ICPC Asia Regional Beijing Site ！！ Online Contest &source=1&searchmode=source'> The 36th ACM/ICPC Asia Regional Beijing Site ！！ Online Contest  </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=4041'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=4041'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=4041">Discuss</a> | <a href='note/note.php?pid=4041'>Note</a><br></td></tr></div></body></html>

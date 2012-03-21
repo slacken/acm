@@ -1,0 +1,23 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 1914</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>The Stable Marriage Problem</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 5000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65535/32768 K (Java/Others)<br>Total Submission(s): 299&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 135<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>The stable marriage problem consists of matching members of two different sets according to the member¡¯s preferences for the other set¡¯s members. The input for our problem consists of:<br><br>   a set M of n males;<br>   a set F of n females;<br><br>for each male and female we have a list of all the members of the opposite gender in order of preference (from the most preferable to the least).<br>A marriage is a one-to-one mapping between males and females. A marriage is called stable, if there is no pair (m, f) such that f ¡Ê F prefers m ¡Ê M to her current partner and m prefers f over his current partner. The stable marriage A is called male-optimal if there is no other stable marriage B, where any male matches a female he prefers more than the one assigned in A.<br><br>Given preferable lists of males and females, you must find the male-optimal stable marriage.<br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The first line gives you the number of tests. The first line of each test case contains integer n (0 &lt; n &lt; 27). Next line describes n male and n female names. Male name is a lowercase letter, female name is an upper-case letter. Then go n lines, that describe preferable lists for males. Next n lines describe preferable lists for females.<br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case find and print the pairs of the stable marriage, which is male-optimal. The pairs in each test case must be printed in lexicographical order of their male names as shown in sample output. Output an empty line between test cases.<br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+3
+a b c A B C
+a:BAC
+b:BAC
+c:ACB
+A:acb
+B:bac
+C:cab
+3
+a b c A B C
+a:ABC
+b:ABC
+c:BCA
+A:bac
+B:acb
+C:abc</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">a A
+b B
+c C
+
+a B
+b A
+c C</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=Southeastern Europe 2007&source=1&searchmode=source'> Southeastern Europe 2007 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1914'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1914'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1914">Discuss</a> | <a href='note/note.php?pid=1914'>Note</a><br></td></tr></div></body></html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 3806</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Configuration files</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 1000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 67&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 18<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>&nbsp;&nbsp;In daily project development process, we often use to the configuration file. Now we are going to solve the problem is simple. It is a complete configuration files writing and reading operation and output operation results.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>&nbsp;&nbsp;The input contains multiple test cases.The first line has one integer N (1 &lt;= N&lt;= 100), represent the number of the test cases.The second line has one integer M (1 &lt;= M &lt;= 2600) ,represent configuration files contain the M line data. The following next M line data represent the content of configuration files. The next line has one integer K (1 &lt;= K &lt;= 10000), represent the number of the operations. Then next K lines follow, each line represent a operation.there are two format in the operations. The first format is ¡°op nodeName variable Name value ¡° . The second format is ¡°op nodeName variableName¡±. If op is ¡°U¡± that represent that it is the Update operation. If op is ¡°G¡± that represent that it is the Get operation. If op is ¡°I¡± that represent that it is the Insert operation. The node¡¯s format in the configuration is ¡°[nodeName]¡±. The format of the value is ¡°variableName=value¡±. The nodeName, variableName in the configuration files all consist of lowercase character and each of them most contain 100 characters(include 100). The value consist of printable characters and most contain 100 characters(include 100) There may have some whitespaces (space or Tab key) front or behind the nodeName, variableName and value. There may have multiple same variables in the same node in the configuration file and the value of the variable to last shall prevail and the variable names and node name may be the same, in a configuration file won't exist in the same node name, inserting operations if a specified node name designated variables are the already existing failured.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>&nbsp;&nbsp;For each case, firstly print the ¡°case n:¡± n represent the number of the case.Then operate according to the output corresponding operation results, to ¡°U¡± operation if successfully output ¡°update succeed.¡± otherwise output ¡°update failured.¡±,to ¡°I¡± operation if successful ouput ¡°insert succeed.¡± otherwise ouput ¡°insert failured.¡± for ¡°G¡± operation if successful output a specified node specified under the value of the variable, or output ¡°not get the value.¡±.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">1
+10
+[appinfo]
+appid = 32152
+post = 86,87,89
+[userinfo]
+	name = acmer
+password  = 	2536LR
+[softversion]
+version =3.0.1
+date= 2011-2-20
+developers =  ACM_DIY
+11
+U appinfo appid 12345
+G appinfo appid
+I test value 110alcm
+G test value
+G userinfo password
+G userinf name
+I softversion version 3.0.5
+G softversion version
+U softversion date 2011-2-14
+G softversion versio
+G softversion Date</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">case 1:
+update succeed.
+12345
+insert succeed.
+110alcm
+2536LR
+not get the value.
+insert failured.
+3.0.1
+update succeed.
+not get the value.
+not get the value.</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>[FJAU]²ËÄñ</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=ACM-DIY Group Contest 2011 Spring&source=1&searchmode=source'> ACM-DIY Group Contest 2011 Spring </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3806'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3806'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3806">Discuss</a> | <a href='note/note.php?pid=3806'>Note</a><br></td></tr></div></body></html>

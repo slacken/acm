@@ -1,0 +1,50 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 3958</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Tower Defence</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 20000/10000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 83&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 15<br><font color=red>Special Judge</font></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Tower Defence is a popular classic game. During the game,  there will appear some monsters at the entry and each will find a shortest path to the exit.  Your task is puting some warriors on the map to kill the monsters before they reach exit.<br><center><img src=http://acm.hdu.edu.cn/data/images/C361_1008_1.jpg></center><br>You could put warrior(infinite) on the map to change the pathes of monsters. Of course, the longer the path is, the more advantageous to you. <br>Now, giving you the information of the map, how do you put the warriors to make the monsters move on the longest path?<br>The meaning of each character in the map:<br>'S' represents the entry of the map, one and only one;<br>'T' represents the exit of the map, one and only one;<br>'.' represents the grid that monster could move on;<br>'B' represents the barrier that monster couldn't move on;<br>'W' represents the warrior that you put.(could only put on '.')</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The first line is a number T(1&lt;=T&lt;=30), represents the number of case. The next T blocks follow each indicates a case.<br>The first line of each case contains two integers N, M (3&lt;=N&lt;=20 , 3&lt;=M&lt;=9)<br>Then N lines follow, each line contains M chars represent the map, include 'S','T','.','B'.<br>I promise there must be at least one way from entry to exit.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each case, first line output the number of case with the longest distance from S to T.(as shown in the sample output)<br>Then output any one of these ways, using the same format for the map as in the input. Output a blank line after each case.(Special judge.If you not output a blank line after each case, you will get Wrong Answer) </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">4
+3 3
+S..
+...
+..T
+
+5 5
+S....
+.B.B.
+.....
+.B.B.
+....T
+
+5 5
+S...T
+..B..
+..B..
+..B..
+.....
+
+5 5
+S...T
+..B..
+..B..
+..B..
+..B..</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Case 1: 5
+S..
+...
+..T
+
+Case 2: 17
+S....
+WBWB.
+.....
+.BWBW
+....T
+
+Case 3: 17
+S.W.T
+W.B.W
+..B..
+.WBW.
+.....
+
+Case 4: 5
+S...T
+..B..
+..B..
+..B..
+..B..</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>NotOnlySuccess</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2011 Alibaba Programming Contest&source=1&searchmode=source'> 2011 Alibaba Programming Contest </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3958'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3958'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3958">Discuss</a> | <a href='note/note.php?pid=3958'>Note</a><br></td></tr></div></body></html>

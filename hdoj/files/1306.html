@@ -1,0 +1,18 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 1306</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>String Matching</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 538&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 301<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>It's easy to tell if two words are identical - just check the letters. But how do you tell if two words are almost identical? And how close is &quot;almost&quot;?<br><br>There are lots of techniques for approximate word matching. One is to determine the best substring match, which is the number of common letters when the words are compared letter-byletter.<br><br>The key to this approach is that the words can overlap in any way. For example, consider the words CAPILLARY and MARSUPIAL. One way to compare them is to overlay them: <br><br>CAPILLARY<br>MARSUPIAL<br><br>There is only one common letter (A). Better is the following overlay:<br><br>CAPILLARY<br>&nbsp;&nbsp;&nbsp;MARSUPIAL<br><br>with two common letters (A and R), but the best is:<br><br>&nbsp;&nbsp;CAPILLARY<br>MARSUPIAL <br><br>Which has three common letters (P, I and L).<br><br>The approximation measure appx(word1, word2) for two words is given by:<br><br>     common letters * 2<br>-----------------------------<br>length(word1) + length(word2)<br><br>Thus, for this example, appx(CAPILLARY, MARSUPIAL) = 6 / (9 + 9) = 1/3. Obviously, for any word W appx(W, W) = 1, which is a nice property, while words with no common letters have an appx value of 0.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">The input for your program will be a series of words, two per line, until the end-of-file flag of -1.
+
+Using the above technique, you are to calculate appx() for the pair of words on the line and print the result. For example:
+
+CAR CART
+TURKEY CHICKEN
+MONEY POVERTY
+ROUGH PESKY
+A A
+-1
+
+The words will all be uppercase.</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Print the value for appx() for each pair as a reduced fraction, like this:
+
+appx(CAR,CART) = 6/7
+appx(TURKEY,CHICKEN) = 4/13
+appx(MONEY,POVERTY) = 1/3
+appx(ROUGH,PESKY) = 0
+appx(A,A) = 1</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>Eddy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1306'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1306'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1306">Discuss</a> | <a href='note/note.php?pid=1306'>Note</a><br></td></tr></div></body></html>

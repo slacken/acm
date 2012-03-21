@@ -1,0 +1,29 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 1872</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>稳定排序</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 3000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 2305&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 903<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>大家都知道，快速排序是不稳定的排序方法。<br>如果对于数组中出现的任意a[i],a[j](i&lt;j),其中a[i]==a[j]，在进行排序以后a[i]一定出现在a[j]之前，则认为该排序是稳定的。<br><br>某高校招生办得到一份成绩列表，上面记录了考生名字和考生成绩。并且对其使用了某排序算法按成绩进行递减排序。现在请你判断一下该排序算法是否正确，如果正确的话，则判断该排序算法是否为稳定的。<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>本题目包含多组输入，请处理到文件结束。<br>对于每组数据，第一行有一个正整数N(0&lt;N&lt;300)，代表成绩列表中的考生数目。<br>接下来有N行，每一行有一个字符串代表考生名字(长度不超过50，仅包含'a'~'z'),和一个整数代表考生分数(小于500)。其中名字和成绩用一个空格隔开。<br>再接下来又有N行，是上述列表经过某排序算法以后生成的一个序列。格式同上。</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>对于每组数据，如果算法是正确并且稳定的，就在一行里面输出&quot;Right&quot;。如果算法是正确的但不是稳定的，就在一行里面输出&quot;Not Stable&quot;，并且在下面输出正确稳定排序的列表，格式同输入。如果该算法是错误的，就在一行里面输出&quot;Error&quot;,并且在下面输出正确稳定排序的列表，格式同输入。<br><br>注意，本题目不考虑该排序算法是错误的，但结果是正确的这样的意外情况。</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">3
+aa 10
+bb 10
+cc 20
+cc 20
+bb 10
+aa 10
+3
+aa 10
+bb 10
+cc 20
+cc 20
+aa 10
+bb 10
+3
+aa 10
+bb 10
+cc 20
+aa 10
+bb 10
+cc 20</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Not Stable
+cc 20
+aa 10
+bb 10
+Right
+Error
+cc 20
+aa 10
+bb 10</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>linle</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2008浙大研究生复试热身赛（2）——全真模拟&source=1&searchmode=source'> 2008浙大研究生复试热身赛（2）——全真模拟 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1872'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1872'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1872">Discuss</a> | <a href='note/note.php?pid=1872'>Note</a><br></td></tr></div></body></html>

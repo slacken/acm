@@ -1,0 +1,31 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 2300</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Crashing Robots</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 5000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 246&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 118<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>In a modernized warehouse, robots are used to fetch the goods. Careful planning is needed to ensure that the robots reach their destinations without crashing into each other. Of course, all warehouses are rectangular, and all robots occupy a circular floor space with a diameter of 1 meter. Assume there are N robots, numbered from 1 through N. You will get to know the position and orientation of each robot, and all the instructions, which are carefully (and mindlessly) followed by the robots. Instructions are processed in the order they come. No two robots move simultaneously; a robot always completes its move before the next one starts moving. <br>A robot crashes with a wall if it attempts to move outside the area of the warehouse, and two robots crash with each other if they ever try to occupy the same spot.<br><img src=../../../data/images/2300-1.jpg><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The first line of input is K, the number of test cases. Each test case starts with one line consisting of two integers, 1 &lt;= A, B &lt;= 100, giving the size of the warehouse in meters. A is the length in the EW-direction, and B in the NS-direction. <br>The second line contains two integers, 1 &lt;= N, M &lt;= 100, denoting the numbers of robots and instructions respectively. <br>Then follow N lines with two integers, 1 &lt;= Xi &lt;= A, 1 &lt;= Yi &lt;= B and one letter (N, S, E or W), giving the starting position and direction of each robot, in order from 1 through N. No two robots start at the same position. <br><br> <br>Figure 1: The starting positions of the robots in the sample warehouse<br><br>Finally there are M lines, giving the instructions in sequential order. <br>An instruction has the following format: <br>&lt; robot #&gt; &lt; action&gt; &lt; repeat&gt; <br>Where is one of <br><br>L: turn left 90 degrees, <br><br>R: turn right 90 degrees, or <br><br>F: move forward one meter,<br><br>and 1 &lt;= &lt; repeat&gt; &lt;= 100 is the number of times the robot should perform this single move.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>Output one line for each test case: <br><br>Robot i crashes into the wall, if robot i crashes into a wall. (A robot crashes into a wall if Xi = 0, Xi = A + 1, Yi = 0 or Yi = B + 1.) <br><br>Robot i crashes into robot j, if robots i and j crash, and i is the moving robot. <br><br>OK, if no crashing occurs.<br><br>Only the first crash is to be reported.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">4
+5 4
+2 2
+1 1 E
+5 4 W
+1 F 7
+2 F 7
+5 4
+2 4
+1 1 E
+5 4 W
+1 F 3
+2 F 1
+1 L 1
+1 F 3
+5 4
+2 2
+1 1 E
+5 4 W
+1 L 96
+1 F 2
+5 4
+2 3
+1 1 E
+5 4 W
+1 F 4
+1 L 1
+1 F 20</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Robot 1 crashes into the wall
+Robot 1 crashes into robot 2
+OK
+Robot 1 crashes into robot 2</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=NCPC2005&source=1&searchmode=source'> NCPC2005 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>zty</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2300'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2300'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2300">Discuss</a> | <a href='note/note.php?pid=2300'>Note</a><br></td></tr></div></body></html>

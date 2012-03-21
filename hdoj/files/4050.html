@@ -1,0 +1,41 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 4050</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>wolf5x</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 138&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 96<br><font color=red>Special Judge</font></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>There are n grids in a row. The coordinates of grids are numbered from x=1 to x=n. Someone starts from x=0. You can step forward with your left leg or right leg alternatively in turn.Namely,if you step forward with your left leg, then you must step with your right leg next. As you can not jump , only one leg is allowed to use each step. Every step you take is in the range of [A,B], inclusively; namely, every step you take is at most B units and at least A units.<br>Before you start to move, the grids will be initialized randomly with 4 states(0,1,2,3), and p[i][j] means the probability of ith grid initialized with state j. After initialization, the state of the grids will not change.<br><br>State 0 means you can't step into the correspoding grid.<br>State 1 means you can just step into the grid with your left leg. <br>State 2 means you can just step into the grid with your right leg.<br>State 3 means you can step into the grid with either of your legs,and the next step,you can use any legs; namely you don't need to follow the rules above.<br>If x&gt;n, then the grid can be stepped in with arbitrary method.means you can step at the place after the nth grid.<br>For every step,you will choose the ¡°step method¡± with the minimum step length. Namely, if you can take the step of S units and S+1 units, you will choose the step of S units.<br>Until you can't step in any grids in front of you,or you have been in a grid x&gt;n, you will stop.<br>Can you calculate the expectation of the steps when you stop? <br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>An integer T means the number of cases.T&lt;=30<br>For each case,the first line is three integers n,A,B.<br>The next n lines,each line has 4 number p[i][0], p[i][1], p[i][2], p[i][3].<br>1 &lt;= A &lt;= B &lt;= n&lt;= 2000.<br>0 &lt;= p[i][j] &lt;= 1, p[i][0]+p[i][1]+p[i][2]+p[i][3] = 1.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>The expectation of the steps when you stop<br>you can assume that the relative epsilon is no more than 1e-6<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">9
+2 1 1
+0 0.5 0.5 0
+0 0 1 0
+2 1 1
+0 0.5 0.5 0
+0.5 0.5 0 0
+2 1 2
+0 0.5 0.5 0
+0 0 1 0
+2 1 2
+0.2 0.3 0.4 0.1
+0.15 0.2 0.25 0.4
+3 1 10
+0 0 0 1
+0 0 0 1
+0 0 0 1
+3 1 1
+0 0 0 1
+0 0 0 1
+0 0 0 1
+3 2 2
+0 0 0 1
+0 0 0 1
+0 0 0 1
+3 3 3
+0 0 0 1
+0 0 0 1
+0 0 0 1
+3 1 2
+0.0 0.3 0.6 0.1
+0.1 0.2 0.3 0.4
+0.5 0.4 0.1 0.0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2.00000000
+1.50000000
+2.50000000
+2.46000000
+4.00000000
+4.00000000
+2.00000000
+2.00000000
+2.80200000</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=The 36th ACM/ICPC Asia Regional Beijing Site ¡ª¡ª Online Contest &source=1&searchmode=source'> The 36th ACM/ICPC Asia Regional Beijing Site ¡ª¡ª Online Contest  </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=4050'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=4050'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=4050">Discuss</a> | <a href='note/note.php?pid=4050'>Note</a><br></td></tr></div></body></html>

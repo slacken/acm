@@ -1,0 +1,21 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 3737</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Adaboost</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 6000/3000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/65536 K (Java/Others)<br>Total Submission(s): 29&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 4<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content><center><img src=../../../data/images/C318-1008-14.png></center></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>There are no more than 10 test cases <br>For each case, the first line contains four integers C , N , M,S ( 1&lt;= C &lt;= 20 ,1 ≤ N,M &lt;= 1000, 1&lt;= S &lt;= 50 ,M%2==0), indicating the number of queries , the number of rectangles, the number of images, the size of image .<b>Noting ：all the images are square and the same in size .</b><br>Then there are N lines. Each line has four integers x1 y1 x2 y2 (x1 &lt;= x2, y1 &lt;= y2, 0 &lt;= x1, x2, y1, y2 &lt; S) .They are the coordinates of the left-top and the right-bottom points of the rectangle . (y is row ,x is column)<br>Then there are M lines. Each lines has  S*S  integers. All integers from 0 to 255.<br>The ith Image is face when i is between 1 and M/2 , notface otherwise. <br>Then there are C lines. Each line has M integers. The ith integer is qi indicating to weight of ith image.( 1&lt;= qi &lt;= 2000000 )</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each case, first print a line &quot;Case #?:&quot; where ? is the case number starting from 1. Then output C lines,You should output the C answers in the order of the sequences appearance. </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">1 1 4 1
+0 0 0 0
+1 
+4
+2
+3
+1 1 1 1 
+
+1 1 4 1
+0 0 0 0
+1 
+2 
+3 
+4
+1 1 1 1</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Case #1:
+1
+Case #2:
+0
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>The first sample f1 (x1) = 1, f1 (x2) = 4, f1 (x3) = 2, f1 (x4 ) = 3, so when θ ∈ (1, 2] , p = 1, or θ ∈ [3, 4), p = -1, ∈t = 1.
+</div><i style='font-size:1px'> </i></div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>Tsubasa</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=ACMDIY第二届群赛&source=1&searchmode=source'> ACMDIY第二届群赛 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>notonlysuccess</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3737'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3737'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3737">Discuss</a> | <a href='note/note.php?pid=3737'>Note</a><br></td></tr></div></body></html>

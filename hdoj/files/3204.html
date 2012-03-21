@@ -1,0 +1,30 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 3204</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>Expression Counting</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 4&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 3<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>YY is a clever boy. One day, he feels very boring and writes some expressions randomly. Later, he discovers that although some expressions were written in different forms, they are essentially the same, such as a+(b-c), (a+b)-c. After several attempts, he becomes interested in this and wants to know the number of distinct expressions involving n different operands.<br><br>To make the problem easier, you can assume that only operators +, -, *, / and parentheses are permitted.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input consists of multiple test cases.<br><br>For each test case, there is one line containing only one integer n. (1&lt;=n&lt;=30)<br>End of input is indicated by a line containing a zero.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case, output the number of distinct expressions involving n different operands. Since the answer is very large, you only need to output the answer modulo 1,000,000,007.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">1
+2
+3
+4
+0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">1
+6
+68
+1170
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>
+There are 6 distinct expressions involving 2 operands:
+a+b, a-b, b-a, a*b, a/b, b/a.
+
+There are 68 distinct expressions involving 3 operands:
+a+b+c, a+b-c, a-b+c, a-b-c, b-a+c, b-a-c, c-a-b,
+a*b*c, a*b/c, a/b*c, a/b/c, b/a*c, b/a/c, c/a/b,
+a+b*c, b+a*c, c+a*b,
+a+b/c, a+c/b, b+a/c, b+c/a, c+a/b, c+b/a,
+a-b*c, b-a*c, c-a*b,
+a-b/c, a-c/b, b-a/c, b-c/a, c-a/b, c-b/a,
+b*c-a, a*c-b, a*b-c,
+b/c-a, c/b-a, a/c-b, c/a-b, a/b-c, b/a-c,
+a*(b+c), b*(a+c), c*(a+b),
+a*(b-c), a*(c-b), b*(a-c), b*(c-a), c*(a-b), c*(b-a),
+a/(b+c), b/(a+c), c/(a+b),
+a/(b-c), a/(c-b), b/(a-c), b/(c-a), c/(a-b), c/(b-a),
+(b+c)/a, (a+c)/b, (a+b)/c,
+(b-c)/a, (c-b)/a, (a-c)/b, (c-a)/b, (a-b)/c, (b-a)/c.
+
+When n=4, note that (a-b)/(c-d) and (b-a)/(d-c) are the same, but a/b-c/d and b/a-d/c are not.
+</div><i style='font-size:1px'> </i></div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2009 Shanghai Invitation Contest Host by DHU&source=1&searchmode=source'> 2009 Shanghai Invitation Contest Host by DHU </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>zhuweicong</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3204'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3204'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3204">Discuss</a> | <a href='note/note.php?pid=3204'>Note</a><br></td></tr></div></body></html>

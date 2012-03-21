@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" type=text/css href="../style.css" /><title>Problem 1571</title></head><body><div id="content"><tr><td align=center><h1 style='color:#1A5CC8'>下沙小面的(1)</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 1000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 509&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 196<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Lele 在下沙高校中有很多同学，所以他有时间也经常到处去看望同学（顺便蹭饭）。<br>在下沙，最便宜方便的交通工具莫过于小面的了。<br>坐得多了，Lele有时候也想，如果将来失业了，能够在下沙开开小面的，也是多么幸福的啊。<br><br>终于有一天，他如愿当上了小面的的司机。为了更好的服务客户，他订立了一些开车的法则。<br><br>1.当有人要求上车时，如果不是下面这两种情况，他就会让人上车。<br>2.有些人会因为迷路，往往不知道自己在哪里。比如身在城市1，他也会要求Lele把他送到城市1。这时，Lele当然具有商人诚信的原则，告诉他这个情况，并且不会让他上车。<br>3.由于小面的的座位只有7个（不包括司机Lele的驾驶座），如果当时车上已经有7个人，Lele就不会让人再上车了。<br>4.在没人上车时，Lele会看车内谁最早上车，然后把他送到目的地，当然，车内其他要去这个地方的人也会一起下车。然后车停在那个位置<br>5.如果车内已经没乘客了，Lele就会在原地等着，直到下一个顾客上门。否则Lele在那个地方重复前面的法则。<br><br>现在，告诉你Lele一天面对到的情况，请帮他计算一下，他一天一共开了多少距离。</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>本题目包含多组测试。最后一组测试后有一个0代表结束。<br>每组测试第一行有一个整数NCity(3&lt;=NCity&lt;=30)表示下沙一共有多少个站点(站点从0开始标号)。<br>然后给你一个 NCity * NCity 的矩阵，表示站点间的两两距离。即这个矩阵中第 i 行 第 j 列的元素表示站点 i 和站点 j 的距离。(0&lt;=距离&lt;=1000)<br>再然后有一个正整数 K ， 表示接下来有K个指令。每个指令占一行。<br>当指令开头为 UP 的时候，接下来有一个整数 T ,表示在面的所在位置有一个要去站点T(0&lt;=T&lt;NCity)的人要上车。<br>当指令为 GO 的时候，表示Lele要执行法则4，送某些乘客下车。<br>当然，如果车上当时没有乘客的话，你就可以忽略这个指令。<br><br>注意：<br>在每组测试开始的时候，Lele的面的总是停在站点0，且车为空<br>如果在T个指令都结束之后，还发现有人没下车，则你可以忽略他们。</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>最后在一行内输出一个整数，表示Lele的面的一共开了多少距离。</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">3
+0 1 2
+1 0 3
+2 3 0
+9
+UP 1
+UP 2
+GO
+UP 2
+GO
+GO
+UP 2
+UP 1
+GO
+0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">7</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>linle</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=HDU 2007-1 Programming Contest&source=1&searchmode=source'> HDU 2007-1 Programming Contest </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>linle</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1571'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1571'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1571">Discuss</a> | <a href='note/note.php?pid=1571'>Note</a><br></td></tr></div></body></html>
