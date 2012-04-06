@@ -10,8 +10,10 @@
 .u:after{
 	content:"*";
 }
+.right{float:right;}
+.clear{clear:both;}
 body{
-	background:url('files/body_bg.png') repeat;
+	background:url('images/texture.png') repeat;
 	
 }
 body,pre,button,input{
@@ -36,6 +38,7 @@ body,dt,dd,dl,form{
 }
 a{
 	text-decoration:none;
+	color:#1111AA;
 }
 a:hover{
 	color:#aa0000;
@@ -72,7 +75,7 @@ b{
 
 
 
-#index_link{
+.link_i{
 	border:1px solid #aaa;
 	border-radius:0 0 3px 3px;
 	background-color:white;
@@ -81,17 +84,17 @@ b{
 	-moz-box-shadow:0 0 5px #ccc;
 	box-shadow:0 0 5px #ccc;
 }
-#index_link a{
+.link_i a{
 	display:inline-block;
 	width:42px;
 	text-align:center;
 	text-shadow:1px 1px 1px rgba(0,0,0,0.3);
 }
-#index_link a:visited{
+.link_i a:visited{
 	color:green;
 	font-weight:bold;
 }
-#index_link a.k{
+.link_i a.k{
 	color:red;
 	font-size:1.2em;
 }
