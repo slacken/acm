@@ -1,0 +1,88 @@
+<!DOCTYPE html><html>
+				<head><meta charset=utf-8 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 1405</title></head>
+				<body><div id="jobdu_c"><dl class="main-title-mod mb10">
+            <dt class="title-hd">
+                题目1405：店小二的IDEA
+            </dt>
+            <dd class="title-bd">
+            	                <div class="pl20 mb10 f14 topic-desc-mod">
+                    <div class="topic-desc-hd">
+                        <p style="width:140px;"><b>时间限制：</b>1 秒</p>
+                        <p style="width:140px;"><b>内存限制：</b>32 兆</p>
+                        <p style="width:100px;"><b>特殊判题：</b>否</p>
+                        <p style="width:130px;"><b>提交：</b>241</p>
+                        <p style="width:130px;"><b>解决：</b>19</p>
+                    </div>
+                   	<div class="topic-desc-bd">
+                   	<dl>
+                       <dt>
+                           <b>题目描述：</b>
+                       </dt>
+                       <dd>
+                           <div style="text-indent: 21pt">亲，你们可知淘宝目前每天活跃数据量超过50TB，每天有超过4000万人次的访问，大约要处理几亿次的用户行为。面对如此巨大的数据访问量，淘宝利用oracle RAC系统，构建自己的数据库奇迹。</div>
+<div style="text-indent: 21pt">现在淘宝店小二YY有个想法，如何把一段信息最大限度的压缩,例如字符串abababab就可以看成是abab和abab的连接,在库中可以用串abab2来表示，但是你会发现这个压缩串并不是最好的，可以进一步压缩成ab4。</div>
+<div style="text-indent: 21pt">需要注意的是优秀的压缩算法，在获取高压缩率的同时，也会耗费大量的cpu资源。淘宝是一个讲究实际效益的公司，在带宽资源能够承受的前提下，也需要权衡cpu的消耗，因此淘宝最终的压缩算法，<strong>仅仅只将原始串，压缩为一个由字符串和数字构成的形式，详细见题目Hint。</strong></div>
+<div style="text-indent: 21pt">&nbsp;亲，你们能实现店小二想法吗？^_^记得给好评哦。</div>
+<p></p>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>输入：</b>
+                       </dt>
+                       <dd>
+                           <div>输入有多组测试案例。</div>
+<div>每个测试案例为1行，全由小写英文字母组成，长度不超过100,000。</div>
+<p></p>
+                       </dd>
+                   	</dl>
+                       <dl>
+                       <dt>
+                           <b>输出：</b>
+                       </dt>
+                       <dd>
+                           <p class="MsoNormal">对应每个测试案例，输出最大压缩串，单独占1行。<span lang="EN-US" style="background: white"><o:p></o:p></span></p>
+<p></p>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>样例输入：</b>
+                       </dt>
+                       <dd>
+                           <pre>aaaa
+xyz
+abababab
+abcabcabdabd
+</pre>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>样例输出：</b>
+                       </dt>
+                       <dd>
+                           <pre>a4
+xyz1
+ab4
+abcabcabdabd1
+</pre>
+                       </dd>
+                   	</dl>
+                   	                   	<dl>
+                       <dt>
+                           <b>提示：</b>
+                       </dt>
+                       <dd class="lBlue">
+                           <div>
+<div>案例4中，答案不是abc2abd2，因为描述中提过压缩串仅是将原始串完全恰好的分割为一个字符串和数字的形式，因此只能为abcabcabdabd1</div>
+</div>
+                       </dd>
+                   	</dl>
+                   	                   		             			                   	</div>
+                </div>
+                            </dd>
+		</dl></div></body></html>

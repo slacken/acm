@@ -1,0 +1,33 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 2599</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>The Dreadful Seven</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 115&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 68<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Super Mario is studying how to use a mysterious Power Square. The Power Square is n×n with integer values between 0 and n2-1.<br>A number y is a neighbor of another number x in the Power Square if y is directly above or below x, or directly to the left or right of x. Rosalina asks Super Mario to find all the numbers in the Power Square that are neighbors of the number 7, since she can tell that those numbers are quite nervous.<br>”Why are the numbers scared of seven?” Mario asks Rosalina.<br>”Because seven ate nine!” Rosalina exclaims.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>Input is a description of of the Power Square, followed by a number of commands. The first line is the size of the Power Square n. You may assume n&lt;=100. The second line contains the n2 values in the Power Square, separated by spaces. Values start from the top left corner and move from left to right, moving down one row to the leftmost position when a row is filled.<br>Following the Power Square description are a number of commands, with each command on a separate line. Each command begins with the name of the command, followed by any additional command parameters.<br>There will no more than 100 commands.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>The command ”SHOW” causes the current state of the Power Square to be displayed in n × n form (each row of n values on a single line, separated by spaces), followed by a blank line.<br>The command ”NEIGHBORS” is followed by a value x in the Power Square. The values neighboring x are output and displayed on a single line (in the order: above, left, right, and below x), separated by spaces. You may assume that x is always in the Power Square.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">3
+8 7 6 5 4 3 2 1 0
+SHOW
+NEIGHBORS 7
+NEIGHBORS 1
+NEIGHBORS 4
+4
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+SHOW
+NEIGHBORS 7
+NEIGHBORS 1
+NEIGHBORS 8
+NEIGHBORS 14</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">8 7 6
+5 4 3
+2 1 0
+
+8 6 4
+4 2 0
+7 5 3 1
+0 1 2 3
+4 5 6 7
+8 9 10 11
+12 13 14 15
+
+3 6 11
+0 2 5
+4 9 12
+10 13 15</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=HDU 2010-05 Programming Contest &source=1&searchmode=source'> HDU 2010-05 Programming Contest  </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2599'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2599'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2599">Discuss</a> | <a href='note/note.php?pid=2599'>Note</a><br></td></tr></div></body></html>

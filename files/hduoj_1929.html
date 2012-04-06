@@ -1,0 +1,26 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 1929</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>A Puzzling Problem</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 5000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 41&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 9<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Anna Graham is a puzzle maker who prides herself in the quality and complexity of her work. She makes puzzles of all kinds - crosswords, logic problems, acrostics, and word search puzzles, to name but a few. For each puzzle, she has developed a set of rules which she constrains herself to follow. For word search puzzles, she insists not only that all the words be connected to one another (as in most word search puzzles), but also that removing any word from the word list will not cause one or more words to become disconnected from the rest. (Two words are connected if they contain a common letter in the grid.) The example word search puzzle on the left satisfies this condition, but the one on the right does not (removing the word Pascal from the word list disconnects Java from the other two words).<br><img src=http://acm.hdu.edu.cn/forum/attachment/11_237_de4c3a5a3af1175.jpg><br>Your job is to write a program that checks to see if Anna’s word search problems are up to snuff.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>Input will consist of multiple test cases. The first line of each test case contains 3 integers n m l, where n and m are the number of rows and columns in the puzzle and l is the number of words. Following this are n lines containing m uppercase characters each (the puzzle) followed by l lines containing one word each (the word list, in mixed case). Each word in the word list will appear in the puzzle exactly once. There will be no more than 100 rows and 100 columns in the puzzle and no more than 100 words to search for. There will be no spaces in the input words.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each problem instance, output the word Yes or No depending on whether the puzzle satisfies Anna’s constraints.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">5 6 3
+PBROGR
+PASCAL
+ASMMIN
+GIICON
+TCELST
+BASIC
+LISP
+Pascal
+5 6 4
+PBROJR
+PASCAL
+ASMMVN
+GIICAN
+TCELST
+BASIC
+Java
+LISP
+Pascal
+0 0 0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Yes
+No</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2007 East Central North America&source=1&searchmode=source'> 2007 East Central North America </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>威士忌</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1929'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1929'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1929">Discuss</a> | <a href='note/note.php?pid=1929'>Note</a><br></td></tr></div></body></html>

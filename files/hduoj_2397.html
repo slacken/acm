@@ -1,0 +1,39 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 2397</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Unique Words</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 316&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 69<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>A common problem faced by electronic information providers is determining the number of unique words in a document.  The case of a word does not affect its uniqueness.  For example, The, tHE and The are all considered equivalent.  Punctuation can appear in these documents and is handled as follows:<br>1) Periods '.' and exclamation marks '!' may appear at the end of a sentence and should not be considered a word, or part of a word.<br>2) Dashes '-' appear between hyphenated words.  The hyphenated words should be considered separately.<br>3) Commas ',' colons ':' and semicolons ';' appear within a sentence and should not be considered a word, or part of a word.<br>4) Apostrophes ' appear within contractions and possessive forms.  These symbols should be treated as if they never appeared (i.e., as if they were deleted from the word).<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input file contains a series of documents, each separated by an entire line of text containing only the word EOD  Each document will contain no more than 1,000 lines and at most 100 unique words.  All input lines will not contain more than 80 characters. Numbers, control characters, and punctuation symbols not listed above will not appear in the text. An entire line containing only the string EOT identifies the end  of the list of documents; note this last document is terminated by EOT and not EOD</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content> The output should be an alphabetically sorted list of all unique words, with each unique word displayed in uppercase.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">The banker hammered home his two-part message! His message, 
+at times satirical, was that the bank's situation was a mess.
+EOD
+Hello world
+EOD
+This is a
+final example
+EOT</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">WORDS IN DOCUMENT #1
+A
+AT
+BANKER
+BANKS
+HAMMERED
+HIS
+HOME
+MESS
+MESSAGE
+PART
+SATIRICAL
+SITATUATION
+THAT
+THE
+TIMES
+TWO
+WAS
+WORDS IN DOCUMENT #2
+HELLO
+WORLD
+WORDS IN DOCUMENT #3
+A
+EXAMPLE
+FINAL
+IS
+THIS</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>2008 ACM ICPC Regional hangzhou</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=HDU “Valentines Day” Open Programming Contest 2009-02-14&source=1&searchmode=source'> HDU “Valentines Day” Open Programming Contest 2009-02-14 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2397'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2397'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2397">Discuss</a> | <a href='note/note.php?pid=2397'>Note</a><br></td></tr></div></body></html>

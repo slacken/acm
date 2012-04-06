@@ -1,0 +1,31 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 3896</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Greatest TC</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 12000/4000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 286&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 88<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>TC (Tian Chao) is magical place, as you all know...<br>The railways and the rail-stations in TC are fragile and always meet with different kinds of problems. In order to reach the destination safely on time, you are asked to develop a system which has two types of main functions as below.<br>1: A B C D, reporting whether we can get from station A to station B without passing the railway that connects station C and station D.<br>2: A B C, reporting whether we can get from station A to station B without passing station C.<br>Please notice that the railways are UNDIRECTED.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>For each test case, the first line will contain two integers N (2&lt;=N&lt;=100000) and M (1&lt;=M&lt;=500000), namely the number of stations and railways in TC. Then each of the next M lines will have two integers, describing the two stations that a certain railway is connecting. After this, there comes a line containing a single integer Q (Q&lt;=300000), which means the number of queries to make on the system. The next Q lines will be queries. Each query begins with a integer, indicating the type of query, followed by 4 (the first type) or 3 (the second type) integers describing the details of the query as what mentioned above.<br>The stations are always labeled from 1 to N.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case, print &quot;yes&quot; or &quot;no&quot; in separated lines for the queries.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">13 15
+1 2
+2 3
+3 5
+2 4
+4 6
+2 6
+1 4
+1 7
+7 8
+7 9
+7 10
+8 11
+8 12
+9 12
+12 13
+5
+1 5 13 1 2
+1 6 2 1 4
+1 13 6 7 8
+2 13 6 7
+2 13 6 8</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">yes
+yes
+yes
+no
+yes</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2011 Multi-University Training Contest 6 - Host by JLU&source=1&searchmode=source'> 2011 Multi-University Training Contest 6 - Host by JLU </a> </div> <div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3896'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3896'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3896">Discuss</a> | <a href='note/note.php?pid=3896'>Note</a><br></td></tr></div></body></html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 3795</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Diff</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 600144/600144 K (Java/Others)<br>Total Submission(s): 48&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 19<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>In computing, diff is a file comparison utility that outputs the differences between two files. It is typically used to show the changes between a file and a former version of the same file. Diff displays the changes made per line for text files.<br>The operation of diff is based on solving the longest common subsequence problem which is as follows: Given two sequences A = a1, a2, ..., aM, and B = b1, b2, ..., bN, find the length, k, of the longest sequence C = c1, c2, ..., ck such that C is a subsequence of both A and B. As an example, if<br>A = d, y, n, a, m, i, c and B = p, r, o, g, r, a, m, m, i, n, g<br>then the longest common subsequence is a, m, i( {3,4,5} from A, {5,6,8} from B) and has length 3.<br>You may find {5,7,8} from B is also a, m, i, but {5,6,8} is lexicographic smaller, so we choose the former one. We always choose the lexicographic smallest one.<br>From the longest common subsequence it's only a small step to get diff-like output:<br>dyn-progr+m+c-ng+<br>where '-' means a deletion from and '+' means an addition to the first string.<br>Now you are supposed to simulate the diff operation.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>Your program must read test cases from standard input.<br>The input file consists of several test cases. Each case contains the contents of two files. The case starts with two non-negative integers N and M (both &lt;= 50), then followed by N+M lines, each contains a string of no more than 80 characters. The first N lines are the contents of the first file, while the second M lines are of the second file.<br>The input is finished by a negative N.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case, your program must output to standard output. If there is no difference found between the two files, print in a line &quot;No difference found&quot;. If there is nothing in common between the two files, print in a line &quot;Totally different&quot;. Otherwise, first print in a line the length of the longest sequence. Then for each line of the first file, print the line number, and output the differences in the diff-like format line by line, as shown by the sample output.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">1 1
+This is a test
+This is a test
+1 1
+ab
+cd
+1 1
+dynamic
+programming
+4 4
+This is a test
+which is more complicated
+zzz
+than ...
+This is another test
+of the project
+which is much more complex
+than the previous one
+-100</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">No difference found
+Totally different
+3
+line #1
+dyn-progr+m+c-ng+
+39
+line #1
+nother+
+line #2
+of the project+
+uch m+icat-d-
+line #3
+zzz-
+line #4
+x+
+...-the previous one+</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=浙大计算机研究生保研复试上机考试-2011年&source=1&searchmode=source'> 浙大计算机研究生保研复试上机考试-2011年 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>notonlysuccess</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3795'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3795'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3795">Discuss</a> | <a href='note/note.php?pid=3795'>Note</a><br></td></tr></div></body></html>

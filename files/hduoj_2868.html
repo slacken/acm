@@ -1,0 +1,18 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 2868</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Neighbor Friend</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 169&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 47<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Suppose we sort N persons in a line according to their heights,we are curious about the Neighbor Friend.<br>A pair of Neighbor Friend is two person next to each other in the line,ignoring the order(ie (x,y) and (y,x)is the same).<br>Now you are given M pieces of infomation,each with two integer a and b,discribing that person a is shorter than person b.<br>Can you find how many different pairs of Neighbor Friend that could occur in some of the sorted line?<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>Input contains multiple cases.<br>Each test case starts with two integer N(2&lt;=N&lt;=200) ,M(0&lt;=M&lt;1000) ,indicating that there are N persons and M pieces of information.Follow by M lines,each line contains two integers a and b,represents that person a is shorter than person b.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case, output the different pairs of Neighbor Friend that could occur in some of the sorted line.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">3 1
+1 2
+3 2
+1 2
+2 3</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">3
+2
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>
+
+Hint
+In sample 1,we know that person 1 is shorter than person 2, there may be three kind of sorted results: 3 1 2,1 3 2,1 2 3.(1,3),(1,2) and (2,3) could be found among them.
+In sample 2,we know that person 1 is shorter than person 2,and person 2 is shorter than person 3,so there is only one kind of sorted results:1 2 3.We can’t find (1,3),so
+the answer is 2.
+</div><i style='font-size:1px'> </i></div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2009 Multi-University Training Contest 7 - Host by FZU&source=1&searchmode=source'> 2009 Multi-University Training Contest 7 - Host by FZU </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>gaojie</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2868'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2868'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2868">Discuss</a> | <a href='note/note.php?pid=2868'>Note</a><br></td></tr></div></body></html>

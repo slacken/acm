@@ -1,0 +1,22 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 2364</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Escape</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 1000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 414&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 166<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>You find yourself trapped in a large rectangular room, made up of large square tiles; some are accessible, others are blocked by obstacles or walls. With a single step, you can move from one tile to another tile if it is horizontally or vertically adjacent (i.e. you cannot move diagonally).<br>To shake off any people following you, you do not want to move in a straight line. In fact, you want to take a turn at every opportunity, never moving in any single direction longer than strictly necessary. This means that if, for example, you enter a tile from the south, you will turn either left or right, leaving to the west or the east. Only if both directions are blocked, will you move on straight ahead. You never turn around and go back!<br>Given a map of the room and your starting location, figure out how long it will take you to escape (that is: reach the edge of the room).<br><br><center><img src=../../../data/images/C145-1005-1.jpg></center><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>On the first line an integer t (1 &lt;= t &lt;= 100): the number of test cases. Then for each test case:<br><br>a line with two integers separated by a space, h and w (1 &lt;= h, w &lt;= 80), the height and width of the room;<br><br>then h lines, each containing w characters, describing the room. Each character is one of . (period; an accessible space), # (a blocked space) or @ (your starting location).<br>There will be exactly one @ character in each room description.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case:<br><br>A line with an integer: the minimal number of steps necessary to reach the edge of the room, or -1 if no escape is possible.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+9 13
+#############
+#@..........#
+#####.#.#.#.#
+#...........#
+#.#.#.#.#.#.#
+#.#.......#.#
+#.#.#.#.#.#.#
+#...........#
+#####.#######
+4 6
+#.####
+#.#.##
+#...@#
+######</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">31
+-1</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=bapc2007_pre&source=1&searchmode=source'> bapc2007_pre </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2364'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2364'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2364">Discuss</a> | <a href='note/note.php?pid=2364'>Note</a><br></td></tr></div></body></html>

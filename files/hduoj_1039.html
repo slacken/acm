@@ -1,0 +1,21 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 1039</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Easier Done Than Said?</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 3645&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 1841<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Password security is a tricky thing. Users prefer simple passwords that are easy to remember (like buddy), but such passwords are often insecure. Some sites use random computer-generated passwords (like xvtpzyo), but users have a hard time remembering them and sometimes leave them written on notes stuck to their computer. One potential solution is to generate &quot;pronounceable&quot; passwords that are relatively secure but still easy to remember.<br><br>FnordCom is developing such a password generator. You work in the quality control department, and it's your job to test the generator and make sure that the passwords are acceptable. To be acceptable, a password must satisfy these three rules:<br><br>It must contain at least one vowel.<br><br>It cannot contain three consecutive vowels or three consecutive consonants.<br><br>It cannot contain two consecutive occurrences of the same letter, except for 'ee' or 'oo'.<br><br>(For the purposes of this problem, the vowels are 'a', 'e', 'i', 'o', and 'u'; all other letters are consonants.) Note that these rules are not perfect; there are many common/pronounceable words that are not acceptable.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input consists of one or more potential passwords, one per line, followed by a line containing only the word 'end' that signals the end of the file. Each password is at least one and at most twenty letters long and consists only of lowercase letters.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each password, output whether or not it is acceptable, using the precise format shown in the example.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">a
+tv
+ptoui
+bontres
+zoggax
+wiinq
+eep
+houctuh
+end</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">&lt;a> is acceptable.
+&lt;tv> is not acceptable.
+&lt;ptoui> is not acceptable.
+&lt;bontres> is not acceptable.
+&lt;zoggax> is not acceptable.
+&lt;wiinq> is not acceptable.
+&lt;eep> is acceptable.
+&lt;houctuh> is acceptable.</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=Mid-Central USA 2000&source=1&searchmode=source'> Mid-Central USA 2000 </a> </div> <div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1039'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1039'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1039">Discuss</a> | <a href='note/note.php?pid=1039'>Note</a><br></td></tr></div></body></html>

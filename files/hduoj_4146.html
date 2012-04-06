@@ -1,0 +1,22 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 4146</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Flip Game</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 15000/5000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65535/32768 K (Java/Others)<br>Total Submission(s): 704&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 245<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Flip game is played on a square N*N field with two-sided pieces placed on each of its N^2 squares. One side of each piece is white and the other one is black and each piece is lying either it's black or white side up. The rows are numbered with integers from 1 to N upside down; the columns are numbered with integers from 1 to N from the left to the right. Sequences of commands (x<sub>i</sub>, y<sub>i</sub>) are given from input, which means that both pieces in row x<sub>i</sub> and pieces in column y<sub>i</sub> will be flipped (Note that piece (x<sub>i</sub>, y<sub>i</sub>) will be flipped twice here). Can you tell me how many white pieces after sequences of commands?<br>Consider the following 4*4 field as an example:<br><br>bwww<br>wbww<br>wwbw<br>wwwb<br><br>Here &quot;b&quot; denotes pieces lying their black side up and &quot;w&quot; denotes pieces lying their white side up.<br>Two commands are given in order: (1, 1), (4, 4). Then we can get the final 4*4 field as follows:<br><br>bbbw<br>bbwb<br>bwbb<br>wbbb<br><br>So the answer is 4 as there are 4 white pieces in the final field.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The first line contains a positive integer T, indicating the number of test cases (1 &lt;= T &lt;= 20).<br>For each case, the first line contains a positive integer N, indicating the size of field; The following N lines contain N characters each which represent the initial field. The following line contain an integer Q, indicating the number of commands; each of the following Q lines contains two integer (x<sub>i</sub>, y<sub>i</sub>), represent a command (1 &lt;= N &lt;= 1000, 0 &lt;= Q &lt;= 100000, 1 &lt;= x<sub>i</sub>, y<sub>i</sub> &lt;= N).<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each case, please print the case number (beginning with 1) and the number of white pieces after sequences of commands.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+4
+bwww
+wbww
+wwbw
+wwwb
+2
+1 1
+4 4
+4
+wwww
+wwww
+wwww
+wwww
+1
+1 1</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Case #1: 4
+Case #2: 10</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>Hzwu@SWJTU</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2011百校联动“菜鸟杯”程序设计公开赛&source=1&searchmode=source'> 2011百校联动“菜鸟杯”程序设计公开赛 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=4146'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=4146'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=4146">Discuss</a> | <a href='note/note.php?pid=4146'>Note</a><br></td></tr></div></body></html>

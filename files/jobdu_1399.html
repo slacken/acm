@@ -1,0 +1,104 @@
+<!DOCTYPE html><html>
+				<head><meta charset=utf-8 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 1399</title></head>
+				<body><div id="jobdu_c"><dl class="main-title-mod mb10">
+            <dt class="title-hd">
+                题目1399：名侦探柯南
+            </dt>
+            <dd class="title-bd">
+            	                <div class="pl20 mb10 f14 topic-desc-mod">
+                    <div class="topic-desc-hd">
+                        <p style="width:140px;"><b>时间限制：</b>1 秒</p>
+                        <p style="width:140px;"><b>内存限制：</b>32 兆</p>
+                        <p style="width:100px;"><b>特殊判题：</b>否</p>
+                        <p style="width:130px;"><b>提交：</b>1184</p>
+                        <p style="width:130px;"><b>解决：</b>161</p>
+                    </div>
+                   	<div class="topic-desc-bd">
+                   	<dl>
+                       <dt>
+                           <b>题目描述：</b>
+                       </dt>
+                       <dd>
+                           <div style="text-indent: 21pt">
+<p class="MsoNormal" style="text-indent: 21pt">大家一定都看过《名侦探柯南》，我最开始看的是小说版本的，后来出了漫画版本，现在又有了动画片的版本。</p>
+<p>引用彪叔的一条飞信：做男人就要做柯南。变得了正太，飚的到女声；学得好化学，射的了麻醉；踢得好足球，玩得好极限；破得了大案，干得过黑社会；开得了飞机，躲得过机枪；停得了爆炸，引得了雪崩，最牛的是有一个十几年只见了他几面却依旧死心踏地念念不忘的好女友。</p>
+<p><o:p></o:p></p>
+</div>
+<div style="text-align: center"><img alt="" src="/upload/201202/image/kenan.jpg" /></div>
+<div>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;好了，书归正传，现在，柯南又遇到了一个棘手的案子：一个贵族的家里被盗。这个贵族的家里非常有钱，但这家主人的习惯很怪异，他将所有的金银珠宝都磨成粉装到几个分开的袋子里。由于之前并没有记录，所以主人并不知道这次被盗自己损失了多少钱。几天后，盗窃犯被抓住，但是他身上仅有一个盗窃时用的包，盗窃走的财产早已经挥霍一空。很显然，盗窃犯一定会使自己偷走的东西的总价值最大，柯南虽然断案如神，但是他却无法计算出盗窃犯到底盗走了价值多少钱的东西。你能帮帮柯南吗？<span lang="EN-US"><o:p></o:p></span></p>
+</div>
+<p class="MsoNormal"><span lang="EN-US"><o:p></o:p></span></p>
+<div></div>
+<p></p>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>输入：</b>
+                       </dt>
+                       <dd>
+                           <div>
+<p class="MsoNormal"></p>
+<p class="MsoNormal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;每组测试数据可能有多组输入，对于每一组输入，<o:p></o:p></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 输入的第一行包括两个整数N(1&lt;=N&lt;=100000)，代表主人所拥有的被磨成粉的珠宝的种类数。以及C(1&lt;=C&lt;=10000000)，代表盗窃犯盗窃时所用的包的容量。<o:p></o:p></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 接下来的N行，每行包括两个数W(1&lt;=W&lt;=10000000) 以及V(1&lt;=V&lt;=10000000)，分别代表一类珠宝粉的总重量，以及这类珠宝粉的总价值。<span lang="EN-US"><o:p></o:p></span></p>
+</div>
+<div>
+<p><span lang="EN-US"><o:p></o:p></span></p>
+</div>
+                       </dd>
+                   	</dl>
+                       <dl>
+                       <dt>
+                           <b>输出：</b>
+                       </dt>
+                       <dd>
+                           <div>
+<p class="MsoNormal">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;输出盗窃犯所盗走物品的总价值。<span lang="EN-US"><o:p></o:p></span></p>
+</div>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>样例输入：</b>
+                       </dt>
+                       <dd>
+                           <pre>2 10
+4 12
+8 16
+
+</pre>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>样例输出：</b>
+                       </dt>
+                       <dd>
+                           <pre>24</pre>
+                       </dd>
+                   	</dl>
+                   	                   	<dl>
+                       <dt>
+                           <b>提示：</b>
+                       </dt>
+                       <dd class="lBlue">
+                           <div style="text-indent: 21pt">若最后得到的被盗物品的总价值不是整数，请你将答案四舍五入后输出。</div>
+                       </dd>
+                   	</dl>
+                   	                   		             			                       <dl>
+	                       <dt>
+	                           <b>答疑：</b>
+	                       </dt>
+	                       <dd class="lBlue">
+	                           解题遇到问题?分享解题心得?讨论本题请访问：<a class="cBlue" href="http://t.jobdu.com/thread-8122-1-1.html" target="_blank">http://t.jobdu.com/thread-8122-1-1.html</a>
+	                       </dd>
+                       </dl>
+                                       	</div>
+                </div>
+                            </dd>
+		</dl></div></body></html>

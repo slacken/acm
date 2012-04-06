@@ -1,0 +1,31 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 3710</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Battle over Cities</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 10000/5000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/65536 K (Java/Others)<br>Total Submission(s): 62&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 18<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>It is vitally important to have all the cities connected by highways in a war, but some of them are destroyed now because of the war. Furthermore,if a city is conquered, all the highways from/toward that city will be closed by the enemy, and we must repair some destroyed highways to keep other cities connected, with the minimum cost if possible.<br>Given the map of cities which have all the destroyed and remaining highways marked, you are supposed to tell the cost to connect other cities if each city is conquered by the enemy.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input contains multiple test cases. The first line is the total number of cases T (T ≤ 10). Each case starts with a line containing 2 numbers N (0 &lt; N ≤ 20000), and M (0 ≤ M ≤ 100000), which are the total number of cities, and the number of highways, respectively. Then M lines follow, each describes a highway by 4 integers: City1 City2 Cost Status where City1 and City2 are the numbers of the cities the highway connects (the cities are numbered from 1 to N), Cost (0 &lt; Cost ≤ 20000) is the effort taken to repair that highway if necessary, and Status is either 0, meaning that highway is destroyed, or 1, meaning that highway is in use.<br>Note: It is guaranteed that the whole country was connected before the war and there is no duplicated high ways between any two cities.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case, output N lines of integers. The integer in the i-th line indicates the cost to keep the cities connected if the i-th city is conquered by the enemy. In case the cities cannot be connected after the i-th city is conquered by the enemy, output &quot;inf&quot; instead in the corresponding place.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">3
+4 5
+1 2 1 1
+1 3 1 1
+2 3 1 0
+2 4 1 1
+3 4 2 0
+4 5
+1 2 1 1
+1 3 1 1
+2 3 1 0
+2 4 1 1
+3 4 1 0
+3 2
+1 2 1 1
+1 3 1 1</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">1
+2
+0
+0
+1
+1
+0
+0
+inf
+0
+0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>GUAN, Yao</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2010 Asia Chengdu Regional Contest&source=1&searchmode=source'> 2010 Asia Chengdu Regional Contest </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>zhengfeng</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3710'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3710'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3710">Discuss</a> | <a href='note/note.php?pid=3710'>Note</a><br></td></tr></div></body></html>

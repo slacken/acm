@@ -1,0 +1,53 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 3633</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Black and white</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 20000/10000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 78&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 19<br><font color=red>Special Judge</font></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Given a partially filled grid with N rows and M columns and each gird with a number.We define <b>sumBlack</b> is the sum of all Black gird and <b>sumWhite</b> is the sum of all White gird.<br>You are to calculate how many ways there are to fill the remaining part of the grid under the constraints stated below to make the <b>absolute of (sumBlack - sumWhite)</b> minimum and output one of these ways (if any exist). <br>Each cell in the grid should be colored either black or white.<br>All black cells in the grid should be connected with each other, and all white cells should also be connected with each other.The pictures below show two filled grids where this constraint is only fulfilled in the picture2.<br><center><img src=../../../data/images/C308_1002_1.png></center><br>There must be no <b>2x2</b> blocks in the grid which consists of only white cells, or of only black cells.<br>The picture3 shows a grid with a black and a white <b>2x2</b> block, while the picture4 contains no such <b>2x2</b> block. <br><center><img src=../../../data/images/C308_1002_2.png></center><br>You are not allowed to change the color of any of the cells whose color has already been assigned in the input, and all cells must be colored.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The first line in the input contains an integer T (1&lt;=T&lt;=30), the number of cases to follow.<br>Each case starts with two integers, N and M (2 ≤ N, M ≤ 8), the number of rows and columns respectively in the grid.<br>The next N lines contains M characters each and describes the grid using the following characters:<br>&nbsp;&nbsp;# - a cell which is colored black<br>&nbsp;&nbsp;o - a cell which is colored white<br>&nbsp;&nbsp;. - a cell which color has not yet been assigned<br>The next N lines contains M integers (-1 or 0 or 1) each indicating the number of this gird.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each case, first line output the number of case(as shown in the sample output)<br>If there are at least one way, then output the minimum <b>absolute of (sumBlack - sumWhite)</b> and the number of ways to fill the grid make it minimum in a line and output one of these ways, using the same format for the grid as in the input.(anyone is ok)<br>If there is no way to fill the gird under the constraints stated , just output two zero.<br>Output a blank line after each case.(Special judge.If you not output a blank line after each case, you may get Wrong Answer)</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">4
+2 3
+xxx
+oox
+1 1 0
+0 1 0
+
+2 3
+...
+...
+1 1 0
+0 1 -1
+
+5 5
+..x..
+.....
+....o
+o....
+.x...
+1 1 0 0 1
+0 -1 -1 0 1
+1 1 0 -1 0
+1 0 1 -1 -1
+-1 -1 1 -1 0
+
+4 5
+.....
+.....
+.....
+.....
+1 1 0 0 1
+0 -1 -1 0 1
+1 1 0 -1 0
+1 0 1 -1 -1</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Case 1: 1 1
+xxx
+oox
+
+Case 2: 0 8
+xxx
+xox
+
+Case 3: 0 0
+
+Case 4: 1 54
+xxxxx
+xoxox
+oooox
+oxxxx</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>NotOnlySuccess</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2010 ACM-ICPC Multi-University Training Contest（19）——Host by HDU&source=1&searchmode=source'> 2010 ACM-ICPC Multi-University Training Contest（19）——Host by HDU </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3633'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3633'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3633">Discuss</a> | <a href='note/note.php?pid=3633'>Note</a><br></td></tr></div></body></html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 1120</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>The Bulk</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 10000/5000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 71&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 4<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>ACM uses a new special technology of building its transceiver stations. This technology is called Modular Cuboid Architecture (MCA) and is covered by a patent of Lego company. All parts of the transceiver are shipped in unit blocks that have the form of cubes of exactly the same size. The cubes can be then connected to each other. The MCA is modular architecture, that means we can select preferred transceiver configuration and buy only those components we need. <br>The cubes must be always connected &quot;face-to-face&quot;, i.e. the whole side of one cube is connected to the whole side of another cube. One cube can be thus connected to at most six other units. The resulting equipment, consisting of unit cubes is called The Bulk in the communication technology slang. <br><br>Sometimes, an old and unneeded bulk is condemned, put into a storage place, and replaced with a new one. It was recently found that ACM has many of such old bulks that just occupy space and are no longer needed. The director has decided that all such bulks must be disassembled to single pieces to save some space. Unfortunately, there is no documentation for the old bulks and nobody knows the exact number of pieces that form them. You are to write a computer program that takes the bulk description and computes the number of unit cubes. <br><br>Each bulk is described by its faces (sides). A special X-ray based machine was constructed that is able to localise all faces of the bulk in the space, even the inner faces, because the bulk can be partially hollow (it can contain empty spaces inside). But any bulk must be connected (i.e. it cannot drop into two pieces) and composed of whole unit cubes.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>There is a single positive integer T on the first line of input. It stands for the number of bulks to follow. Each bulk description begins with a line containing single positive integer F, 6 &lt;= F &lt;= 250, stating the number of faces. Then there are F lines, each containing one face description. All faces of the bulk are always listed, in any order. Any face may be divided into several distinct parts and described like if it was more faces. Faces do not overlap. Every face has one inner side and one outer side. No side can be &quot;partially inner and partially outer&quot;. <br><br>Each face is described on a single line. The line begins with an integer number P stating the number of points that determine the face, 4 &lt;= P &lt;= 200. Then there are 3 x P numbers, coordinates of the points. Each point is described by three coordinates X,Y,Z (0 &lt;= X, Y, Z &lt;= 1000) separated by spaces. The points are separated from each other and from the number P by two space characters. These additional spaces were added to make the input more human readable. The face can be constructed by connecting the points in the specified order, plus connecting the last point with the first one. <br><br>The face is always composed of &quot;unit squares&quot;, that means every edge runs either in X, Y or Z-axis direction. If we take any two neighbouring points X1, Y1, Z1 and X2, Y2, Z2, then the points will always differ in exactly one of the three coordinates. I.e. it is either X1 &lt;&gt; X2, or Y1 &lt;&gt; Y2, or Z1 &lt;&gt; Z2, other two coordinates are the same. Every face lies in an orthogonal plane, i.e. exactly one coordinate is always the same for all points of the face. The face outline will never touch nor cross itself.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>Your program must print a single line for every test case. The line must contain the sentence The bulk is composed of V units., where V is the volume of the bulk.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+12
+4 10 10 10 10 10 20 10 20 20 10 20 10
+4 20 10 10 20 10 20 20 20 20 20 20 10
+4 10 10 10 10 10 20 20 10 20 20 10 10
+4 10 20 10 10 20 20 20 20 20 20 20 10
+4 10 10 10 10 20 10 20 20 10 20 10 10
+5 10 10 20 10 20 20 20 20 20 20 15 20 20 10 20
+4 14 14 14 14 14 16 14 16 16 14 16 14
+4 16 14 14 16 14 16 16 16 16 16 16 14
+4 14 14 14 14 14 16 16 14 16 16 14 14
+4 14 16 14 14 16 16 16 16 16 16 16 14
+4 14 14 14 14 16 14 16 16 14 16 14 14
+4 14 14 16 14 16 16 16 16 16 16 14 16
+12
+4 20 20 30 20 30 30 30 30 30 30 20 30
+4 10 10 10 10 40 10 40 40 10 40 10 10
+6 10 10 20 20 10 20 20 30 20 30 30 20 30 40 20 10 40 20
+6 20 10 20 20 20 20 30 20 20 30 40 20 40 40 20 40 10 20
+4 10 10 10 40 10 10 40 10 20 10 10 20
+4 10 40 10 40 40 10 40 40 20 10 40 20
+4 20 20 20 30 20 20 30 20 30 20 20 30
+4 20 30 20 30 30 20 30 30 30 20 30 30
+4 10 10 10 10 40 10 10 40 20 10 10 20
+4 40 10 10 40 40 10 40 40 20 40 10 20
+4 20 20 20 20 30 20 20 30 30 20 20 30
+4 30 20 20 30 30 20 30 30 30 30 20 30</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">The bulk is composed of 992 units.
+The bulk is composed of 10000 units.</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=Central Europe 2000&source=1&searchmode=source'> Central Europe 2000 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>JGShining</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1120'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1120'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1120">Discuss</a> | <a href='note/note.php?pid=1120'>Note</a><br></td></tr></div></body></html>

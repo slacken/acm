@@ -1,0 +1,30 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 3100</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Series / Parallel Resistor Circuits</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 28&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 14<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>A series/parallel resistor circuit is shown here.<br><br><center><img src=../../../data/images/con228-1001-1.JPG></center> <br><br>The resistance value is given next to each resistor. Connection points (wires connecting two or more resistors together, are denoted by an uppercase letter. A and Z are reserved for the names of the connection points which are the endpoints of the circuit. Our goal is to calculate the equivalent resistance of the circuit (i.e., the equivalent resistance between A and Z).<br><br>Within the circuit, a resistor can be specified by a triple consisting of the connection points at either endpoint, and the resistance. The resistor labelled ``9&quot; could be specified as either (C, D, 9) or (D, C, 9). A circuit specification is the set of all resistor specifications.<br><br>A pair of resistors is in series if one of either of their endpoints have a common connection point that is not use by any other resistor (e.g., the resistors labelled ``6&quot; and ``9&quot; are both connected to C, which is not connected to anything else). Two series resistors can be replaced by an equivalent single resistor whose resistance is the sum of the replaced resistors (15, in the previous example).<br><br>A pair of resistors is in parallel if both their endpoints have common connection points (e.g., the resistors labelled ``3&quot; and ``10&quot; above are both connected to R and D). Two parallel resistors can be replaced by an equivalent single resistor whose resistance is the inverse of the sum of the inverses of the two resistors ( (1/3 + 1/10)-1 = 2.307692 , in the previous example).<br><br><center><img src=../../../data/images/con228-1001-2.JPG></center> <br><br>The equivalent resistance of a well-formed series-parallel resistor circuit can be determined by successively replacing a series or parallel resistor pair by the single equivalent resistor, until only one is left.<br><br>Not all circuits can be decomposed into series and parallel components. The Wheatstone Bridge, shown here, is a classic example of a circuit that is not considered a well-formed series-parallel resistor circuit.<br><br><center><img src=../../../data/images/con228-1001-3.JPG></center> </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>There will be multiple circuit specifications. The first input line for each circuit specification is an integer N  (N &lt; 1000 ), the number of resistors in the circuit. This is followed by N  lines, each being a resistor specification in the form: X Y r , where X  and Y  are uppercase characters, and r  is a positive integer resistance (r &lt; 100 ). The equivalent resistance is guaranteed never to be greater than 100.<br><br>A circuit with N = 0 indicates the last circuit, and should not be processed. </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each circuit, if the circuit is well-formed and reduces to a single equivalent resistance between A and Z, print the equivalent resistance of the circuit from A to Z, rounded to (and displayed to) 3 decimal places. If the circuit is not well formed, or if there is no equivalent resistance between A and Z, simply print the number `-1.000'. There should be no blank lines between outputs. </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">8
+N R 2
+D R 3
+R N 2
+R D 10
+Z R 7
+C D 9
+N C 6
+A N 4
+2
+A Z 3
+Z A 10
+2
+P A 6
+P Z 9
+5
+A B 1
+B Z 4
+A C 8
+C Z 19
+B C 12
+0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">11.945
+2.308
+15.000
+-1.000</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2008 ACM-ICPC Southeast USA Regional &source=1&searchmode=source'> 2008 ACM-ICPC Southeast USA Regional  </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>gaojie</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3100'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3100'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3100">Discuss</a> | <a href='note/note.php?pid=3100'>Note</a><br></td></tr></div></body></html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 3296</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Acm Team Section</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 101&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 37<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>The ACM-ICPC brings together the top student programmers from all over the world, and provides them with opportunities to develop critical skills which will give them a competitive edge when they launch careers in information technology areas. More than 5,600 teams from 84 countries had competed in regional contests last year. An ever larger number of teams - more than 7,000 teams from different countries worldwide - have registered in this year's regional contests. However, due to the limited capacity of each site, only a small amount of the registered teams can be allowed to participate in the on-site contest. It is really hard for the contest organizers to determine which teams should be allowed to participate. One of the possible solutions is to hold a preliminary internet contest before the on-site competition. The following part describes a simplified version of rules for team selection:<br><br>Up to three teams from each school can participate in the on-site contest, depending on how many following conditions the school in question meets:<br><br>a)<br>    A team from this school has solved at least M problems in the preliminary contest; <br>b)<br>    Some of the teams from this school ranked top 20 in previous World Finals; <br>c)<br>    This school has hosted a provincial contest this year. <br><br>Your task is to write a program to help the contest holders to calculate how many teams are allowed to participate in the on-site final contest. </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>There are multiple test cases in the input file. Each test case starts with three integers S , T  and M  (1&lt;=S&lt;=100, 1&lt;=T&lt;=2000, 0&lt;=M&lt;=10) , representing the number of schools, the number of teams participating in the preliminary contest, and the minimum number of problems which is required to be solved in order to enter the on-site competition, respectively.<br><br>Each of the following S lines consists of three integers Id , P and Q , (1&lt;=Id&lt;=S, 0&lt;=P, Q&lt;=1) , representing the Id of the school, whether this school satisfies condition b), and whether this school satisfies condition c).<br><br>The last part of each test case consists of T lines. There are two integers on each of the T lines, Sid and Tot (1&lt;=Sid&lt;=S, 0&lt;=Tot&lt;=10) , meaning that a team from school Sid had solved Tot problems in the preliminary contest.<br><br>Two consecutive test cases are separated by a blank line. S = 0, T = 0, M = 0 indicates the end of input and should not be processed by your program. </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case, print the total number of teams which are allowed to participate in the on-site competition on a separate line in the format as indicated in the sample output. </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">5 8 6 
+5 0 1 
+4 0 0 
+1 0 0 
+3 1 1 
+2 1 1
+2 6 
+3 3 
+2 9 
+5 7 
+4 8 
+3 6 
+2 8 
+1 6 
+
+5 8 6 
+3 0 1 
+5 1 1 
+2 0 1 
+1 1 1 
+4 1 0
+5 7 
+2 5 
+4 5 
+5 5 
+3 3 
+5 6 
+2 0 
+4 7 
+
+0 0 0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Case 1: 10
+Case 2: 9</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2006 Asia Regional Shanghai &source=1&searchmode=source'> 2006 Asia Regional Shanghai  </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3296'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3296'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3296">Discuss</a> | <a href='note/note.php?pid=3296'>Note</a><br></td></tr></div></body></html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 2758</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Colliding Traffic</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 4000/2000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 33&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 11<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>For a boat on a small, constrained body of water, other traffic can be a major hazard. The more traffic there is in the same area, the higher the risk of a collision.<br><br>Your job is to monitor traffic and help detect likely collisions before they occur. You have sensors to detect the position, direction, and speed of each boat. Assuming the direction and speed remain constant, your task is to determine whether any of the boats will collide. Two boats are considered to collide if they come within a given distance of each other. </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The first line of each test chunk contains a single integer c, the number of test cases to follow. Each test case starts with a line containing two numbers, n, the number of boats, and r, the collision distance. Two boats are considered to collide if they come within r metres of each other. There will be no more than 1000 boats. Each boat is identified by a line containing four numbers x, y, d, s. The numbers x and y give the current position of the boat as a distance east and north, respectively, from a common origin, and will be between -1000 and 1000, inclusive. The lake is small enough that we can model it as a flat surface. The number d gives the direction in which the boat is heading in degrees clockwise from north (so east is 90 degrees). The number s gives the speed of the boat in metres per second, and will be between 0.001 and 1000. Note that r, x, y, d, and s are not necessarily integers. The input data will be such that the answer will not change if any of the numbers x, y, d and s are changed by 10^-6 or less. <br><br>Please process to the end of the data file.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case, output a line containing a single integer, the number of seconds, rounded to the nearest second, before any of the boats come within r metres of each other. If none of the boats ever collide, output the line:<br><br>No collision.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+2 5
+0 0 90 1
+10 10 180 1
+2 10
+0 0 0 0
+8 8 270 1
+2
+2 5
+0 0 90 1
+10 10 180 1
+2 10
+0 0 0 0
+8 8 270 1</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">6
+2
+6
+2</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=University of Waterloo Local Contest 2009.02.08&source=1&searchmode=source'> University of Waterloo Local Contest 2009.02.08 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2758'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2758'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2758">Discuss</a> | <a href='note/note.php?pid=2758'>Note</a><br></td></tr></div></body></html>

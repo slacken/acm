@@ -1,0 +1,28 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 1483</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Automatic Correction of Misspellings</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 3000/3000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 42&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 12<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Some text editors offer a feature to correct words which seem to be written incorrectly. In this problem you are asked to implement a simple Automatic Correction of Misspellings (ACM). <br><br>ACM takes care of the following misspellings of words: <br><br>1.One letter is missing (e.g., letter is written leter) or too much (e.g., letter is written lettter). <br>2.One letter is wrong (e.g., letter is written ketter) <br>3.The order of two adjacent letters is wrong (e.g., letter is written lettre) <br><br>ACM is based on a dictionary of known words. When a text contains a word which is not in the dictionary, ACM will try to replace it by a similar word of the dictionary. Two words are similar if we can transform one word into the other by doing exactly one of the misspellings listed above. An unknown word is left unchanged if there is no similar word in the dictionary.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The first line of the input file will give the number n of words in the dictionary (n ≤ 10000). The next n lines contain the dictionary words. The following line contains an integer q ≤ 1000, the number of query words. The next q lines contain the query words. You may assume that each word in the input consists of 1 to 25 lower case letters ('a' to 'z').<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each query word, print one line with the query word followed by one of the following possibilities:<br><br>1.is correct, if the word occurs in the dictionary. <br>2.is a misspelling of &lt;x&gt;, where &lt;x&gt; is a word of the dictionary similar to the query word, and the query word is not in the dictionary. In the case that there are several possibilities, select the word from the dictionary which appeared earlier in the input. <br>3.is unknown, if cases 1 and 2 do not apply.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">10
+this
+is
+a
+dictionary
+that
+we
+will
+use
+for
+us
+6
+su
+as
+the
+dictonary
+us
+willl</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">su is a misspelling of us
+as is a misspelling of is
+the is unknown
+dictonary is a misspelling of dictionary
+us is correct
+willl is a misspelling of will</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2006/2007 ACM-ICPC University of Ulm Local Contest&source=1&searchmode=source'> 2006/2007 ACM-ICPC University of Ulm Local Contest </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>JGShining</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1483'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1483'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1483">Discuss</a> | <a href='note/note.php?pid=1483'>Note</a><br></td></tr></div></body></html>

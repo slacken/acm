@@ -1,0 +1,31 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 2355</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>The Sidewinder Sleeps Tonite</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 3000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 88&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 29<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Slitherlink is a type of logic puzzle made popular by Nikoli, the same Japanese puzzle company that has made Sudoku popular the world over. Like<br>most good logic puzzles, it has a set of very basic rules that can nonetheless result in devilishly difficult (and delightful!) puzzling experiences.<br><br>The rules of Slitherlink are as follows:<br><br>A Slitherlink board is made up of a lattice of dots; in this problem, it will be a regular rectangular lattice.<br>Some of the boxes (or cells) defined by the lattice have numbers within them; with a regular rectangular lattice, the numbers will be between 0<br>and 3 inclusive.<br>The goal of a Slitherlink puzzle is to connect adjacent dots (horizontally or vertically, like the sides of boxes) so that there is a single loop that<br>never crosses itself, with no line segments that are not part of the loop (no &quot;dangling&quot; segments or other, separate loops) such that every cell<br>that has a number has exactly that many sides as segments of the loop.<br><br><center><img src=../../../data/images/c131-1005-1.jpg.jpg></center><br><br>Given a supposedly solved Slitherlink puzzle, your task will be to determine whether or not it is indeed legitimately solved.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>Input to this problem will begin with a line containing a single integer N (1 ≤ N ≤ 100) indicating the number of data sets. Each data set consists of<br>the following components:<br><br>A line containing two integers H, W (1 ≤ H,W ≤ 20) representing the height and width of the Slitherlink puzzle by the number of cells (not<br>dots!) per edge;<br>A series of 2H + 1 lines representing the Slitherlink puzzle, using the following non-whitespace characters:<br>0, 1, 2, 3, ?: The numbers written inside a given cell. A ? represents an empty cell, as in the example graphic above.<br>#: A dot in the lattice.<br>-, |: A horizontal or vertical line segment.<br>.: An empty adjacency between two dots in the lattice.<br><br>Note that all Slitherlink puzzles will be fully represented; that is, there is no internal whitespace on a given line to represent empty cells or<br>adjacencies.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each data set, print &quot;VALID&quot; if the solution is a valid solution to the given Slitherlink, or &quot;INVALID&quot; if the solution is not valid.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+5 5
+#-#-#-#-#-#
+|?.?.?.1.3|
+#.#-#-#.#-#
+|?|?.?|?|?.
+#-#.#.#.#-#
+.2.0.2|?.?|
+#-#.#-#.#-#
+|?|3|?.?|2.
+#.#-#.#-#.#
+|?.?.2|?.0.
+#-#-#-#.#.#
+5 5
+#-#-#-#-#-#
+|?|?.?.1.3|
+#.#-#-#.#-#
+|?|?.?|?|?.
+#-#.#.#.#-#
+.2.0.2|?.?|
+#-#.#-#.#-#
+|?|3|?.?|2.
+#.#-#.#-#.#
+|?.?.2|?.0.
+#-#-#-#-#.#</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">VALID
+INVALID</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=HDU 2008'8 公开赛（非原创）&source=1&searchmode=source'> HDU 2008'8 公开赛（非原创） </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2355'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2355'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2355">Discuss</a> | <a href='note/note.php?pid=2355'>Note</a><br></td></tr></div></body></html>

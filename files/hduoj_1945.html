@@ -1,0 +1,27 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 1945</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Sylvester construction</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 5000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 16&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 8<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>A Hadamard matrix of order n is an n * n matrix containing only 1s and -1s, called Hn, such that <img src=data/images/1945-1.gif> where <img src=data/images/1945-2.gif> is the n * n identity matrix. An interesting property of Hadamard matrices is that they have the maximum possible determinant of any n * n matrix with elements in the range [-1, 1]. Hadamard matrices have applications in errorcorrecting codes and weighing design problems. <br>The Sylvester construction is a way to create a Hadamard matrix of size 2n given <img src=data/images/1945-3.gif>. <img src=data/images/1945-4.gif> can be constructed as:<br><img src=data/images/1945-5.gif> <br>for example:<br><img src=data/images/1945-6.gif> <br><br><img src=data/images/1945-7.gif> <br>and so on.<br>In this problem you are required to print a part of a Hadamard matrix constructed in the way described above.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The first number in the input is the number of test cases to follow. For each test case there are ve integers: n, x, y, w and h. n will be between 1 and 2^62 (inclusive) and will be a power of 2. x and y specify the upper left corner of the sub matrix to be printed, w and h specify the width and height respectively. Coordinates are zero based, so 0 &lt;= x,y &lt; n. You can assume that the sub matrix will t entirely inside the whole matrix and  that 0 &lt; w,h &lt;= 20. There will be no more than 1000 test cases.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case print the sub matrix followed by an empty line.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">3
+2 0 0 2 2
+4 1 1 3 3
+268435456 12345 67890 11 12</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">1 1
+1 -1
+
+-1 1 -1
+1 -1 -1
+-1 -1 1
+
+1 -1 -1 1 1 -1 -1 1 1 -1 -1
+-1 -1 1 1 -1 -1 1 1 -1 -1 1
+1 1 1 -1 -1 -1 -1 1 1 1 1
+-1 1 -1 -1 1 -1 1 1 -1 1 -1
+1 -1 -1 -1 -1 1 1 1 1 -1 -1
+-1 -1 1 -1 1 1 -1 1 -1 -1 1
+-1 -1 -1 -1 -1 -1 -1 1 1 1 1
+1 -1 1 -1 1 -1 1 1 -1 1 -1
+-1 1 1 -1 -1 1 1 1 1 -1 -1
+1 1 -1 -1 1 1 -1 1 -1 -1 1
+-1 -1 -1 1 1 1 1 1 1 1 1
+1 -1 1 1 -1 1 -1 1 -1 1 -1</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=NM2004&source=1&searchmode=source'> NM2004 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>wangye</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1945'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1945'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1945">Discuss</a> | <a href='note/note.php?pid=1945'>Note</a><br></td></tr></div></body></html>

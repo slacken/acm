@@ -1,0 +1,50 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 2384</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Ranking</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 1000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 137&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 40<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Hosting a programming contest is fun, but it's also a lot of work. For instance, at the end of the day the jury will have to create a ranking of the teams based on their results during the contest. This can be tedious to do by hand, so we would like you to write a program for this task. <br><br>For the BAPC, the rules for the ranking are as follows: <br><br>  Teams are ranked according to the most problems solved; teams tied are ordered by increasing total time used. <br><br>  The time used for a problem is the number of minutes between the start of the contest and the first accepted run, plus a 20 minute penalty for each rejected run until the first accepted run. <br><br>  The total time used is the sum of the times used for each problem solved (as described above). Note that penalty time for problems for which no run was accepted does not count toward the total time used. <br><br>  If ties remain at the end of the contest, the point of comparison between tied teams will be the last point in time where their scores differed (e.g. if two teams are tied at the end of the contest, the team which solved their last problem earlier than the other team solved their last problem wins). <br><br>During the contest, teams submit solutions for problems, which are processed by the jury as runs. Each run has four properties: <br><br>the submission time in minutes since the beginning of the contest (an integer between 1 and 300, inclusive); <br><br>the name of the team that submitted the solution (a non-empty string of at most 20 lower-case letters); <br><br>the identifier of the corresponding problem (an upper-case letter A through J, inclusive); <br><br>the result as determined by the judging software (either accepted or rejected). <br><br>At the end of the contest, we have a list of runs available (ordered by non-decreasing submission times) and we want you to determine the final ranking of the teams. <br><br>Teams that are tied will share a position; those teams should be ordered alphabetically in the results.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>On the first line an integer t (1 &lt;= t &lt;= 100): the number of test cases. Then for each test case: <br><br>one line with the number of teams t (1 &lt;= t &lt;= 50) and the number of runs r (0 &lt;= r &lt;= 5 000), seperated by a single space; <br><br>then t lines, each with the name of a team; <br><br>then r lines, each with the description of a run: time, team, problem and result, formatted as described above, and seperated by a single space. <br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case: <br><br>Print the ordered results: t lines, each with a rank (starting from 1), the team name, the number of correctly solved problems and the total penalty time, separated by single spaces. <br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">1
+8 28
+twente
+utrecht
+groningen
+amsterdam
+eindhoven
+leiden
+delft
+nijmegen
+5 utrecht B rejected
+8 eindhoven F accepted
+10 utrecht F accepted
+17 utrecht B rejected
+18 leiden C rejected
+23 twente F rejected
+25 utrecht B accepted
+26 amsterdam D rejected
+27 amsterdam D accepted
+27 leiden C accepted
+27 groningen F accepted
+28 twente F rejected
+30 nijmegen C rejected
+30 nijmegen C accepted
+30 delft B accepted
+30 delft B rejected
+33 twente F accepted
+47 groningen D rejected
+51 leiden D accepted
+51 amsterdam C accepted
+51 groningen D accepted
+60 utrecht D accepted
+65 utrecht J accepted
+67 twente F rejected
+70 twente F accepted
+90 eindhoven D accepted
+100 utrecht A rejected
+101 utrecht C rejected</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">1 utrecht 4 200
+2 groningen 2 98
+3 amsterdam 2 98
+3 leiden 2 98
+5 eindhoven 2 98
+6 delft 1 30
+7 nijmegen 1 50
+8 twente 1 73</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=bapc2007&source=1&searchmode=source'> bapc2007 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2384'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2384'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2384">Discuss</a> | <a href='note/note.php?pid=2384'>Note</a><br></td></tr></div></body></html>

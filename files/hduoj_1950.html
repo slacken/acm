@@ -1,0 +1,46 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 1950</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Bridging signals</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 5000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 300&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 173<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>'Oh no, they've done it again', cries the chief designer at the Waferland chip factory. Once more the routing designers have screwed up completely, making the signals on the chip connecting the ports of two functional blocks cross each other all over the place. At this late stage of the process, it is too<br>expensive to redo the routing. Instead, the engineers have to bridge the signals, using the third dimension, so that no two signals cross. However, bridging is a complicated operation, and thus it is desirable to bridge as few  signals as possible. The call for a computer program that finds the maximum number of signals which may be connected on the silicon surface without  rossing each other, is imminent. Bearing in mind that there may be  housands of signal ports at the boundary of a functional block, the problem asks quite a lot of the programmer. Are you up  to the task?<br><img src=data/images/1950-1.jpg><br>Figure 1. To the left: The two blocks' ports and their signal mapping (4,2,6,3,1,5). To the right: At most three signals may be routed on the silicon surface without crossing each other. The dashed signals must be bridged. <br><br>A typical situation is schematically depicted in figure 1. The ports of the two functional blocks are numbered from 1 to p, from top to bottom. The signal mapping is described by a permutation of the numbers 1 to p in the form of a list of p unique numbers in the range 1 to p, in which the i:th number  pecifies which port on the right side should be connected to the i:th port on the left side.<br>Two signals cross if and only if the straight lines connecting the two ports of each pair do.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>On the first line of the input, there is a single positive integer n, telling the number of test scenarios to follow. Each test scenario begins with a line containing a single positive integer p&lt;40000, the number of ports on the two functional blocks. Then follow p lines, describing the signal mapping: On the i:th line is the port number of the block on the right side which should be connected to the i:th port of the block on the left side. </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test scenario, output one line containing the maximum number of signals which may be routed on the silicon surface without crossing each other.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">4
+6
+4
+2
+6
+3
+1
+5
+10
+2
+3
+4
+5
+6
+7
+8
+9
+10
+1
+8
+8
+7
+6
+5
+4
+3
+2
+1
+9
+5
+8
+9
+2
+3
+1
+7
+4
+6</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">3
+9
+1
+4</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=NWERC2003&source=1&searchmode=source'> NWERC2003 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>wangye</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1950'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1950'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1950">Discuss</a> | <a href='note/note.php?pid=1950'>Note</a><br></td></tr></div></body></html>

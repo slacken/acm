@@ -1,0 +1,22 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 3380</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Circle of Friends</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 27&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 1<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>After measuring the strength of friendships between different Navi, Grace wants to find groups of Navi who form close-knit friendships. A group of friends has strength k if each Navi in the group has at least k friends within the group. Your goal is to help Grace find the strongest, largest circle of friends for individual Navi.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>Connections between Navi are described beginning with the line “GRAPH BEGIN”. Additional lines lists individual Navi, followed (on the same line) by their friends. The line ”GRAPH END” ends the list of connection descriptions. The next lines describe individual Navi to be analyzed, each on a single line. Following these lines, a completely new instance of the problem can be given, starting from scratch.<br><br>Some Navi may be only be listed as friends of other Navi (i.e., not all Navi will have their connections listed on a separate line).<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>Your output should consist of one line for each Navi analyzed, in the same order they were listed in the input. Each line should contain the name of the Navi, the largest k for which the Navi is a member of some group of friends of strength k, and all the friends in that group (in alphabetical order), including themselves. Every Navi in the group must know the initial Navi either directly or indirectly through some sequence of common friends (i.e., the friendship graph must be connected).<br><br>In the example below, Navi c is a member of a group of friends of strength 3: bcde. She is also a member of several groups of friends of strength 2 (bcd, bce, cde, . . . ) but because 3 &gt; 2, the group of strength 3 is the one that should be output.<br><br>Navi f is a member of several groups of strength 1 (ef, bef, def, . . . ) but the largest one is abcdef, so that is the one that should be output.<br><center><img src=../../data/images/C282-1004-1.jpg></center> <br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">GRAPH BEGIN 
+a b c 
+b c d e 
+c d e 
+e d f 
+GRAPH END
+a
+b
+c
+d
+e
+f</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">a 2 a b c d e
+b 3 b c d e
+c 3 b c d e
+d 3 b c d e
+e 3 b c d e
+f 1 a b c d e f</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2010 MHSPC&source=1&searchmode=source'> 2010 MHSPC </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3380'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3380'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3380">Discuss</a> | <a href='note/note.php?pid=3380'>Note</a><br></td></tr></div></body></html>

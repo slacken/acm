@@ -1,0 +1,21 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 3499</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Flight</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 20000/10000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65535/65535 K (Java/Others)<br>Total Submission(s): 1576&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 310<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Recently, Shua Shua had a big quarrel with his GF. He is so upset that he decides to take a trip to some other city to avoid meeting her. He will travel only by air and he can go to any city if there exists a flight and it can help him reduce the total cost to the destination. There's a problem here: Shua Shua has a special credit card which can reduce half the price of a ticket ( i.e. 100 becomes 50, 99 becomes 49. The original and reduced price are both integers. ). But he can only use it once. He has no idea which flight he should choose to use the card to make the total cost least. Can you help him? </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>There are no more than 10 test cases. Subsequent test cases are separated by a blank line. <br>The first line of each test case contains two integers N and M ( 2 &lt;= N &lt;= 100,000 <br><br>0 &lt;= M &lt;= 500,000 ), representing the number of cities and flights. Each of the following M lines contains &quot;X Y D&quot; representing a flight from city X to city Y with ticket price D ( 1 &lt;= D &lt;= 100,000 ). Notice that not all of the cities will appear in the list! The last line contains &quot;S E&quot; representing the start and end city. X, Y, S, E are all strings consisting of at most 10 alphanumeric characters. <br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>One line for each test case the least money Shua Shua have to pay. If it's impossible for him to finish the trip, just output -1. </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">4 4
+Harbin Beijing 500
+Harbin Shanghai 1000
+Beijing Chengdu 600
+Shanghai Chengdu 400
+Harbin Chengdu
+
+4 0
+Harbin Chengdu</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">800
+-1
+
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>In the first sample, Shua Shua should use the card on the flight from
+ Beijing to Chengdu, making the route Harbin->Beijing->Chengdu have the
+ least total cost 800. In the second sample, there's no way for him to get to 
+Chengdu from Harbin, so -1 is needed. </div><i style='font-size:1px'> </i></div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>Edelweiss </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2010 ACM-ICPC Multi-University Training Contest（7）——Host by HIT &source=1&searchmode=source'> 2010 ACM-ICPC Multi-University Training Contest（7）——Host by HIT  </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>zhouzeyong</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3499'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3499'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3499">Discuss</a> | <a href='note/note.php?pid=3499'>Note</a><br></td></tr></div></body></html>

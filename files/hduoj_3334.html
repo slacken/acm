@@ -1,0 +1,20 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 3334</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Matrix Puzzle</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 8000/4000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 164&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 37<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>As you know, math is quite incredible.For example,if you want to know all x that not only satisfy the expression A^x = B ( mod C) where A,B and C are given and C is a prime number, but also smaller than C, you could use the following algorithm <br>(http://en.wikipedia.org/wiki/Baby-step_giant-step).<br>Now your task is quite simple. You are given A,B, here A and B are matrixes( n X n).You are expected to solve the following expression.<br><img src=http://acm.hdu.edu.cn/data/images/C235-1002-1.png> mod 1000000007</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>There are no more than 20 cases.<br>For each case,there are two integers n,L  in the first line indicating the size of the matrixes , the value of L. (Here 1&lt;= n &lt;= 50, 1&lt;= L &lt;= 10^11)<br>Then follows 2n lines.<br>For the first n lines, indicating the matrix A.<br>For the next n lines, indicating the matrix B.<br>All the numbers in the matrix are between 0 and 10^9</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>Output a single line with “Case #idx: ”,here idx is the case number start from 1. Then output if there is only one valid solution (the solution must no larger than L and larger than 0).<br>If there is only one valid solution ,then just output “Yes”, otherwise output “No”.<br>We  assure that the ABS(|A|) (determinant’s abosolute value)is always larger than one after the mod operation in all the cases.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">1 6
+2
+2
+
+1 4
+2
+1
+
+2 3
+1 2
+2 1
+5 4
+4 5</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Case 1: Yes
+Case 2: No
+Case 3: Yes</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>AekdyCoin@FZU</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=HDOJ Monthly Contest – 2010.03.06&source=1&searchmode=source'> HDOJ Monthly Contest – 2010.03.06 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3334'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3334'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3334">Discuss</a> | <a href='note/note.php?pid=3334'>Note</a><br></td></tr></div></body></html>

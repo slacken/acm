@@ -1,0 +1,59 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 3121</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>FreeOpen</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 131072/131072 K (Java/Others)<br>Total Submission(s): 286&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 82<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>FreeOpen is an organization which arranges blind data for girls and boys. The moral of that name is “Open your free mind to find your other half”. FreeOpen use a pet to make a match to a girl and a boy. FreeOpen believe that if a girl and a boy like each other and they like the same pet, they will be happy when they are living together with that pet.<br>There are n boys, m girls and k pets. FreeOpen want know the maximum matches. Each match consists of one girl, one boy and one pet, and each girl, boy or pet can only be in one single match.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The first line consists of an integer T, indicating the number of test cases.<br>The first line of each case consists of three integers G, B, P, indicating the number of girls, the number of boys and the number of pets. The next G * B matrix indicates whether a girl and a boy like each other. The i-th girl and j-th boy like each other if and only if Matrix (i, j) = 1; the next G * P matrix indicates whether a girl likes a pet and the next B * P matrix indicates whether a boy likes a pet.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>Output the maximum matches on a single line for each test case.<br><br>Constrains<br>0 &lt; T &lt;= 10<br>0 &lt; G, B, P &lt;= 20<br>0 &lt; G + B + P &lt;= 60<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+2 1 3
+1
+1
+1 1 1
+1 1 1
+0 0 0
+15 15 15
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+1 1 1 1 1 1 1 1 1 1 0 1 1 1 1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+1 1 1 1 1 1 1 1 1 1 0 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 0 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 0 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 0 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 0 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 0 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 0 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 0 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 0 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 0 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 0 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 0 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">0
+13</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2009 Asia Wuhan Regional Contest Online&source=1&searchmode=source'> 2009 Asia Wuhan Regional Contest Online </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3121'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3121'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3121">Discuss</a> | <a href='note/note.php?pid=3121'>Note</a><br></td></tr></div></body></html>

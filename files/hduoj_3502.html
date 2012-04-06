@@ -1,0 +1,24 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 3502</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Huson's Adventure Island</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 6000/3000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65535/65535 K (Java/Others)<br>Total Submission(s): 530&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 104<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>A few days ago, Tom was tired of all the PC-games, so he went back to some old FC-games. &quot;Hudson's Adventure Island&quot; was his favorite which he had played thousands of times. But to his disappointed, the more he played, the more he lost. Tom soon gave up the game. <br><br><center><img src=../../data/images/3502-1.jpg></center> <br><br>Now, he invents an easier game on the base of “Hudson's Adventure Island”. He wants to know whether the new game is easy enough. So he came to you for help. <br>To simplify the problem, you can assume there is matrix-map contains m(0 &lt; m &lt; 256) rows, n(0 &lt; n &lt; 256) columns, an entrance on the top-left corner (0, 0), an exit on the bottom-right corner (m-1, n-1). Each entry of the matrix contains a integer k.The range of k is defined below:<br>    a)k = 0,it is a free space one can go through.<br>    b)k = -1,it is an obstacle one can’t go through.<br>    c)0 &lt; k &lt; 10000,it is a fruit one can go through and gain k points of energy.<br>    d)k &gt;= 0 at the entrance point and the end point.<br>At the begin, the hero has 0 points of energy and he can go four directions (up, down, left, right). Each move he makes cost 1 point of energy. No energy no move. If he can’t make a move or get to the exit, he loses the game. The number of fruit is 17 at most.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input consists of multiple test cases. Each test case starts with two positive integers m, n. Then follows m lines, each line contain n integers. </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each case, if the hero can get the exit, find and print the maximum points of energy he left. Or print “you loss!”</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">4 4
+8 0 0 0
+-1 -1 -1 0
+-1 -1 -1 0
+0 6 0 0
+3 3
+4 0 0
+0 0 0
+0 0 0
+4 4
+5 0 0 0
+0 -1 -1 0
+0 -1 -1 0
+0 0 0 0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">4
+0
+you loss!
+
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>The hero can pass the exit. When he gets the exit point, he can choose to get out to finish the game or move on to gain more points of energy.</div><i style='font-size:1px'> </i></div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>imems </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2010 ACM-ICPC Multi-University Training Contest（7）——Host by HIT &source=1&searchmode=source'> 2010 ACM-ICPC Multi-University Training Contest（7）——Host by HIT  </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>zhouzeyong</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3502'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3502'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3502">Discuss</a> | <a href='note/note.php?pid=3502'>Note</a><br></td></tr></div></body></html>

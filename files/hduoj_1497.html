@@ -1,0 +1,49 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 1497</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Simple Library Management System</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 4000/2000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 911&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 271<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>After AC all the hardest problems in the world , the ACboy 8006 now has nothing to do . One day he goes to an old library to find a part-time job .It is also a big library which has N books and M users.The user's id is from 1 to M , and the book id is from 1 to N . According to the library rules , every user are only allowed to borrow 9 books .But what surprised him is that there is no computer in the library , and everything is just recorded in paper ! How terrible , I must be crazy after working some weeks , he thinks .So he wants to change the situation .<br><br>In the other hand , after 8006's fans  know it , they all collect money and buy many computers for the library .<br><br>Besides the hardware , the library needs a management program . Though it is just a piece of cake for 8006 , the library turns to you , a excellent programer,for help .<br><br>What they need is just a simple library management program . It is just a console program , and have only three commands : Borrow the book , Return the book , Query the user .<br><br>1.The Borrow command has two parameters : The user id and the book id<br>The format is : &quot;B ui bi&quot;    (1&lt;=ui&lt;=M , 1&lt;=bi&lt;=N)<br>The program must first check the book bi wether it's in the library . If it is not , just print &quot;The book is not in the library now&quot; in a line . <br>If it is , then check the user ui .<br>If the user has borrowed 9 books already, print &quot;You are not allowed to borrow any more&quot; .<br>Else let the user ui borrow the book , and print &quot;Borrow success&quot;.<br><br>2.The Return command only has one parameter : The book id<br>The format is : &quot;R bi&quot; (1&lt;=bi&lt;=N)<br>The program must first check the book bi whether it's in the library . If it is , just print &quot;The book is already in the library&quot; . Otherwise , you can return the book , and print &quot;Return success&quot;.<br><br>3.The Query command has one parameter : The user id<br>The format is : &quot;Q ui&quot; (1&lt;=ui&lt;=M)<br>If the number of books which the user ui has borrowed is 0 ,just print &quot;Empty&quot; , otherwise print the books' id which he borrows in increasing order in a line.Seperate two books with a blank.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input file contains a series of test cases . Please process to the end of file . The first line contains two integers M and N ( 1&lt;= M &lt;= 1000 , 1&lt;=N&lt;=100000),the second line contains a integer C means the number of commands(1&lt;=C&lt;=10000). Then it comes C lines . Each line is a command which is described above.You can assum all the books are in the library at the beginning of each cases.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each command , print the message which described above .<br>Please output a blank line after each test.<br>If you still have some questions , see the Sample .<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">5 10
+9
+R 1
+B 1 5
+B 1 2
+Q 1
+Q 2
+R 5
+Q 1
+R 2
+Q 1
+5 10
+9
+R 1
+B 1 5
+B 1 2
+Q 1
+Q 2
+R 5
+Q 1
+R 2
+Q 1</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">The book is already in the library
+Borrow success
+Borrow success
+2 5
+Empty
+Return success
+2
+Return success
+Empty
+
+The book is already in the library
+Borrow success
+Borrow success
+2 5
+Empty
+Return success
+2
+Return success
+Empty
+
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>Hint</div><i style='font-size:1px'> </i>
+Huge input, the function scanf() may work better than cin</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>linle</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=“2006校园文化活动月”之“校庆杯”大学生程序设计竞赛暨杭州电子科技大学第四届大学生程序设计竞赛 &source=1&searchmode=source'> “2006校园文化活动月”之“校庆杯”大学生程序设计竞赛暨杭州电子科技大学第四届大学生程序设计竞赛  </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>LL</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1497'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1497'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1497">Discuss</a> | <a href='note/note.php?pid=1497'>Note</a><br></td></tr></div></body></html>

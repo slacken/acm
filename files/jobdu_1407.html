@@ -1,0 +1,81 @@
+<!DOCTYPE html><html>
+				<head><meta charset=utf-8 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 1407</title></head>
+				<body><div id="jobdu_c"><dl class="main-title-mod mb10">
+            <dt class="title-hd">
+                题目1407：快速找出最小数
+            </dt>
+            <dd class="title-bd">
+            	                <div class="pl20 mb10 f14 topic-desc-mod">
+                    <div class="topic-desc-hd">
+                        <p style="width:140px;"><b>时间限制：</b>1 秒</p>
+                        <p style="width:140px;"><b>内存限制：</b>32 兆</p>
+                        <p style="width:100px;"><b>特殊判题：</b>否</p>
+                        <p style="width:130px;"><b>提交：</b>186</p>
+                        <p style="width:130px;"><b>解决：</b>14</p>
+                    </div>
+                   	<div class="topic-desc-bd">
+                   	<dl>
+                       <dt>
+                           <b>题目描述：</b>
+                       </dt>
+                       <dd>
+                           <p class="MsoNormal">给定一个大小为N 的整数数组array，我们定义两种操作：<o:p></o:p></p>
+<p><!--[if !supportLists]-->1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]-->Add(L, R, W)。即将子数组[L, R]中的元素，都累加一个整数W。<o:p></o:p></p>
+<p><!--[if !supportLists]-->2)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]-->Min(L, R)。即返回子数组[L, R]之中，最小的一个元素的值。<o:p></o:p></p>
+<p>其中L和R为数组的下标，且从0开始计数。当数组下标L &gt; R时，我们认为这个子数组的元素包含array[L], array[L+1], &hellip; array[N &ndash; 1], array[0], array[1], &hellip; array[R]。<span lang="EN-US" style="background:white;mso-font-kerning:0pt"><o:p></o:p></span></p>
+<p></p>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>输入：</b>
+                       </dt>
+                       <dd>
+                           <p class="MsoNormal">每个测试文件包含多个测试案例。<o:p></o:p></p>
+<p>每个测试案例的第一行为整数N, 其中1 &lt;= N &lt;= 100000, 表示数组array的元素个数。<o:p></o:p></p>
+<p>第二行将会输入N个数组元素a1, a2，&hellip; an，且-10^6 &lt;= ai &lt;= 10^6。<o:p></o:p></p>
+<p>第三行将输入整数M，其中 100000 &lt;= M &lt;= 100000，代表接下来将会输入的操作数<o:p></o:p></p>
+<p>余下的M行将会是具体的对数组的操作指令：若一行中含有3个整数参数，则该操作为Add操作，需要对array的元素进行更新操作，三个参数依次代表L, R以及W；若一行中只有两个参数，则该操作为Min操作，你需要返回当前子数组[L, R]之中最小的元素大小。对于所有的操作指令, 都满足0 &lt;= L, R &lt;= N &ndash; 1, -10^6 &lt;= W &lt;= 10^6。</p>
+<p></p>
+                       </dd>
+                   	</dl>
+                       <dl>
+                       <dt>
+                           <b>输出：</b>
+                       </dt>
+                       <dd>
+                           <p class="MsoNormal">对于每个测试案例中的所有Min操作，都返回其指定的操作值。<span lang="EN-US" style="background:white"><o:p></o:p></span></p>
+<p></p>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>样例输入：</b>
+                       </dt>
+                       <dd>
+                           <pre>3
+1 2 4
+3
+0 2
+0 0 1
+0 2
+</pre>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>样例输出：</b>
+                       </dt>
+                       <dd>
+                           <pre>1
+2
+</pre>
+                       </dd>
+                   	</dl>
+                   	                   		             			                   	</div>
+                </div>
+                            </dd>
+		</dl></div></body></html>

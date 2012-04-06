@@ -1,0 +1,93 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 3583</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>CodeMaker</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 131072/65536 K (Java/Others)<br>Total Submission(s): 163&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 63<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Dreamwind is doing C++ homework……<br>“Write a program, enter 3 different integers a,b,c, output them in increasing order using their variable names.”<br>This is Dreamwind’s answer:<br>#include &lt;stdio.h&gt;<br><br>int a,b,c;<br>bool ok;<br><br>int main()<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;Please enter 3 different integers:\n&quot;);<br>&nbsp;&nbsp;&nbsp;&nbsp;do<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scanf(&quot;%d%d%d&quot;,&amp;a,&amp;b,&amp;c);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ok=1;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (a==b || a==c || b==c)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ok=0;<br>&nbsp;&nbsp;&nbsp;&nbsp;}while (ok);<br>&nbsp;&nbsp;&nbsp;&nbsp;if (a&lt;b)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (b&lt;c)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;a&lt;b&lt;c\n&quot;);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (a&lt;c)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;a&lt;c&lt;b\n&quot;);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;c&lt;a&lt;b\n&quot;);<br>&nbsp;&nbsp;&nbsp;&nbsp;else<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (a&lt;c)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;b&lt;a&lt;c\n&quot;);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (b&lt;c)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;b&lt;c&lt;a\n&quot;);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;c&lt;b&lt;a\n&quot;);<br>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>}<br>Obviously, this program is very complex, but Dreamwind is satisfied with this. He prepares to solve similar question by using the same format. However, when the nubmer of integers if very large, the length of code by this format will be very long, so Dreamwind gives this code to you, hoping you can write a program which can create the code of some questions like “Enter n different integers a,b,c,…, output them in increasing order using their variable names.” automatically.<br>We can see that in Dreamwind’s format, the integers’ variable name will be a,b,c,…, and when judge whether the integers are different, the “if” will follow many sentence like (a==b) in some order. When compare the integers, he uses the least “if” so that every “if” and “else” is perfectly used. For each comparison, a and b will always be used first, and then c, and then d (if n is larger, see the Sample Output). Dreamwind never use “&gt;” in this program, and in every “&lt;” and “==” in the “if” sentence, the varible name on the left will always smaller than the one on the right.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>There are some test cases. For each test case there is only one line with a integer n (2&lt;=n&lt;=8), the number of integers. There is one 0 in the end of the case.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each n, output the code with Dreamwind’s format. Notice that you should use one or more Tabs (‘\t’) to intent in some lines. Leave a blank line after each output.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">4
+0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">#include &lt;stdio.h>
+
+int a,b,c,d;
+bool ok;
+
+int main()
+{
+	printf("Please enter 4 different integers:\n");
+	do
+	{
+		scanf("%d%d%d%d",&a,&b,&c,&d);
+		ok=1;
+		if (a==b || a==c || a==d || b==c || b==d || c==d)
+			ok=0;
+	}while (ok);
+	if (a&lt;b)
+		if (b&lt;c)
+			if (c&lt;d)
+				printf("a&lt;b&lt;c&lt;d\n");
+			else
+				if (b&lt;d)
+					printf("a&lt;b&lt;d&lt;c\n");
+				else
+					if (a&lt;d)
+						printf("a&lt;d&lt;b&lt;c\n");
+					else
+						printf("d&lt;a&lt;b&lt;c\n");
+		else
+			if (a&lt;c)
+				if (b&lt;d)
+					printf("a&lt;c&lt;b&lt;d\n");
+				else
+					if (c&lt;d)
+						printf("a&lt;c&lt;d&lt;b\n");
+					else
+						if (a&lt;d)
+							printf("a&lt;d&lt;c&lt;b\n");
+						else
+							printf("d&lt;a&lt;c&lt;b\n");
+			else
+				if (b&lt;d)
+					printf("c&lt;a&lt;b&lt;d\n");
+				else
+					if (a&lt;d)
+						printf("c&lt;a&lt;d&lt;b\n");
+					else
+						if (c&lt;d)
+							printf("c&lt;d&lt;a&lt;b\n");
+						else
+							printf("d&lt;c&lt;a&lt;b\n");
+	else
+		if (a&lt;c)
+			if (c&lt;d)
+				printf("b&lt;a&lt;c&lt;d\n");
+			else
+				if (a&lt;d)
+					printf("b&lt;a&lt;d&lt;c\n");
+				else
+					if (b&lt;d)
+						printf("b&lt;d&lt;a&lt;c\n");
+					else
+						printf("d&lt;b&lt;a&lt;c\n");
+		else
+			if (b&lt;c)
+				if (a&lt;d)
+					printf("b&lt;c&lt;a&lt;d\n");
+				else
+					if (c&lt;d)
+						printf("b&lt;c&lt;d&lt;a\n");
+					else
+						if (b&lt;d)
+							printf("b&lt;d&lt;c&lt;a\n");
+						else
+							printf("d&lt;b&lt;c&lt;a\n");
+			else
+				if (a&lt;d)
+					printf("c&lt;b&lt;a&lt;d\n");
+				else
+					if (b&lt;d)
+						printf("c&lt;b&lt;d&lt;a\n");
+					else
+						if (c&lt;d)
+							printf("c&lt;d&lt;b&lt;a\n");
+						else
+							printf("d&lt;c&lt;b&lt;a\n");
+	return 0;
+}</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>alpc32</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2010 ACM-ICPC Multi-University Training Contest（15）——Host by NUDT&source=1&searchmode=source'> 2010 ACM-ICPC Multi-University Training Contest（15）——Host by NUDT </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>zhouzeyong</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3583'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3583'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3583">Discuss</a> | <a href='note/note.php?pid=3583'>Note</a><br></td></tr></div></body></html>

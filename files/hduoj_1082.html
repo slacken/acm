@@ -1,0 +1,36 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 1082</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Matrix Chain Multiplication</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 560&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 389<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Matrix multiplication problem is a typical example of dynamical programming. <br><br>Suppose you have to evaluate an expression like A*B*C*D*E where A,B,C,D and E are matrices. Since matrix multiplication is associative, the order in which multiplications are performed is arbitrary. However, the number of elementary multiplications needed strongly depends on the evaluation order you choose.<br>For example, let A be a 50*10 matrix, B a 10*20 matrix and C a 20*5 matrix.<br>There are two different strategies to compute A*B*C, namely (A*B)*C and A*(B*C).<br>The first one takes 15000 elementary multiplications, but the second one only 3500. <br><br>Your job is to write a program that determines the number of elementary multiplications needed for a given evaluation strategy. <br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>Input consists of two parts: a list of matrices and a list of expressions.<br>The first line of the input file contains one integer n (1 &lt;= n &lt;= 26), representing the number of matrices in the first part. The next n lines each contain one capital letter, specifying the name of the matrix, and two integers, specifying the number of rows and columns of the matrix. <br>The second part of the input file strictly adheres to the following syntax (given in EBNF): <br><br>SecondPart = Line { Line } &lt;EOF&gt;<br>Line       = Expression &lt;CR&gt;<br>Expression = Matrix | &quot;(&quot; Expression Expression &quot;)&quot;<br>Matrix     = &quot;A&quot; | &quot;B&quot; | &quot;C&quot; | ... | &quot;X&quot; | &quot;Y&quot; | &quot;Z&quot;<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each expression found in the second part of the input file, print one line containing the word &quot;error&quot; if evaluation of the expression leads to an error due to non-matching matrices. Otherwise print one line containing the number of elementary multiplications needed to evaluate the expression in the way specified by the parentheses. <br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">9
+A 50 10
+B 10 20
+C 20 5
+D 30 35
+E 35 15
+F 15 5
+G 5 10
+H 10 20
+I 20 25
+A
+B
+C
+(AA)
+(AB)
+(AC)
+(A(BC))
+((AB)C)
+(((((DE)F)G)H)I)
+(D(E(F(G(HI)))))
+((D(EF))((GH)I))</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">0
+0
+0
+error
+10000
+error
+3500
+15000
+40500
+47500
+15125</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=University of Ulm Local Contest 1996&source=1&searchmode=source'> University of Ulm Local Contest 1996 </a> </div> <div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1082'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1082'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1082">Discuss</a> | <a href='note/note.php?pid=1082'>Note</a><br></td></tr></div></body></html>

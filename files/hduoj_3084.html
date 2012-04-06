@@ -1,0 +1,28 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 3084</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Tnine</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 58&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 11<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Kongyi found a company called Tnine after graduation, and she has eight employees. With her effort, the company expands gradually. However, there are also some problems. For example, she doesn't know how to arrange those employees to get the maximum profits. If you can help the inexperienced kongyi, she will be appreciated.<br><br>Now I will give you the workflow of Tnine in T days, the company has received N projects’ requests, but it need not to accept all. <br><br>Each project will give four conditions 1) It will needs M employees;2) It must be started on the day S and finished on the day E. Meantime, it can not be interrupted;3) The project can offer P profits. 4) You can assume in one day will not have more than one project.<br><br>Each employee who joins a project will get a day off after finishing the work, it means Kongyi will not ask an employee to join a new project in the second day after he finished his project. And Kongyi knows some of workers’ cooperation will get extra profits. Now your job is to help Kongyi to arrange the eight employees and choose which projects to accept to maximize the total profits.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input may contain several data sets. <br>The first line of each test case contains two integers T (0 &lt; T ≤ 100000) and N (0 &lt; N ≤ 500). Then following N lines give the description of the projects. Each line contains four non-negative integers M (0 &lt; M ≤ 8), S, E (0 &lt; S, E ≤ T) and P. With the same meaning described above. <br><br>The next line contains a single integer Q (0 ≤ Q &lt; 2^8), denotes Q descriptions of cooperation as following.<br>Each description is a single line, the first integer q shows the number of employees in this cooperation. Then the following q integers mean those q employees’ id (0 ≤ id &lt; 8) and the last integer means the extra profits F. That means a team contains those employees will take extra profits F. <br><br>Note that if a team contains more than one kind of cooperation, we will chose the maximum extra profits to add.<br>See the sample input for further details. <br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case, output one line containing the maximum profits Tnine will gain during the T days.<br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">10 3
+3 2 5 2
+3 6 7 1
+8 9 10 2
+2
+3 1 3 7 2
+3 4 5 3 1
+
+15 3
+3 1 5 3
+6 6 7 1
+2 8 11 1
+2
+4 2 5 6 3 3
+2 2 3 2
+
+10 1
+4 1 10 1
+2
+3 0 1 2 1
+3 1 2 3 2</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">9
+8
+3</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>木雪空亦</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=HDU 2nd “Vegetable-Birds Cup” Programming Open Contest&source=1&searchmode=source'> HDU 2nd “Vegetable-Birds Cup” Programming Open Contest </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3084'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3084'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3084">Discuss</a> | <a href='note/note.php?pid=3084'>Note</a><br></td></tr></div></body></html>

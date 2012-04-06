@@ -1,0 +1,21 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 3452</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Bonsai</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 429&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 227<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>After being assaulted in the parking lot by Mr. Miyagi following the &quot;All Valley Karate Tournament&quot;, John Kreese has come to you for assistance. Help John in his quest for justice by chopping off  all the leaves from Mr. Miyagi's bonsai tree!<br>You are given an undirected tree (i.e., a connected graph with no cycles), where each edge (i.e., branch) has a nonnegative weight (i.e., thickness). One vertex of the tree has been designated the root of the tree.The remaining vertices of the tree each have unique paths to the root; non-root vertices which are not the successors of any other vertex on a path to the root are known as leaves.Determine the minimum weight set of edges that must be removed so that none of the leaves in the original tree are connected by some path to the root.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input file will contain multiple test cases. Each test case will begin with a line containing a pair of integers n (where 1 &lt;= n &lt;= 1000) and r (where r ∈ ｛1,……, n｝) indicating the number of vertices in the tree and the index of the root vertex, respectively. The next n-1 lines each contain three integers u<sub>i</sub> v<sub>i</sub> w<sub>i</sub> (where u<sub>i</sub>, v<sub>i</sub> ∈ {1,……, n} and 0 &lt;= w<sub>i</sub> &lt;= 1000) indicating that vertex u<sub>i</sub> is connected to vertex v<sub>i</sub> by an undirected edge with weight w<sub>i</sub>. The input file will not contain duplicate edges. The end-of-file is denoted by a single line containing &quot;0 0&quot;.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each input test case, print a single integer indicating the minimum total weight of edges that must be deleted in order to ensure that there exists no path from one of the original leaves to the root.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">15 15
+1 2 1
+2 3 2
+2 5 3
+5 6 7
+4 6 5
+6 7 4
+5 15 6
+15 10 11
+10 13 5
+13 14 4
+12 13 3
+9 10 8
+8 9 2
+9 11 3
+0 0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">16</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2009 Stanford Local ACM Programming Contest&source=1&searchmode=source'> 2009 Stanford Local ACM Programming Contest </a> </div> <div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3452'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3452'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3452">Discuss</a> | <a href='note/note.php?pid=3452'>Note</a><br></td></tr></div></body></html>

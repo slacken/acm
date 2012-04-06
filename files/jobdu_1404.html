@@ -1,0 +1,87 @@
+<!DOCTYPE html><html>
+				<head><meta charset=utf-8 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 1404</title></head>
+				<body><div id="jobdu_c"><dl class="main-title-mod mb10">
+            <dt class="title-hd">
+                题目1404：机器人网店
+            </dt>
+            <dd class="title-bd">
+            	                <div class="pl20 mb10 f14 topic-desc-mod">
+                    <div class="topic-desc-hd">
+                        <p style="width:140px;"><b>时间限制：</b>1 秒</p>
+                        <p style="width:140px;"><b>内存限制：</b>32 兆</p>
+                        <p style="width:100px;"><b>特殊判题：</b>否</p>
+                        <p style="width:130px;"><b>提交：</b>178</p>
+                        <p style="width:130px;"><b>解决：</b>28</p>
+                    </div>
+                   	<div class="topic-desc-bd">
+                   	<dl>
+                       <dt>
+                           <b>题目描述：</b>
+                       </dt>
+                       <dd>
+                           <p class="MsoNormal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ID为TMao的淘宝用户前些日子在淘宝机器人网店购买了一个智能机器人oz.这个机器人不仅精致小巧，还具有很多有意思的功能。<o:p></o:p></p>
+<p>比如：oz可以在迷宫里自由的上下左右走动; 并且，在不碰到障碍物的情况下，它能够以最短时间从入口处走到出口 (假设存在的话); 最智能的是，在有充电器的地方oz还可以给自己充电 (^_^)。<o:p></o:p></p>
+<p>现在，TMao设计了很多种迷宫，并且在里面随意的摆了些充电器，想请你们帮他算下，这个智能机器人要多久时间可以走出去呢？<o:p></o:p></p>
+<p>他做了如下假设：</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.迷宫可以看作是长为w，宽为h的网格；<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.机器人每移动一步，需要时间1s，消耗电量0.5格；<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.机器人初始电量为满格4格；<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.每个充电器充电次数不限 (充电时间所需时间忽略不计)，机器人可以反复经过一个地方，但是不能走到有障碍的地方,并且一旦机器人电量变为0,它就只能停下来，哪怕这个位置正好有充电器，它也没有足够的电量去执行充电操作；<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5.机器人走到迷宫出口，必须至少还有0.5格电量，否则也算没走出出口。<br />
+</p>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>输入：</b>
+                       </dt>
+                       <dd>
+                           <p class="MsoNormal">输入有多组测试案例，每个测试案例以如下形式输入。<o:p></o:p></p>
+<p>第一行输入w,h分别表示迷宫的长和宽，当输入0 0时结束输入（w , h &lt;= 10）。<o:p></o:p></p>
+<p>接下来的h行表示迷宫的布局：-1表示该位置是障碍物, 0表示该位置什么也没有,1表示迷宫入口, 2表示迷宫出口, 3表示该位置有充电器。<span lang="EN-US" style="background: white"><o:p></o:p></span></p>
+<p></p>
+                       </dd>
+                   	</dl>
+                       <dl>
+                       <dt>
+                           <b>输出：</b>
+                       </dt>
+                       <dd>
+                           <p class="MsoNormal">对应每个测试案例，输出机器人oz走到出口处的时间;如果无法按要求走到出口则输出&rdquo;Pity oz!&rdquo;。<span lang="EN-US" style="background: white"><o:p></o:p></span></p>
+<p></p>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>样例输入：</b>
+                       </dt>
+                       <dd>
+                           <pre>4 3
+2 0 0 0
+0 0 0 0
+0 0 0 1
+4 3
+2 -1 0 0
+-1 0 0 0
+3 0 0 1
+0 0
+</pre>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>样例输出：</b>
+                       </dt>
+                       <dd>
+                           <pre>5
+Pity oz!
+</pre>
+                       </dd>
+                   	</dl>
+                   	                   		             			                   	</div>
+                </div>
+                            </dd>
+		</dl></div></body></html>

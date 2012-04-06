@@ -1,0 +1,31 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 3955</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>March</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 594&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 135<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>During a game of Civilization V, much of your time will be spent moving units around the world. You'll be marching your army units off to discover stuff or to fight with your neighbors.<br><center><img src=http://acm.hdu.edu.cn/data/images/C361_1005_1.jpg></center><br>The world is comprised of hexagons. Generally, units move from hexagon to hexagon, paying the &quot;Movement Cost&quot; required to enter the new hexagon.<br><i><b>Movement Points</b></i>:<br>All army units have a certain number of &quot;Movement Points&quot;(MPs) that they can expend on movement in every turn. Once they've expended those MPs, they can't move any more until the next turn.<br><i><b>Expending MPs:</b></i><br>Units expend MPs to enter tiles. The terrain of the tile determines the MP cost of the move. It doesn't cost anything to leave your current tile; the MP cost is determined by the tile you're entering.<br>A unit can always move one tile if it has any MPs left.It doesn't matter how expensive the tile is; as long as the unit has some MPs left, it can enter. <br><i><b>Terrain of the tile:</b></i><br>Open terrain like Grassland and Plains cost 1 MP to enter, while Forest and Jungle costs 2.<br><i><b>Zones of Control:</b></i><br>Enemy units exert a &quot;Zone of Control&quot;(ZOC) over the tiles around them. When a unit moves between two tiles within enemys' ZOC it expends all of MPs.(you can't move on the tile which contain an enemy)<br><i><b>Road:</b></i><br>As long as the unit moves from one tile containing a road into another tile containing a road,the unit will expend just 0.25 MPs no matter what terrain of the tile.(unless within an enemy's ZOC)<br><i><b>Rivers:</b></i><br>Rivers are between two tiles.<br>As long as the unit moves cross a rivers from a tile to another tile it expends all of MPs(unless these tiles contain roads).<br><br>Giving the information of the World, please tell me the minimum turns to cost for reaching the destination.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The first line is a number T(1&lt;=T&lt;=30), represents the number of case. The next T blocks follow each indicates a case.<br>The first line of each case contains three integers N, M(2&lt;=N,M&lt;=100), indicating the size of World, and MP(1&lt;=MP&lt;=10).<br>Then N lines follow, each line contains M integers.<br>Each module number tells the information of the tile and is the sum of up to ten integers:<br>1: Grassland and Plains<br>2: Forest and Jungle<br>4: Road<br>8: Enemy<br>16: A river on northeast of the tile<br>32: A river on east of the tile<br>64: A river on southeast of the tile<br>128: A river on southwest of the tile<br>256: A river on west of the tile<br>512: A river on northwest of the tile<br>(each tile must contain either 1 or 2)<br>Then a line with two coordinates x1,y1,x2,y2(0&lt;=x1,x2&lt;n,0&lt;=y1,y2&lt;m) indicating the source and destination. There is no enemy in source and destination and source is different from destination.<br>The picture below shows the coordinate of the World.<br><center><img src=http://acm.hdu.edu.cn/data/images/C361_1005_2.jpg></center></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each case, output the number of case and the minimum turns to cost for reaching the destination.If can't reach the destination, just output -1.(as shown in the sample output)</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">3
+2 2 10
+97 257
+513 1
+0 0 1 1
+
+2 2 1
+101 262
+513 2
+0 0 1 1
+
+3 3 2
+5 5 5
+10 10 5
+1 1 5
+0 0 2 2</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Case 1: 2
+Case 2: 1
+Case 3: 4
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>
+Case 1: (0,0)->(0,1)->(1,1)
+First turn cross a river, you expends all of MPs. So you need waiting second turn to reach (1,1)
+Case 2: (0,0)->(0,1)->(1,1)
+There are roads on these tiles, so you cross the river expends 0.25 MPs, then expends the remain MPs to reach (1,1).
+Case 3: (0,0)->(0,1)->(0,2)->(1,2)->(2,2)
+Even if there are roads on these tiles, but there are all in ZOC, so you will expends all of MPs each move.
+</div><i style='font-size:1px'> </i></div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>NotOnlySuccess</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2011 Alibaba Programming Contest&source=1&searchmode=source'> 2011 Alibaba Programming Contest </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3955'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3955'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3955">Discuss</a> | <a href='note/note.php?pid=3955'>Note</a><br></td></tr></div></body></html>

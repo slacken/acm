@@ -1,0 +1,24 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 3144</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Gokigen Naname</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 38&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 11<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content><i>Gokigen Naname</i> is a Japanese puzzle game played on a square grid in which numbers in circles appear at some of the intersections on the grid.<br><br>The objective is to draw diagonal lines in each cell of the grid, such that the number in each circle equals the number of lines extending from that circle. Additionally, it is forbidden for the diagonal lines to form an enclosed loop.<br><br><center><img src=../../../data/images/3144-1.jpg>&nbsp;&nbsp;&nbsp;&nbsp;<img src=../../../data/images/3144-2.jpg></center><br>The first figure shows the start position of a puzzle. The second figure shows the solution to the same puzzle. A <i>Gokigen Naname</i> puzzle always has exactly one solution.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The first line of the input contains a single integer <i>n</i> (2 &lt;= <i>n</i> &lt;= 7), the number of cells along each of the sides in the square grid. Then follow <i>n</i> + 1 lines containing the contents of the intersections of the grid cells. Each such line will contain a string of <i>n</i>+1 characters, either a digit between 0 and 4, inclusive, or a period ('.') indicating that there is no number at this intersection (arbitrarily many lines may connect to it).</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>The output should contain <i>n</i> lines, each line containing exactly <i>n</i> characters. Each character should either be a slash or a backslash, denoting how the corresponding grid cell is filled.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">3
+1.1.
+...0
+.3..
+..2.
+5
+.21...
+..33.0
+......
+..33..
+0..33.
+....11</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">\//
+\\\
+/\/
+/\\//
+//\\\
+\\\//
+\/\\/
+///\\</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=NCPC 2009&source=1&searchmode=source'> NCPC 2009 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>chenrui</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3144'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3144'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3144">Discuss</a> | <a href='note/note.php?pid=3144'>Note</a><br></td></tr></div></body></html>

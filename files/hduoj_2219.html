@@ -1,0 +1,45 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 2219</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>God's Birthday</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 249&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 73<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Do you know God's birthday?<br>Stupid Wiskey and Michelle say they didn't knew.<br>Now, Gods want to make a game let them guess the answer.<br>This game is a two-player alternative game and is played as follows:<br>1.God tell the month to Wiskey, and tell the day to Michelle.<br>2.There are many dates in a list, Wiskey and Michelle must choose the date from the list.<br>3.Wiskey guesses first, then Michelle and alternative to reply YES or NO, if he/she konws the answer, he/she will say YES, or he/she will say NO.<br>4.Who first know God's birthday when is his/her turn and his/her answer is right, he/she is the winner.<br>Your task is telling me who will win, Wiskey or Michelle?<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>First line will contain one integer means how many cases will follow by.<br>Each line will contain three integers N, M, D.<br>N represents the number of dates God tell them. (1 &lt;= N &lt;= 365)<br>M, D represent God's birthday is the M-th month, the D-th day. (1 &lt;= M &lt;= 12, 1 &lt;= D &lt;= 31)<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>If Wiskey win, print &quot;Wiskey Win&quot;.<br>If Michelle wins, print &quot;Michelle Win&quot;.<br>Else print &quot;No&quot; if nobody will win the game.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">4
+
+3 12 25
+12 25
+10 25
+11 25
+
+3 12 25
+12 25
+12 23
+12 24
+
+4 12 25
+11 25
+11 25
+12 24
+12 24
+ 
+3 12 25
+11 25
+12 25
+12 24</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Wiskey Win
+Michelle Win
+No
+Michelle Win
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>
+In the first case, Wiskey knows the month is 12, 
+and the list have only date 12.25, so Wiskey will win.
+
+In the second case, theie are three dates in December, 
+so Wiskey can't decide which one is right, he must say NO. 
+When is Michelle's turn, she knows the day is 25, so she will win.
+
+In the third case, nobody will win the game, the answer is "No".
+
+In the fourth case, 12.25 and 12.24 are in December, so Wiskey says NO. 
+Michelle thinks if the month is 11, Wiskey must knew the answer, 
+but he said NO, so the month must be 12, so Michelle knows the answer is 12.25.
+</div><i style='font-size:1px'> </i></div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>Wiskey</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2219'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2219'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2219">Discuss</a> | <a href='note/note.php?pid=2219'>Note</a><br></td></tr></div></body></html>

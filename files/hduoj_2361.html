@@ -1,0 +1,39 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 2361</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Bonus Word</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 10000/5000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 14&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 3<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Lingo is a once popular game show where the contestants have to guess words. In the original version the contestants would have to guess a five-letter word each round.<br>In between the rounds of regular word guessing, the contestants can win a bonus prize if they can guess a ten-letter word. The ten-letter word is displayed with the letters permuted. Some letters are colored indicating that they are displayed in the right position. Since there are not that many ten-letter words, it happens frequently that the word is actually a compound: a word constructed by concatenating two shorter words. In this problem we<br>assume that the ten-letter word is always of this form.<br>Given a dictionary and a sequence of ten letters, you must calculate the possible solutions to the ten-letter word game. Two solutions are considered different if they are constructed from different parts, even if their concatenation is the same. This is illustrated by the the second sample case.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>On the first line an integer t (1 &lt;= t &lt;= 100): the number of test cases. Then for each test case:<br><br>One line with an integer n (1 &lt;= n &lt;= 200): the number of words in the dictionary.<br><br>n lines with a single word in the dictionary. Each word is between 1 and 9 (inclusive) characters long and consists of only lowercase letters.<br><br>One line with an integer q (1 &lt;= q &lt;= 100): the number of queries.<br><br>q lines with a single query string. Each query is exactly 10 characters long and will consist of uppercase and lowercase letters. Lowercase letters are in the right position and uppercase letters may be in the wrong position.<br>All words in the dictionary for a single test case are distinct.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case, output for each query:<br><br>One line with an integer s: the number of solutions.<br><br>min(1000, s) lines, each a solution formatted as two dictionary words separated by a hyphen (-).<br><br>The solutions to a single query must be ordered lexicographically. If the number of solutions exceeds 1000, then only output the first 1000 solutions.<br><br><br>Notes<br>If s and t are strings of equal length and si denotes the ith character of s, then s precedes t lexicographically if for some i: s<sub>i</sub> &lt; t<sub>i</sub> and s<sub>j</sub> = t<sub>j</sub> for all j &lt; i. In this problem statement, the hyphen precedes all letters lexicographically.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+5
+gunner
+integral
+relating
+tail
+un
+4
+TAILGUNNER
+unINTEGRAL
+UNrelating
+IMPOSSIBLE
+3
+aaaa
+aaaaa
+aaaaaa
+1
+AAAAAAAAAA</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">6
+gunner-tail
+integral-un
+relating-un
+tail-gunner
+un-integral
+un-relating
+2
+un-integral
+un-relating
+1
+un-relating
+0
+3
+aaaa-aaaaaa
+aaaaa-aaaaa
+aaaaaa-aaaa</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=bapc2007_pre&source=1&searchmode=source'> bapc2007_pre </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2361'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2361'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2361">Discuss</a> | <a href='note/note.php?pid=2361'>Note</a><br></td></tr></div></body></html>

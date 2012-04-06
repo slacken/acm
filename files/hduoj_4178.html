@@ -1,0 +1,27 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 4178</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Roll-call in Woop Woop High</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 34&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 26<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>The new principal of Woop Woop High is not satisfied with her pupils performance.She introduced a new roll-call process to get a daily measure of the pupils' learning, which proceeds as follows:At the beginning of the daily roll-call period each pupil is handed a question, which they must attempt to answer, before proceeding to their classes. A pupil stops after the question is answered correctly. Each pupil is allowed up to five attempts to answer the question correctly. Pupils who answer correctly on the first attempt are marked present. Pupils who answer correctly after more than one attempt are encouraged to work at home. Pupils who fail to develop a correct answer within five attempts are given remedial classes after school. Pupils who do not give any answer are marked as abscent. Your task is to write a program that reads the pupils' assessments and generates performance reports for the principal to proceed with appropriate actions.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input starts with an integer K (1 &lt;= K &lt;= 100) indicating the number of classes. Each class starts with an integer N (1 &lt;= N &lt;= 50) indicating the number of pupils in the class. Each of the following N lines starts with a pupil's name followed by up-to five assessments of his/her answers. An assessment of 'yes' or 'y' indicates a correct answer and an assessment of 'n' or 'no' indicates a wrong answer. A pupil's name consists of a single string with no white spaces.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>The attendance report for each class consists of five lines. <br>The first line consists of the sentence: &quot;Roll-call: X&quot;, where X indicates the class number starting with the value of one. <br>The second line consists of the sentence: ''Present: Y1 out of N'', where Y1 is the number of pupils who did not submit a wrong answer. <br>The third line consists of the sentence: ''Needs to study at home: Y2 out of N'', where Y2 is the number of pupils who submitted a number of wrong answers before submitting the correct answer. <br>The fourth line consists of the sentence: ''Needs remedial work after school: Y3 out of N'', where Y3 indicates the number of pupils whose submitted five wrong answers.<br>The fifth line consists of the sentence: ''Absent: Y4 out of N'', where Y4 indicates the number of absent pupils.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+5 
+Doc n y
+sneezy n n no yes
+princecharming no n no no n
+goofy yes
+grumpy n y
+5 
+evilemperor n y
+princesslia
+r2d2 no no y
+obeyonecanopy n no y
+darthvedar y</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Roll-call: 1
+Present: 1 out of 5
+Needs to study at home: 3 out of 5
+Needs remedial work after school: 1 out of 5
+Absent: 0 out of 5
+Roll-call: 2
+Present: 1 out of 5
+Needs to study at home: 3 out of 5
+Needs remedial work after school: 0 out of 5
+Absent: 1 out of 5</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=The 2011 South Pacific Programming Contest&source=1&searchmode=source'> The 2011 South Pacific Programming Contest </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=4178'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=4178'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=4178">Discuss</a> | <a href='note/note.php?pid=4178'>Note</a><br></td></tr></div></body></html>

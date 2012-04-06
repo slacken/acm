@@ -1,0 +1,31 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 3917</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Road constructions</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 6000/2000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 779&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 258<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>N cities are required to connect with each other by a new transportation system. After several rounds of bidding, we have selected M constructions companies and <br>decided which section is assigned to which company, the associated cost and the direction of each road.  <br><br>Due to the insufficiency of national fiscal revenue and special taxation system （the tax paid by each company pays  is a fixed amount and tax payment occurs at the<br> beginning of the construction of the project） &nbsp;&nbsp;The government wishes to complete the project in several years and collects as much tax as possible to support the public<br> expense<br><br>For the restrictions of construction and engineering techniques, if a company is required to start the construction, then itself and its associated companies have to <br>complete all the tasks they commit (if company A constructs a road <br>from city 1 to city 2, company B constructs a road from city 2 to city 3, company C constructs a road from city 1 to city 3, we call <br>companies A and B are associated and other company pairs have no such relationship, pay attention, in this example and a are not associated, in other words,’ <br>associated' is a directed relationship). &nbsp;&nbsp;<br>Now the question is what the maximum income the government can obtain in the first year is？</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>There are multiple cases (no more than 50).<br>&nbsp;&nbsp;Each test case starts with a line, which contains 2 positive integers, n and m (1&lt;=n&lt;=1000, 1&lt;=m&lt;=5000).<br>&nbsp;&nbsp;The next line contains m integer which means the tax of each company.<br>&nbsp;&nbsp;The Third line has an integer k <b>(1&lt;=k&lt;=3000)</b>which indicates the number of the roads.<br>&nbsp;&nbsp;Then k lines fellow, each contains 4 integers, the start of the roads, the end of the road, the company is responsible for this road and the cost of the road.<br>&nbsp;&nbsp;The end of the input with two zero</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case output the maximum income in a separate line, and if you can not get any income, please output 0.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">4 2
+500 10
+4
+1 2 1 10
+2 3 1 20
+4 3 1 30
+1 4 2 60
+4 2
+500 100
+5
+1 2 1 10
+2 3 1 20
+4 3 1 30
+4 3 2 10
+1 4 2 60
+3 1
+10
+3
+1 2 1 100
+2 3 1 100
+3 1 1 100
+0 0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">440
+470
+0
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>for second test case, if you choose company 2 responsible ways, then you must choose the path of responsible company 1, but if you choose company 1, then you 
+do not have to choose company 2.</div><i style='font-size:1px'> </i></div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2011 Multi-University Training Contest 8 - Host by HUST&source=1&searchmode=source'> 2011 Multi-University Training Contest 8 - Host by HUST </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3917'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3917'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3917">Discuss</a> | <a href='note/note.php?pid=3917'>Note</a><br></td></tr></div></body></html>

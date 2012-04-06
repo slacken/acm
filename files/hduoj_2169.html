@@ -1,0 +1,25 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 2169</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'> Geek Challenge [SKRZAT] (Base Minus Two)</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 3000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 264&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 137<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Problem F:  Geek Challenge [SKRZAT] (Base Minus Two)<br>Geek Challenge [SKRZAT] is an old, old game from Poland that uses a game console with two buttons plus a joy stick.  As is true to its name, the game communicates in binary, so that one button represents a zero and the other a one.  Even more true to its name, the game chooses to communicate so that the base of the number system is minus two, not plus two, so we’ll call this representation “Weird Binary”.  Thus the bit positions label the powers of minus two, as seen in the following five-bit tables: <br><img src=/data/images/C127_1006_1.jpg><br>Numbers are presented on the screen in Weird Binary, and then numbers are accepted in response from the console as a stream of zeroes and ones, terminated by a five-second pause.<br>You are writing a computer program to support the novice geek in playing the game by translating numbers between decimal and Weird Binary.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The first line in the file gives the number of problems being posed without any white space.  Following are that many lines.  Each line will either be a conversion into Weird Binary or out of Weird Binary:  the letter &quot;b&quot; indicates that the rest of the line is written in Weird Binary and needs to be converted to decimal;  the letter &quot;d&quot; indicates that the rest of the line is written in decimal and needs to be converted to Weird Binary.<br>The input data are in the range to fit within a 15-bit Weird Binary number, which represents the decimal number range –10922 to 21845, inclusive.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each conversion problem, show the type of problem, its input string, and the converted result in the format shown below, replicating even the spacing exactly as shown.  Leading zeroes are not allowed.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">10
+b 1001101
+b 0111111
+b 101001000100001
+b 010010001000010
+b 100110100110100
+d -137
+d 137
+d 8191
+d -10000
+d 21000</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">From binary: 1001101 is 61
+From binary: 0111111 is -21
+From binary: 101001000100001 is 19937
+From binary: 010010001000010 is -7106
+From binary: 100110100110100 is 15604
+From decimal: -137 is 10001011
+From decimal: 137 is 110011001
+From decimal: 8191 is 110000000000011
+From decimal: -10000 is 10100100110000
+From decimal: 21000 is 101011000011000</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2007 ACM-ICPC Pacific Northwest Region&source=1&searchmode=source'> 2007 ACM-ICPC Pacific Northwest Region </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2169'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2169'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2169">Discuss</a> | <a href='note/note.php?pid=2169'>Note</a><br></td></tr></div></body></html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 2532</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Engine</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 5000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 62&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 15<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>谷歌、百度等搜索引擎已经成为了互连网中不可或缺的一部分。在本题中，你的任务也是设计一个搜索论文的搜索引擎，当然，本题的要求比起实际的需求要少了许多。<br>本题的输入将首先给出一系列的论文，对于每篇论文首先给出标题，然后给出它被引用的次数。然后会有一系列的搜索询问，询问标题中包含特定关键词的论文有哪些。<br>每一个询问可能包含多个关键词，你需要找出标题包含所有关键词的论文。<br>“包含”必须是标题中有一个词正好是给定的关键词，不区分大小写。<br>对每个询问，都按被引用的次数从多到少输出满足条件的论文的标题。如果有被引用的次数相同的论文，则按照论文在输入中的顺序排列，先给出的论文排在前面。<br><img src=../../../data/images/2532-1.jpg><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>输入包含多组数据。<br>每组数据首先有一行包含一个整数N(1&lt;=N&lt;=1000)，表示论文的数目，N=0表示输入结束。每组论文的信息第一行是论文的标题，由字母（大小写均可）和空格组成，不超过10个词，每个词不超过20个字符，标题总共不超过250个字符。第二行是一个整数K(0&lt;=K&lt;=108)，表示它被引用的次数。在论文信息结束以后，有一行包含一个整数M(1&lt;=M&lt;=100)，表示询问的数目。接下来有M行，每行是一个询问，由L(1&lt;=L&lt;=10)个空格分开的词构成，每个词不超过20个字符。<br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>对每个询问，按照题目给定的顺序输出满足条件的论文的标题；如果没有满足条件的论文，就不输出。在每组询问的输出之后输出一行”***”，在每组数据的输出之后输出一行”---”。</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">6
+Finding the Shortest Path
+120
+Finding the k Shortest Path
+80
+Find Augmenting Path in General Graph
+80
+Matching in Bipartite Graph
+200
+Finding kth Shortest Path
+50
+Graph Theory and its Applications
+40
+6
+shortest path
+k shortest path
+graph
+path
+find
+application
+0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Finding the Shortest Path
+Finding the k Shortest Path
+Finding kth Shortest Path
+***
+Finding the k Shortest Path
+***
+Matching in Bipartite Graph
+Find Augmenting Path in General Graph
+Graph Theory and its Applications
+***
+Finding the Shortest Path
+Finding the k Shortest Path 
+Find Augmenting Path in General Graph
+Finding kth Shortest Path
+***
+Find Augmenting Path in General Graph
+***
+***
+---</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=The 6th UESTC Programming Contest&source=1&searchmode=source'> The 6th UESTC Programming Contest </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2532'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2532'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2532">Discuss</a> | <a href='note/note.php?pid=2532'>Note</a><br></td></tr></div></body></html>

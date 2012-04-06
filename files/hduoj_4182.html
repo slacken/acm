@@ -1,0 +1,21 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 4182</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Help-or-else</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 10000/3000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 9&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 4<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>A penal colony for finance professionals will soon be holding its annual community service activity with some rules that are considered suitable for a penal colony. Every inmate is assigned a set P of N people to help with their finances and a limit of K minutes. In addition to the circumstances of the jth person, 1 &lt;= j &lt;= N, a time penalty of ej for choosing not to give advice and the time duration of dj minutes allotted to provide the advice are also made clear to the inmate. An inmate starts his community service at time T equal to zero. If the inmate started working with the jth person at time T, then he must terminate his work no later than T+dj. Regardless of the validity of the advice and time of completion, a value of C<sub>j</sub> ( = T+ d<sub>j</sub> ) is deducted from the inmate's alloted minutes. Also the inmate is not permitted to work with another person until the time T+ d<sub>j</sub>. If S is the set of people helped by an inmate, then the total number of used minutes is calculated as <img src=../../../data/images/C388-1005-2.JPG> <br>Your task is to write a program to calculate the maximum number of persons that can be helped by an inmate without exceeding his K minutes limit.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>Input consists of sets for many inmates. The description for each inmate begins with two integers N and K, separated by a single space on a line by themselves, that represent the number of people and the maximum allowed minutes. 0 &lt; N &lt;= 200 and 0 &lt; K &lt;= 6000. Each of the following N lines contains two integers, separated by a single space, which represent the penalty and time duration one person to be assisted. All integers have values between 0 and 10000, inclusive. Input terminates with two zeros on a line by themselves.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each inmate, the output consists of a single line that contains the maximum number of persons to be helped within the given time limit using the format shown. “Mission Impossible” is entered where not exceeding the given time limit is not possible.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">1 1000
+100 1000
+2 100
+1000 1000
+20 10
+1 1
+0 10000
+4 293
+61 30
+295 39
+206 27
+94 85
+0 0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">1: 1
+2: Mission Impossible
+3: 0
+4: 3</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=The 2011 South Pacific Programming Contest&source=1&searchmode=source'> The 2011 South Pacific Programming Contest </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=4182'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=4182'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=4182">Discuss</a> | <a href='note/note.php?pid=4182'>Note</a><br></td></tr></div></body></html>

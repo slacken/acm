@@ -1,0 +1,25 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 3146</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Beacons</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 60000/30000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 230&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 42<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content><br><center><img src=../../../data/images/3146-1.jpg></center><br>In ancient times, communication was not as swift as it is today. When a kingdom was at war, it could take months to muster all the armed forces. But by using fire-lit beacons at strategic locations, it was still possible to quickly send emergency signals.<br><br>When the first beacon is lit, all other beacons within sight from it are also lit. All beacons within sight of these are then lit, and so on until all beacons are lit - assuming of course that all beacons are within sight of each other, directly or indirectly. If they are not, the dire news must be carried by riders between some beacons.<br><br>Given the location of all beacons in the kingdom as well as the location and size of all mountain peaks, write a program that determines how many messages must be sent by riders in order for all beacons to be lit when an enemy threatens the country.<br><br>For simplicity, we model the country in the following way: a beacon is represented as a point in the xy-plane and a mountain peak is represented as a circle. Two beacons are considered to be within sight of each other if no mountain peak blocks the straight line between the two beacons.<br><br><i>The input will be constructed so that the straight line between any pair of beacons will not touch the circumference of a mountain peak, unless it passes through the interior of another mountain peak. Mountain peaks will not overlap or touch, nor will any beacon be on a mountain peak or on its circumference.</i><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The first line in the input contains two integers <i>n</i> (1 &lt;= <i>n</i> &lt;= 1000) and <i>m</i> (0 &lt;= <i>m</i> &lt;= 1000) the number of beacons and the number of mountain peaks, respectively. Then follow <i>n</i> lines specifying the locations of the beacons. The location of each beacon is given as a pair of integers <i>x</i> and <i>y</i> (0 &lt;= <i>x</i>, <i>y</i> &lt;= 10000). Then follow <i>m</i> lines describing the mountain peaks. Each mountain peak is given as a pair of integers <i>x</i> and <i>y</i> (0 &lt;= <i>x</i>, <i>y</i> &lt;= 10000) specifying the location of the peak and a radius <i>r</i> (1 &lt;= <i>r</i> &lt;= 5000).</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>The output should be a single integer: the number of messages that must be carried by riders for all beacons to be lit.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">6 3
+1 8
+5 4
+7 7
+9 2
+16 6
+17 10
+4 7 2
+6 3 1
+12 6 3
+4 4
+0 4
+8 4
+4 0
+4 8
+2 2 1
+6 2 1
+2 6 1
+6 6 1</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+1</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=NCPC 2009&source=1&searchmode=source'> NCPC 2009 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>chenrui</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3146'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3146'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3146">Discuss</a> | <a href='note/note.php?pid=3146'>Note</a><br></td></tr></div></body></html>

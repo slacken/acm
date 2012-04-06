@@ -1,0 +1,23 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 2970</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Suffix reconstruction</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 10000/5000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 64&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 49<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Given a text s[1..n] of length n, we create its suffix array by taking all its suffixes: s[1..n], s[2..n],...., s[n..n] and sorting them lexicographically. As a result we get a sorted list of suffixes: s[p(1)..n], s[p(2)..n],..., s[p(n)..n] and call the sequence p(1),p(2),...,p(n) the suffix array of s[1..n]. <br><br>For example, if s = abbaabab, the sorted list of all suffixes becomes: aabab, ab, abab, abbaabab, b, baabab, bab, bbaabab and the suffix array is 4, 7, 5, 1, 8, 3,6, 2.<br><br><br>It turns out that it is possible to construct this array in a linear time. Your task will be completely different, though: given p(1), p(2), p(3),... , p(n) you should check if there exist at least one text consisting of lowercase letters of the English alphabet for which this sequence is the suffix array. If so, output any such text. Otherwise output -1.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input contains several descriptions of suffix arrays. The first line contains the number of descriptions t (t &lt;= 100). Each description begins with a line containing the length of both the text and the array n (1 &lt;= n &lt;= 500000). Next line contains integers p(1), p(2), ... ,p(n). You may assume that 1 &lt;= p(i) &lt;= n and no value of p(i) occurs twice. Total size of the input will not exceed 50MB.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case  <br>If there are multiple answers, output the smallest  dictionary order in the given suffix array. In case there is no such text consisting of lowercase letters of the English alphabet, output -1.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">6
+2
+1 2
+2
+2 1
+3
+2 3 1
+6
+3 4 5 1 2 6
+14
+3 10 2 12 14 5 13 4 1 8 6 11 7 9
+7
+5 1 7 4 3 2 6</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">ab
+aa
+bab
+bcaaad
+ebadcfgehagbdc
+bcccadc</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=Central European Programming Contest 2008&source=1&searchmode=source'> Central European Programming Contest 2008 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2970'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2970'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2970">Discuss</a> | <a href='note/note.php?pid=2970'>Note</a><br></td></tr></div></body></html>

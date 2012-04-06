@@ -1,0 +1,51 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 3882</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Strange Galaxy</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65768/32768 K (Java/Others)<br>Total Submission(s): 0&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 0<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>ACM space explorer discovered a special space in an observation. There are many strange stars in it, and we call them S-stars. Each three of them, such as A, B, C, can form an opaque triangle area ABC, and the area can absorb the light inside O-ABC for the point light source O which made O can only light the space except an infinite triangular file shaped space whose boundaries are ray OA, OB and OC.<br><br>In order to know the size of the area that a point light source O can light at a specific direction, we normally choose a plane P as reference, consider O’s invisible area in P. If the area size is infinite or 0, we consider the direction as a bad one. We take this direction as a reference only if the area size is finite and non-zero.<br><br>Then we’ll give you another set of normal stars, we’d like to know the percentage of those couldn’t be lighted among all the normal stars.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>Multiple cases, no more than 100, test case ends with four zeros.<br>All numbers are integers, in each case:<br>Line 1: a, b, c and d, represent the reference plane: ax+by+cz=d;<br>Line 2: n (0&lt;n&lt;=100), number of S-stars<br>Line 3 – n+2: x, y and z, coordinate of each S-star<br>Line n+3: x0, y0 and z0, coordinate of point light source O<br>Line n+4: m (0&lt;m&lt;100), number of normal stars<br>Line n+5 – n+m+4: x, y and z, coordinate of each normal star<br><br>Notice: S-star and normal star may coincide. We guarantee that if there exist S-stars, they are not all at the same plane. The point light source is not on the reference plane and doesn’t coincide with other stars. The absolute value of each coordinate number is below 10000.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case, if the invisible area size is 0, output “ZERO”, if it’s infinite, output “INF”, otherwise output the percentage described above, rounded to two decimal numbers.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">0 0 1 0
+8
+1 1 1
+1 -1 1
+-1 1 1
+-1 -1 1
+1 1 0
+1 -1 0
+-1 1 0
+-1 -1 0
+2 2 1
+4
+0 0 1
+0 0 0
+0 1 0
+1 0 1
+1 0 0 -2
+8
+1 1 1
+1 1 -1
+1 -1 1
+1 -1 -1
+-1 1 1
+-1 1 -1
+-1 -1 1
+-1 -1 -1
+2 0 0
+10
+1 0 0
+2 0 0
+-1 -1 1
+1 1 -1
+0 0 0
+2 0 0
+3 0 0
+2 2 2
+1 -1 -1
+-1 1 -1
+1 1 1 1
+0
+0 0 0
+1
+1 1 1
+0 0 0 0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">INF
+40.00%
+ZERO</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>hzw0106</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2011 Multi-University Training Contest 5 - Host by BNU&source=1&searchmode=source'> 2011 Multi-University Training Contest 5 - Host by BNU </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3882'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3882'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3882">Discuss</a> | <a href='note/note.php?pid=3882'>Note</a><br></td></tr></div></body></html>

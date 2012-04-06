@@ -1,0 +1,32 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 3660</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Alice and Bob's Trip</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 4000/2000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 2061&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 520<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Alice and Bob are going on a trip. Alice is a lazy girl who wants to minimize the total travelling distance, while Bob as an active boy wants to maximize it. At the same time, they cannot let the value to be less than a given integer L since that will make them miss too much pleasure, and they cannot let the value to be greater than a given integer R since they don't want to get too exhausted.<br>  The city they are visiting has n spots and the spots are connected by directed edges. The spots are connected in such a way that they form a tree and the root will always be at spot 0. They take turns to select which edge to go. Both of them choose optimally. Bob will go first.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>There are multiple test cases. For every test case, the first line has three integers, n, L and R (1&lt;=n&lt;=500000, 0&lt;=L, R&lt;=1000000000). The next n-1 lines each has three integers a, b and c, indicating that there is an edge going from spot a to spot b with length c (1&lt;=c&lt;=1000). The spots are labeled from 0 to n-1.<br>  There is a blank line after each test case.<br>  Proceed to the end of file.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>If the total distance is not within the range [L, R], print &quot;Oh, my god!&quot; on a single line. Otherwise, print the most value Bob can get. </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">3 2 4
+0 1 1
+0 2 5
+
+7 2 8
+0 1 1
+0 2 1
+1 3 1
+1 4 10
+2 5 1
+2 6 5
+
+7 4 8
+0 1 1
+0 2 1
+1 3 1
+1 4 2
+2 5 1
+2 6 5
+
+4 2 6
+0 1 1
+1 2 1
+1 3 5</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Oh, my god!
+2
+6
+2</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2010 Asia Regional Harbin&source=1&searchmode=source'> 2010 Asia Regional Harbin </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3660'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3660'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3660">Discuss</a> | <a href='note/note.php?pid=3660'>Note</a><br></td></tr></div></body></html>

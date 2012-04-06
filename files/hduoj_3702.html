@@ -1,0 +1,28 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 3702</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>The Covering Polygon</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 20000/15000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 171&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 14<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Martians are invading the earth! Yes, it's not an illusion, it's the truth. Their attack are so quickly and unpredictable that few people realize it until many most buildings are destroyed. As a human being on the earth, you feel it's your duty to protect your homeland.<br><br>After scouting, you find there are some powerful weapons which are still working well on the land. They are the last hope to defeat the Martains, so all of them should be protected. And there are a few of defensive devices can be used. If you activate these devices in the order D1, D2, .., Dn, then there will be a laser line between D1 and D2, D2 and D3, ..., Dn and D1, which forms a polygon. Everything enclosed by the polygon or laid on the boundary can be protected well. Due to some physical reasons, nonadjacent laser lines can not intersect (even intersect at end points), or they will disappear and leave a hole in the polygon, which Martains can go through to destroy everything. Of course, no devices can be activated two or more times.<br><br>The final wave of Martains is near, so you need design a plan to construct our defence quickly. Activating a defensive device is very hard and time-consuming, so you should active as few as possible to protect all the weapons. You have the ability, and you have the duty, too.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The beginning of the input is an integer T (T &lt;= 30), which is the number of test cases. T cases are followed. The first line of each test case is two integers sizeA (3 &lt;= sizeA &lt;= 500) and sizeB (3 &lt;= sizeB &lt;= 200000), which denote the number of defensive devices and the number of weapons respectively. Each of them can be considered as a point in 2D euclid plane. The next sizeA+sizeB lines are positions of devices and weapons, each of which contains two integers describing its x and y coordinates. The first sizeA lines are points of defensive devices, and the last sizeB lines are points of weapons. <br><br>The absolute value of all coordinates are not greater than 10^8. Positions of any two objects in the same test case are distinct. Because of some strange reasons, not all of the weapons are on the same line.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case, print a line contains a single integer which is the least devices to be actived to protect all weapons. If all weapons can not be protected, output -1 instead.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+
+4 3
+1 1
+2 2
+3 3
+4 4
+5 5
+6 6
+7 9
+
+7 3
+0 5
+5 0
+-5 0
+100 100
+-100 -100
+100 -100
+-100 100
+0 0
+0 1
+1 1</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">-1
+3</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>wywcgs @ HIT &amp; XMU</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=HDOJ 5th Anniversary Contest&source=1&searchmode=source'> HDOJ 5th Anniversary Contest </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3702'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3702'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3702">Discuss</a> | <a href='note/note.php?pid=3702'>Note</a><br></td></tr></div></body></html>

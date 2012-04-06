@@ -1,0 +1,20 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 2170</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Frogger</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 3000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 76&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 23<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Philip J. Frog just wanted to go for a mid-afternoon swim, but in typical frog fashion he's ended up in the middle of a busy street. Help Phil figure out how long he'll be hopping on hot asphalt before he finds his way to the nice cool water.<br><br>Phil may hop one square horizontally or vertically per second. He may only hop onto road, grass, or water. Additionally, he cannot occupy any square occupied by a car. Phil and the cars move at the same time, meaning Phil can “hop over” an oncoming car. Phil can also remain in the same square if he wishes.  All horizontal movement wraps (e.g., a rightward hop from the rightmost column places Phil in the leftmost column). Cars move horizontally in the direction indicated on the map ('&lt;' means leftward, '&gt;' means rightward) at a rate of one square per second and never collide with anything.<br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>Input begins with a single integer specifying the number of test maps. Each map begins with two integers R and C (0 &lt; R, C &lt;= 30) specifying the number of rows and columns, respectively, followed by R lines each C characters long, specifying the map. The possible map characters are:<br><br>Phil ('&amp;') - Phil's starting location. Each map contains exactly one. Always indicates road underneath.<br>Tree ('T') - Impassable.<br>Grass ('.') -  Phil can move freely in the grass.<br>Road ('-') - Hot!<br>Car ('&lt;', '&gt;') - Always indicates road underneath.<br>Water ('~') - Phil's goal.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each map, output a line containing the fewest number of seconds Phil must spend on the road in order to reach the water, or the string “Impassable”, if no path to water exists.<br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">3
+2 1
+~
+&
+4 7
+~TTTTTT
+.------
+-->-&lt;--
+---&---
+3 5
+~~~~~
+..T..
+>>&&lt;&lt;</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">1
+6
+Impassable</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2007 ACM-ICPC Pacific Northwest Region&source=1&searchmode=source'> 2007 ACM-ICPC Pacific Northwest Region </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2170'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2170'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2170">Discuss</a> | <a href='note/note.php?pid=2170'>Note</a><br></td></tr></div></body></html>

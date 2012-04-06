@@ -1,0 +1,17 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 1429</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>胜利大逃亡(续)</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 4000/2000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 2565&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 828<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Ignatius再次被魔王抓走了(搞不懂他咋这么讨魔王喜欢)……<br><br>这次魔王汲取了上次的教训，把Ignatius关在一个n*m的地牢里，并在地牢的某些地方安装了带锁的门，钥匙藏在地牢另外的某些地方。刚开始Ignatius被关在(sx,sy)的位置，离开地牢的门在(ex,ey)的位置。Ignatius每分钟只能从一个坐标走到相邻四个坐标中的其中一个。魔王每t分钟回地牢视察一次，若发现Ignatius不在原位置便把他拎回去。经过若干次的尝试，Ignatius已画出整个地牢的地图。现在请你帮他计算能否再次成功逃亡。只要在魔王下次视察之前走到出口就算离开地牢，如果魔王回来的时候刚好走到出口或还未到出口都算逃亡失败。<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>每组测试数据的第一行有三个整数n,m,t(2&lt;=n,m&lt;=20,t&gt;0)。接下来的n行m列为地牢的地图，其中包括:<br><br>.   代表路<br>*   代表墙<br>@   代表Ignatius的起始位置<br>^   代表地牢的出口<br>A-J 代表带锁的门,对应的钥匙分别为a-j<br>a-j 代表钥匙，对应的门分别为A-J<br><br>每组测试数据之间有一个空行。<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>针对每组测试数据，如果可以成功逃亡，请输出需要多少分钟才能离开，如果不能则输出-1。<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">4 5 17
+@A.B.
+a*.*.
+*..*^
+c..b*
+
+4 5 16
+@A.B.
+a*.*.
+*..*^
+c..b*</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">16
+-1</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>LL</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key= ACM暑期集训队练习赛（三）&source=1&searchmode=source'>  ACM暑期集训队练习赛（三） </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>linle</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1429'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1429'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1429">Discuss</a> | <a href='note/note.php?pid=1429'>Note</a><br></td></tr></div></body></html>

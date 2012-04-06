@@ -1,0 +1,102 @@
+<!DOCTYPE html><html>
+				<head><meta charset=utf-8 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 1415</title></head>
+				<body><div id="jobdu_c"><dl class="main-title-mod mb10">
+            <dt class="title-hd">
+                题目1415：不一样的循环队列
+            </dt>
+            <dd class="title-bd">
+            	                <div class="pl20 mb10 f14 topic-desc-mod">
+                    <div class="topic-desc-hd">
+                        <p style="width:140px;"><b>时间限制：</b>1 秒</p>
+                        <p style="width:140px;"><b>内存限制：</b>32 兆</p>
+                        <p style="width:100px;"><b>特殊判题：</b>否</p>
+                        <p style="width:130px;"><b>提交：</b>745</p>
+                        <p style="width:130px;"><b>解决：</b>110</p>
+                    </div>
+                   	<div class="topic-desc-bd">
+                   	<dl>
+                       <dt>
+                           <b>题目描述：</b>
+                       </dt>
+                       <dd>
+                           <p class="MsoNormal">大家都知道数据结构里面有一个结构叫做循环队列。顾名思义，这是一个队列，并且是循环的。但是现在，淘气的囧哥给这个循环队列加上了一些规矩，其中有5条指令:<o:p></o:p></p>
+<p><!--[if !supportLists]-->(1) <!--[endif]-->Push K, 让元素K进队列。<o:p></o:p></p>
+<p><!--[if !supportLists]-->(2) <!--[endif]-->Pop，对头元素出队列。<o:p></o:p></p>
+<p><!--[if !supportLists]-->(3) <!--[endif]-->Query K，查找队列中第K个元素，<!--StartFragment --><span style="color: #ff0000">注意K的合法性</span>。<o:p></o:p></p>
+<p><!--[if !supportLists]-->(4) <!--[endif]-->Isempty，判断队列是否为空。<o:p></o:p></p>
+<p><!--[if !supportLists]-->(5) <!--[endif]-->Isfull，判断队列是否已满。</p>
+<p>现在有N行指令，并且告诉你队列大小是M。</p>
+<p class="MsoNormal"><span lang="EN-US"><o:p></o:p></span></p>
+<p></p>
+<p><span lang="EN-US"><o:p></o:p></span></p>
+<p></p>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>输入：</b>
+                       </dt>
+                       <dd>
+                           <p class="MsoNormal">第一行包含两个整数N和M。1&lt;=N,M&lt;=100000。<o:p></o:p></p>
+<p>接下来有N行，表示指令，指令格式见题目描述。<o:p></o:p></p>
+<p>其中元素均在int范围。<span lang="EN-US"><o:p></o:p></span></p>
+<p></p>
+                       </dd>
+                   	</dl>
+                       <dl>
+                       <dt>
+                           <b>输出：</b>
+                       </dt>
+                       <dd>
+                           <p class="MsoNormal">对于指令（1），若队列已满，输出failed，否则不做输出。<o:p></o:p></p>
+<p>对于指令（2），若队列已空，输出failed，否则不做输出。<o:p></o:p></p>
+<p>对于指令（3），输出队列中第K个元素，若不存在，输出failed。<o:p></o:p></p>
+<p>对于指令（4）和（5），则用yes或者no回答。<o:p></o:p></p>
+<p>详情见样例。<span lang="EN-US"><o:p></o:p></span></p>
+<p></p>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>样例输入：</b>
+                       </dt>
+                       <dd>
+                           <pre>12 2
+Push 1
+Push 2
+Push 3
+Query 2
+Query 3
+Isempty
+Isfull
+Pop
+Pop
+Pop
+Isempty
+Isfull
+</pre>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>样例输出：</b>
+                       </dt>
+                       <dd>
+                           <pre>failed
+2
+failed
+no
+yes
+failed
+yes
+no
+</pre>
+                       </dd>
+                   	</dl>
+                   	                   		             			                   	</div>
+                </div>
+                            </dd>
+		</dl></div></body></html>

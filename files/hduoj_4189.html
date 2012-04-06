@@ -1,0 +1,28 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 4189</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Cybercrime Donut Investigation</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 30000/15000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 54&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 6<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Year 2042. The Internet has evolved to a virtual reality dataspace where crimes are committed every day. The 2041 SWERC winner developed an agent that drops a donut every time a crime is committed in the Cyberspace. Each of the donuts has its own signature. The Madrid Police have a huge database with crimes and their donut signatures.<br>    Today is your day. Your task is to implement a new agent that looks for the records in the database that bear a strong resemblance to the given signature of a dropped donut found at a new crime scene.<br><center><img src=../../data/images/C389-1003-1.jpg></center><br><center>Figure 2: The major piece of evidence for today's unsolved crime streak</center><br>    Experts in virtual criminology have obtained the best similarity measure between donuts: compute the difference in radius of the internal part of the toroids (holes), compute the difference in radius of the external part of the toroids (tubes), and then add up those differences.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>    The first line of each test case contains n (1&lt;=n&lt;=100,000), the number of donuts in the database. The i<sup>th</sup> of the following n lines contains the radius of the hole and radius of the tube of the i<sup>th</sup> donut in the database, described by two integers l and w (1&lt;=l,w&lt;=10<sup>9</sup>). After that there is a line containing q<br>(1&lt;=q&lt;=50,000), the number of donuts that you are looking for in the database. Then q lines follow, the i<sup>th</sup> of them describing the dimensions of the newly found i<sup>th</sup> donut in the same way.<br>    Different test cases are separated by a blank line. A line containing -1 marks the end of the input.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>   The output of your program on each test case should have q lines, each of them containing an integer. The i<sup>th</sup> of these lines should contain the similarity between the newly found i<sup>th</sup> donut and the donut in the<br>database that most closely resembles it. Outputs for different test cases should be separated by a blank line.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+2 3
+3 4
+2
+1 1
+3 4
+
+2
+1 1
+9 9
+4
+4 5
+6 5
+2 5
+3 4
+
+-1</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">3
+0
+
+7
+7
+5
+5</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=SWERC 2011&source=1&searchmode=source'> SWERC 2011 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=4189'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=4189'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=4189">Discuss</a> | <a href='note/note.php?pid=4189'>Note</a><br></td></tr></div></body></html>

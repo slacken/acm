@@ -1,0 +1,37 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 1968</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>The SetStack Computer</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 5000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 33&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 7<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Background from Wikipedia: 揝et theory is a branch of mathematics created principally by the German mathematician Georg Cantor at the end of the 19th century. Initially controversial, set theory has come to play the role of a foundational theory in modern mathematics, in the sense of a theory invoked to justify assumptions made inmathematics concerning the existence of mathematical objects (such as numbers or functions) and their properties. Formal versions of set theory also have a foundational role to play as specifying a theoretical ideal of mathematical rigor in proofs.?Given this importance of sets, being the basis of mathematics, a set of eccentric theorist set off to construct a supercomputer operating on sets instead of numbers. The initial Set-Stack Alpha is under construction, and they need you to simulate it in order to verify the operation of the prototype.<br><br><img src=data/images/1968-1.jpg><br><br>The computer operates on a single stack of sets, which is initially empty. After each operation, the cardinality of the topmost set on the stack is output. The cardinality of a set S is denoted |S| and is the number of elements in S. The instruction set of the SetStack Alpha is PUSH, DUP, UNION, INTERSECT, and ADD.<br>?PUSH will push the empty set {} on the stack.<br>?DUP will duplicate the topmost set (pop the stack, and then push that set on the stack twice).<br>?UNION will pop the stack twice and then push the union of the two sets on the stack. <br>?INTERSECT will pop the stack twice and then push the intersection of the two sets on the stack.<br>?ADD will pop the stack twice, add the first set to the second one, and then push the resulting set on the stack.<br>For illustration purposes, assume that the topmost element of the stack is A = {{}, {{}}} and that the next one is B = {{}, {{{}}}}.<br>For these sets, we have |A| = 2 and |B| = 2. Then: <br>?UNION would result in the set { {}, {{}}, {{{}}} }. The output is 3.<br>?INTERSECT would result in the set { {} }. The output is 1.<br>?ADD would result in the set { {}, {{{}}}, {{},{{}}} }. The output is 3.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>An integer 0 &lt;= T &lt;= 5 on the first line gives the cardinality of the set of test cases. The first line of each test case contains the number of operations 0 &lt;= N &lt;= 2 000. Then follow N lines each containing one of the five commands. It is guaranteed that the SetStack computer can execute all the commands in the sequence without ever popping an empty stack.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each operation specified in the input, there will be one line of output consisting of a single integer. This integer is the cardinality of the topmost element of the stack after the corresponding command has executed. After each test case there will be a line with *** (three asterisks).</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+9
+PUSH
+DUP
+ADD
+PUSH
+ADD
+DUP
+ADD
+DUP
+UNION
+5
+PUSH
+PUSH
+ADD
+PUSH
+INTERSECT</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">0
+0
+1
+0
+1
+1
+2
+2
+2
+***
+0
+0
+1
+0
+0
+***</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=NWERC2006&source=1&searchmode=source'> NWERC2006 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>wangye</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1968'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1968'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1968">Discuss</a> | <a href='note/note.php?pid=1968'>Note</a><br></td></tr></div></body></html>

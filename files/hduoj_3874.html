@@ -1,0 +1,23 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 3874</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Necklace</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 15000/5000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 959&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 378<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Mery has a beautiful necklace. The necklace is made up of  N magic balls. Each ball has a beautiful value. The balls with the same beautiful value look the same, so if two or more balls have the same beautiful value, we just count it once. We define the beautiful value of some interval [x,y] as F(x,y). F(x,y) is calculated as the sum of the beautiful value from the xth ball to the yth ball  and the same value is ONLY COUNTED ONCE. For example, if the necklace is 1 1 1 2 3 1, we have F(1,3)=1, F(2,4)=3, F(2,6)=6.<br><br>Now Mery thinks the necklace is too long. She plans to take some continuous part of the necklace to build a new one. She wants to know each of the beautiful value of M continuous parts of the necklace. She will give you M intervals [L,R] (1&lt;=L&lt;=R&lt;=N) and you must tell her F(L,R) of them.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The first line is T(T&lt;=10), representing the number of test cases.<br>&nbsp;&nbsp;For each case, the first line is a number N,1 &lt;=N &lt;=50000, indicating the number of the magic balls. The second line contains N non-negative integer numbers not greater 1000000, representing the beautiful value of the N balls. The third line has a number M, 1 &lt;=M &lt;=200000, meaning the nunber of the queries. Each of the next M lines contains L and R, the query.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each query, output a line contains an integer number, representing the result of the query.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+6
+1 2 3 4 3 5
+3
+1 2
+3 5
+2 6
+6
+1 1 1 2 3 5
+3
+1 1
+2 4
+3 5</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">3
+7
+14
+1
+3
+6</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2011 Multi-University Training Contest 4 - Host by SDU&source=1&searchmode=source'> 2011 Multi-University Training Contest 4 - Host by SDU </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3874'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3874'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3874">Discuss</a> | <a href='note/note.php?pid=3874'>Note</a><br></td></tr></div></body></html>

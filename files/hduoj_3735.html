@@ -1,0 +1,19 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 3735</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Recursive Sequence</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 6000/3000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 90&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 58<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Given two integers N and M, we define a recursive sequence g[i] (indexed from 0) as follows:<br>(1) If 0 &lt;= i &lt; M, then g[i] = a[i]<br>(2) If i &gt;= M, then g[i] = b[0]*g[i-M] + b[1]*g[i-M+1] + ... + b[M-1]*g[i-1]<br>Now your task is very simple: Try to find g[N] mod 1,000,000,003.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The first line of input is an integer T (1 &lt;= T &lt;= 10), which is the number of test cases. T cases follow.<br>For each case, the first line are two integers M(1 &lt;= M &lt;= 1000) and N(M &lt;= N &lt;= 1,000,000,000). Two lines followed, each of which contains exactly M integers. The first M integers are a[0], a[1], ..., a[M-1], and the last M integers are b[0], b[1], ..., b[M-1], where 0 &lt;= a[i], b[i] &lt; 1,000,000,003.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each case, output a single line contain g[N] mod 1,000,000,003.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+
+1 5
+1
+2
+
+2 7
+0 1
+1 1</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">32
+13
+
+Hint
+Sample #0: You can easily find that g[i] = 2^i, so g[5] = 32
+Sample #1: g[i] is the i-th fibonacci number, so g[6] = 13</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>wywcgs @ HIT &amp; XMU</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=ACMDIY第二届群赛&source=1&searchmode=source'> ACMDIY第二届群赛 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>notonlysuccess</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3735'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3735'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3735">Discuss</a> | <a href='note/note.php?pid=3735'>Note</a><br></td></tr></div></body></html>

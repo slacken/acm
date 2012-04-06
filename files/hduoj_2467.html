@@ -1,0 +1,20 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 2467</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Déjà vu</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 30000/10000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 781&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 130<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>An antique machine with C(n , 3) switches capable of processing integers in the range 0...2<sup>N</sup>-1 has just been discovered. Each switch is associated to a distinct integer in 0...2<sup>N</sup>-1 with exactly three ones in its binary representation. By setting switches associated with number X<sub>0</sub>,X<sub>1</sub>...X<sub>M-1</sub> to on, any integer Y passing through the machine will render a result of  Y⊕X<sub>0</sub>⊕X<sub>1</sub>⊕...⊕X<sub>M-1</sub>(here “⊕” stands for bitwise-XOR).<br>    Further inspections reveal that contrary to what we assumed in problem B, some of the switches on the machine are damaged due to their old age. We are interested in whether a configuration transforming integer S into T still exists, and if so, the minimum number of switches that have to be set to on to make it possible.<br>    WARNING: a naive algorithm might not be sufficient to solve this problem.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>There are multiple test cases in the input file.<br>Each test case starts with two integers, N and M ( 1 ≤ N ≤ 20), representing the number of bits and the number of functioning switches, respectively. Two integers, S and T ( 0 ≤ S,T &lt; 2<sup>N</sup>), come in the next line, followed by another M lines, the ith one describing the value Vi associated to the ith switch ( 0 ≤ V<sub>i</sub> &lt; 2<sup>N</sup>).<br>Two successive test cases are separated by a blank line. A case with N = 0 and M = 0 indicates the end of the input file, and should not be processed by your program.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case, please print a single integer, the minimum number of<br>operations, or “Impossible” (without quotes) if no feasible sequence exists.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">6 7
+55 21
+11
+22
+25
+56
+41
+49
+28
+5 2
+0 21
+22
+28
+0 0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Case #1: 2
+Case #2: Impossible</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2008 Asia Regional Hangzhou&source=1&searchmode=source'> 2008 Asia Regional Hangzhou </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2467'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2467'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2467">Discuss</a> | <a href='note/note.php?pid=2467'>Note</a><br></td></tr></div></body></html>

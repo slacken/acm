@@ -1,0 +1,28 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 2305</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>WorstWeather Ever</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 3000/2000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 124&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 77<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>&quot;Man, this year has the worst weather ever!&quot;, David said as he sat crouched in the small cave where we had sought shelter from yet another sudden rainstorm. <br>&quot;Nuh-uh!&quot;, Diana immediately replied in her traditional know-it-all manner. <br>&quot;Is too!&quot;, David countered cunningly. Terrific. Not only were we stuck in this cave, now we would have to listen to those two nagging for at least an hour. It was time to cut this discussion short. <br>&quot;Big nuh-uh. In fact, 93 years ago it had already rained five times as much by this time of year.&quot; <br>&quot;Duh&quot;, David capitulated, &quot;so it's the worst weather in 93 years then.&quot; <br>&quot;Nuh-uh, this is actually the worst weather in 23 years.&quot;, Diana again broke in. <br>&quot;Yeah, well, whatever&quot;, David sighed, &quot;Who cares anyway?&quot;. <br>Well, dear contestants, you care, don't you? <br>Your task is to, given information about the amount of rain during different years in the history of the universe, and a series of statements in the form &quot;Year X had the most rain since year Y&quot;, determine whether these are true, might be true, or are false. We say that such a statement is true if: <br><br>The amount of rain during these two years and all years between them is known. <br><br>It rained at most as much during year X as it did during year Y. <br><br>For every year Z satisfying Y &lt; Z &lt; X, the amount of rain during year Z was less than the amount of rain during year X.<br><br>We say that such a statement might be true if there is an assignment of amounts of rain to years for which there is no information, such that the statement becomes true. We say that the statement is false otherwise.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input will consist of several test cases, each consisting of two parts. <br>The first part begins with an integer 1 &lt;= n &lt;= 50000, indicating the number of different years for which there is information. Next follow n lines. The ith of these contains two integers -10<sup>9</sup> &lt;= yi &lt;= 10<sup>9</sup> and 1 &lt;= ri &lt;= 10<sup>9</sup> indicating that there was ri millilitres of rain during year yi (note that the amount of rain during a year can be any nonnegative integer, the limitation on ri is just a limitation on the input). You may assume that yi &lt; yi+1 for 1 &lt;= i &lt; n. <br>The second part of a test case starts with an integer 1 &lt;= m &lt;= 10000, indicating the number of queries to process. The following m lines each contain two integers -10<sup>9</sup> &lt;= Y &lt; X &lt;= 10<sup>9</sup> indicating two years. <br>There is a blank line between test cases. The input is terminated by a case where n = 0 and m = 0. This case should not be processed. <br>Technical note: Due to the size of the input, the use of cin/cout in C++ might be too slow in this problem. Use scanf/printf instead. In Java, make sure that both input and output is buffered.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>There should be m lines of output for each test case, corresponding to the m queries. Queries should be answered with &quot;true&quot; if the statement is true, &quot;maybe&quot; if the statement might be true, and &quot;false&quot; if the statement is false. <br>Separate the output of two different test cases by a blank line.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">4
+2002 4920
+2003 5901
+2004 2832
+2005 3890
+2
+2002 2005
+2003 2005
+
+3
+1985 5782
+1995 3048
+2005 4890
+2
+1985 2005
+2005 2015
+
+0
+0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">false
+true
+
+maybe
+maybe</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=NCPC2005&source=1&searchmode=source'> NCPC2005 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>zty</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2305'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2305'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2305">Discuss</a> | <a href='note/note.php?pid=2305'>Note</a><br></td></tr></div></body></html>

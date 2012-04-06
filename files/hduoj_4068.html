@@ -1,0 +1,19 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 4068</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>SanguoSHA</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 3000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 396&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 234<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content><a href=http://zh.wikipedia.org/wiki/三国杀>Sanguosha</a> has a singled version. Two players each select N heroes and start fighting. If a hero dies, the next follows. If one player's heroes are all dead, he loses.<br><center><img src=../../data/images/C348-1008-1.jpg></center> <br>There're restraints among heroes. For example, YuJi restricts Zhu Geliang, LuXun restricts DaQiao, ZhangJiao restricts MaChao, WeiYan restricts XiaoQiao.  <br>Today I play with friends. I know the heroes and the restraints.(If opponent's hero restraint my hero, my hero will be beaten, others my hero will beat opponent's hero)<br>Can you arrange my heroes' order,no matter what order of opponent's heroes, so that I can win the game?</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The first line is a number T(1&lt;=T&lt;=50), represents the number of case. The next T blocks follow each indicates a case.<br>The first line is N(3&lt;=N&lt;=6).<br>The second line has N names(shorter than 20 letter).<br>The following N lines each contains a restraints. Restraints are given as “k b1 b2 … bk”, which means the opponent's hero restricts my hero b1, b2 … bk. (0&lt;=K&lt;=N)</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each case, first line output the number of case with &quot;Yes&quot; or &quot;No&quot;. If Yes, output the order of your heroes separate by a space. If there are more than one order, please output the one with minimum lexicographic order.(as shown in the sample output)</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+3
+ZhugeLiang HuangYueying ZhenJi
+1 ZhugeLiang
+2 HuangYueying ZhenJi
+2 ZhugeLiang ZhenJi
+4
+MaChao YanLiangWenChou YuJin XiaoQiao
+2 MaChao XiaoQiao
+2 YanLiangWenChou YuJin
+1 XiaoQiao
+0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Case 1: No
+Case 2: Yes
+MaChao YanLiangWenChou XiaoQiao YuJin</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=The 36th ACM/ICPC Asia Regional Fuzhou Site —— Online Contest&source=1&searchmode=source'> The 36th ACM/ICPC Asia Regional Fuzhou Site —— Online Contest </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=4068'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=4068'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=4068">Discuss</a> | <a href='note/note.php?pid=4068'>Note</a><br></td></tr></div></body></html>

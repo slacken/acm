@@ -1,0 +1,26 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 1074</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Doing Homework</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 2663&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 995<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Ignatius has just come back school from the 30th ACM/ICPC. Now he has a lot of homework to do. Every teacher gives him a deadline of handing in the homework. If Ignatius hands in the homework after the deadline, the teacher will reduce his score of the final test, 1 day for 1 point. And as you know, doing homework always takes a long time. So Ignatius wants you to help him to arrange the order of doing homework to minimize the reduced score.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input contains several test cases. The first line of the input is a single integer T which is the number of test cases. T test cases follow.<br>Each test case start with a positive integer N(1&lt;=N&lt;=15) which indicate the number of homework. Then N lines follow. Each line contains a string S(the subject's name, each string will at most has 100 characters) and two integers D(the deadline of the subject), C(how many days will it take Ignatius to finish this subject's homework). <br><br>Note: All the subject names are given in the alphabet increasing order. So you may process the problem much easier.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case, you should output the smallest total reduced score, then give out the order of the subjects, one subject in a line. If there are more than one orders, you should output the alphabet smallest one.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+3
+Computer 3 3
+English 20 1
+Math 3 2
+3
+Computer 3 3
+English 6 3
+Math 6 3</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+Computer
+Math
+English
+3
+Computer
+English
+Math
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>
+In the second test case, both Computer->English->Math and Computer->Math->English leads to reduce 3 points, but the 
+word "English" appears earlier than the word "Math", so we choose the first order. That is so-called alphabet order.
+</div><i style='font-size:1px'> </i></div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>Ignatius.L</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1074'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1074'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1074">Discuss</a> | <a href='note/note.php?pid=1074'>Note</a><br></td></tr></div></body></html>

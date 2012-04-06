@@ -1,0 +1,92 @@
+<!DOCTYPE html><html>
+				<head><meta charset=utf-8 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 1403</title></head>
+				<body><div id="jobdu_c"><dl class="main-title-mod mb10">
+            <dt class="title-hd">
+                题目1403：神奇的开关
+            </dt>
+            <dd class="title-bd">
+            	                <div class="pl20 mb10 f14 topic-desc-mod">
+                    <div class="topic-desc-hd">
+                        <p style="width:140px;"><b>时间限制：</b>1 秒</p>
+                        <p style="width:140px;"><b>内存限制：</b>32 兆</p>
+                        <p style="width:100px;"><b>特殊判题：</b>否</p>
+                        <p style="width:130px;"><b>提交：</b>121</p>
+                        <p style="width:130px;"><b>解决：</b>30</p>
+                    </div>
+                   	<div class="topic-desc-bd">
+                   	<dl>
+                       <dt>
+                           <b>题目描述：</b>
+                       </dt>
+                       <dd>
+                           <p class="MsoNormal" style="margin: 0cm 0cm 0pt">在一个密闭的房间里，里面有n盏，编号从1到n。所有的灯都和4个开关相连，不过4个开关不是普通的开关。<o:p></o:p></p>
+<p>开关1：当开关被按下，所有的灯都改变状态。<o:p></o:p></p>
+<p>开关2：当开关被按下，所有编号为奇数的灯改变状态。<o:p></o:p></p>
+<p>开关3：当开关被按下，所有编号为偶数的灯改变状态。<o:p></o:p></p>
+<p>开关4：当开关被按下，所有编号为(3 * K + 1)(K&gt;=0)的灯改变状态。如1，4，7&hellip;&hellip;<o:p></o:p></p>
+<p>现在有一个计数器C记录所有开关被按的次数的总和。<o:p></o:p></p>
+<p>一开始，所有的灯都是开的，计数器清零。<o:p></o:p></p>
+<p>现在告诉你计数器C记录的次数和一些灯最后的状态，要求你输出所有灯最后可能的状态。Hint：样例输出有更详细的解释。<o:p></o:p></p>
+<p></p>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>输入：</b>
+                       </dt>
+                       <dd>
+                           <div>第一行输入一个n，1&lt;=n&lt;=100。</div>
+<div>第二行输入一个C，表示计数器最终的次数，0&lt;=C&lt;=10000。</div>
+<div>第三行输入一些编号Ai，表示最终编号为Ai的灯是开着的。编号之间有空格，并以-1结束。</div>
+<div>第四行输入一些编号Bi，表示最终编号为Bi的灯是关着的。编号之间有空格，并以-1结束。</div>
+                       </dd>
+                   	</dl>
+                       <dl>
+                       <dt>
+                           <b>输出：</b>
+                       </dt>
+                       <dd>
+                           <div>输出所有最终的可能的情况，一系列长度为n的01串，字符顺序从左到右，0表示关，1表示开。输出按照字典序，并且无重复。如果没有答案，输出&quot;IMPOSSIBLE&quot;。</div>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>样例输入：</b>
+                       </dt>
+                       <dd>
+                           <pre>10
+1
+-1
+7 -1
+1
+1
+1 -1
+1 -1</pre>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>样例输出：</b>
+                       </dt>
+                       <dd>
+                           <pre>0000000000
+0101010101
+0110110110
+IMPOSSIBLE</pre>
+                       </dd>
+                   	</dl>
+                   	                   		             			                       <dl>
+	                       <dt>
+	                           <b>答疑：</b>
+	                       </dt>
+	                       <dd class="lBlue">
+	                           解题遇到问题?分享解题心得?讨论本题请访问：<a class="cBlue" href="http://t.jobdu.com/thread-8133-1-11.html" target="_blank">http://t.jobdu.com/thread-8133-1-11.html</a>
+	                       </dd>
+                       </dl>
+                                       	</div>
+                </div>
+                            </dd>
+		</dl></div></body></html>

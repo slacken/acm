@@ -1,0 +1,40 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 3321</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Rose Shop</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 6000/3000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/65536 K (Java/Others)<br>Total Submission(s): 8&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 5<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Small JH,the boss of the rose shop, preparated many roses for the valentine's day.It’s too much people come and buy roses,so Small JH have to put the roses back in every t(0 &lt; t) minutes.The roses put as a thwartwise tower in the rail (look at the picture).You can get the number of rose with n(0&lt;n&lt;13) rows is n*(n + 1)/ 2.<br>a bundle of rose like this:<pre><br>    @<br>  @~@~@<br>@~@\@/@~@<br>\@|@|@|@/<br> \\\|///<br>  \\|//<br>   \|/<br>   =&amp;=<br>   /|\</pre><br>This is the rose in the rail:<br><center><img src=../../../data/images/C252-1007-1.jpg></center><br>The rose numbered as below:<pre><br>      1<br>    2   3<br>  4   5   6<br>7   8   9  10<br></pre><br>The rule of putting the rose in is to find a empty bay where the number is smallest and put the rose in.We can suppose he add the rose spend no time,the customer should wait after Small JH add the rose.<br>The shop opened  at 8:00am and closed at 11:00pm(the customer can buy rose at 11:00pm but the boss will not add the rose at 11:00pm).He want to know the situation of the customer buy the rose and the placement of rose after 11:00pm.If the customer see the shop is closed,he will leave.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input will consist of several cases, please deal with till the end of file. Each case contains three integers N , T and M (0&lt;N&lt;13, 0&lt;T, 0&lt;M&lt;=100) representing there are N rows of roses,small JH add the rose every T minutes and M customer.Then follow M*2 lines as below format:<br>hh:mm k<br>a1 a2…ak<br>stand for at hh:mm the customer want to buy k roses,ai means he wants the rose numberd ai.at the same time,only one customer into the shop.<br>the time is increase and  0 &lt; k &lt;= n*(n + 1)/ 2, 0 &lt; ai &lt;= n*(n+1)/2.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each customer, when the shop Not yet opened,print “Not yet open for business”. if he can buy at least one rose,please print “You bought X beams of rose”.X means the number of the customer have bought.otherwise,print “What a pity!”.<br>After all, print the state of rose.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2 1 1
+8:00 1
+2
+2 10000 1
+8:00 1
+2</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">You bought 1 beams of rose
++---------------------+
+|          @          |
+|        @~@~@        |
+|      @~@\@/@~@      |
+|    @ \@|@|@|@/ @    |
+|  @~@~@\\\|///@~@~@  |
+|@~@\@/@~@\|/@~@\@/@~@|
+|\@|@|@|@/\|/\@|@|@|@/|
+| \\\|/// =&= \\\|/// |
+|  \\|//  /|\  \\|//  |
+|   \|/         \|/   |
+|   =&=         =&=   |
+|   /|\         /|\   |
++---------------------+
+You bought 1 beams of rose
++---------------------+
+|          @          |
+|        @~@~@        |
+|      @~@\@/@~@      |
+|      \@|@|@|@/ @    |
+|       \\\|///@~@~@  |
+|        \\|/@~@\@/@~@|
+|         \|/\@|@|@|@/|
+|         =&= \\\|/// |
+|         /|\  \\|//  |
+|               \|/   |
+|               =&=   |
+|               /|\   |
++---------------------+</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>Tuzkier</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=HDU “Valentines Day” Open Programming Contest 2010-02-14 &source=1&searchmode=source'> HDU “Valentines Day” Open Programming Contest 2010-02-14  </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>wxl</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3321'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3321'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3321">Discuss</a> | <a href='note/note.php?pid=3321'>Note</a><br></td></tr></div></body></html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 2129</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Give the rank</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 10000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 231&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 55<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>As we all know, after a series of international contests, the leaders are wild about ranking the schools to appraise the development of the ACM of our country. There are a lot of schools attend the contests, and each school has some teams or none, and each team may get some prizes of not. There are three kinds of prizes of the contests: gold, silver and copper, and gold is the best one and silver is better than copper. Now we get the result of all the schools, you should rank them, and print them according to the below rules:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;1) We define the ranks between any two schools (or two teams) as the follow rules: firstly we compare the number of gold prizes, and the school is better whose number of gold prizes is larger, and if the numbers of gold prize are the same then compare the silver prizes and then copper prizes. If all the numbers of gold prizes and silver prizes and copper prizes are the same, then we just say the two school (or two teams) are the same good, and their ranks are the same, you have to obey the lexicographic orders when you print them, though.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;2) We define the rank number as the following rule: if there are three schools (or three teams), A is as good as B, but better than C. So the rank number of A and B is 1 (the rank number starts from 1), and C is 3, we omit the rank number 2. If more, the rule goes on.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>There are T cases come, and the first line contains just one integer T. <br>In each case of following T ones, there is an integer N indicates that there are N following lines describe the information of the encouragement. <br>Each line contains fours strings: the name of the school, the name of the team, the kind of the prize (&quot;none&quot; means the team gets no prize), and the contest hosting place. Any string is no longer than fifty characters. T&lt;=10, N &lt;=200, and the school number will not be beyond N, and the team number of each school will not exceed 100.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each case, firstly you show the number of school, and then show the rank list as the format: the school name, the rank number, and the numbers of gold prize and silver prize and copper prize. <br>Then you print the teams' information: the team name, the rank number, the numbers of gold prize and silver prize and copper prize. <br>After printing the rank list, firstly you print the number of the contests, and then you have to print the contest information: the name of hosting place (shown lexicographically), the number of gold prize, and the number of silver prize and copper. You can assume all the data is correct.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">1
+4
+aaa mayday gold nanjing
+bbb let's_go silver beijing
+ccc how_do_you_do??? none xihua
+aaa acm.hdu.edu.cn copper xihua</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Case 1:
+****************
+school number: 3
+aaa 1 1 0 1
+     team number: 2
+     mayday 1 1 0 0
+     acm.hdu.edu.cn 2 0 0 1
+bbb 2 0 1 0
+     team number: 1
+     let's_go 1 0 1 0
+ccc 3 0 0 0
+     team number: 1
+     how_do_you_do??? 1 0 0 0
+****************
+
+contest number: 3
+beijing 0 1 0
+nanjing 1 0 0
+xihua 0 0 1
+****************</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>wangye</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=HDU 2007-10  Programming Contest&source=1&searchmode=source'> HDU 2007-10  Programming Contest </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>威士忌</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2129'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2129'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2129">Discuss</a> | <a href='note/note.php?pid=2129'>Note</a><br></td></tr></div></body></html>

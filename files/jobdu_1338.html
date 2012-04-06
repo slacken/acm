@@ -1,0 +1,81 @@
+<!DOCTYPE html><html>
+				<head><meta charset=utf-8 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 1338</title></head>
+				<body><div id="jobdu_c"><dl class="main-title-mod mb10">
+            <dt class="title-hd">
+                题目1338：角斗士
+            </dt>
+            <dd class="title-bd">
+            	                <div class="pl20 mb10 f14 topic-desc-mod">
+                    <div class="topic-desc-hd">
+                        <p style="width:140px;"><b>时间限制：</b>3 秒</p>
+                        <p style="width:140px;"><b>内存限制：</b>32 兆</p>
+                        <p style="width:100px;"><b>特殊判题：</b>否</p>
+                        <p style="width:130px;"><b>提交：</b>113</p>
+                        <p style="width:130px;"><b>解决：</b>22</p>
+                    </div>
+                   	<div class="topic-desc-bd">
+                   	<dl>
+                       <dt>
+                           <b>题目描述：</b>
+                       </dt>
+                       <dd>
+                           <div>角斗士是古罗马奴隶社会的一种特殊身份的奴隶，他们的职责是在角斗场上进行殊死搏斗，为了人们提供野蛮的娱乐。他们的结局或是战死，或者由于表现突出赢得胜利而获得释放。</div>
+<div>现在在角斗场里有N个待战的角斗士(1 &lt;=N&lt;=18)，每天都将举行一场比赛，为了保持比赛的刺激性，每场比赛前才会在所有当前活着的角斗士之中随机选择两名进行上场拼杀。每场比赛的结束条件即为其中一名被杀死。当进行了N场比赛之后，最后存活的角斗士将被释放。而你将被赋予一个任务，计算出每名角斗士最终存活的概率。我们将提供角斗士之间对战获胜的概率。</div>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>输入：</b>
+                       </dt>
+                       <dd>
+                           <div>测试数据包括多个，每个测试数据包含两部分</div>
+<div>首先第一行将输入一个整数N，其中1 &lt;= N &lt;= 18，代表角斗士的个数。</div>
+<div>接下来将是一个N * N大小的概率矩阵P，代表角斗士之间战斗的获胜概率，例如P[i][j]就代表角斗士i战胜j的概率；同样P[j][i]则代表角斗士j战胜i的概率。我们保证P[i][j] + P[j][i] = 1。同时我们规定当i等于j时，P[i][j] 为 0。</div>
+                       </dd>
+                   	</dl>
+                       <dl>
+                       <dt>
+                           <b>输出：</b>
+                       </dt>
+                       <dd>
+                           <div>对于每个测试案例，输出一行，包含N个小数，中间用空格隔开，分别代表第0、1、&hellip;、N个角斗士存活下来的概率，每个小数精确到小数点后3位。</div>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>样例输入：</b>
+                       </dt>
+                       <dd>
+                           <pre>2
+0 0.5
+0.5 0
+3
+0 1 1
+0 0 0.5
+0 0.5 0</pre>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>样例输出：</b>
+                       </dt>
+                       <dd>
+                           <pre>0.500 0.500
+1.000 0.000 0.000</pre>
+                       </dd>
+                   	</dl>
+                   	                   		             			                       <dl>
+	                       <dt>
+	                           <b>答疑：</b>
+	                       </dt>
+	                       <dd class="lBlue">
+	                           解题遇到问题?分享解题心得?讨论本题请访问：<a class="cBlue" href="http://t.jobdu.com/thread-8061-1-1.html" target="_blank">http://t.jobdu.com/thread-8061-1-1.html</a>
+	                       </dd>
+                       </dl>
+                                       	</div>
+                </div>
+                            </dd>
+		</dl></div></body></html>

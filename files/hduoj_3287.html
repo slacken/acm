@@ -1,0 +1,29 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 3287</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Theta Puzzle</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 207&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 81<br><font color=red>Special Judge</font></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>The Theta Puzzle consists of a base with 6 positions at the vertices of a regular hexagon and another position at the center, connected as shown in the figure below. There are six tokens labeled A, B, C, D, E and F. A single move of the puzzle is to move a token to an adjacent empty position (along an allowed connection – the line segments in the diagram below). The idea of the puzzle is to start with an initial arrangement of tokens with the center empty and, by a sequence of moves, get to the configuration in the figure below.<br><center><img src=../../data/images/C264-1009-1.jpg></center> <br>An initial position for the puzzle is given by a permutation of the letters A through F. The first letter starts at A in the figure, the next at B and so on.<br>A sequence of moves is specified by listing the labels of tokens to be moved, in the order they are to be moved.<br>For example, to solve the puzzle FACDBE, use the moves BEFAB.<br><center><img src=../../data/images/C264-1009-2.jpg></center> <br>Note: Not all starting permutations can be solved.<br>Write a program which, given an initial permutation, either finds the shortest sequence of moves to solve the puzzle or determines that there is no solution.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The first line of input contains a single integer P, (1 ≤ P ≤ 1000), which is the number of data sets that follow. Each data set is a single line that contains the data set number, followed by a space, followed by a permutation of the letters A through F giving the initial puzzle position.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each data set there is a single line of output. If there is no solution, the line contains a decimal integer giving the data set number followed by a single space, followed by the string <b>NO SOLUTION</b>.<br>If there is a solution, the line contains a decimal integer giving the data set number followed by a single space, followed by the number of moves in the solution, followed by a single space, followed by the solution as a string of the letters A through F. If the number of moves is zero (0), you should still output the space after the 0, even though there is no string of letters.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">12
+1 FACDBE
+2 ABCDEF
+3 ADCEFB
+4 ADCEBF
+5 FEDCBA
+6 FEDCAB
+7 ECBFAD
+8 ECBFDA
+9 DCEBFA
+10 DCEBAF
+11 CBEADF
+12 BDEAFC</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">1 5 BEFAB
+2 0 
+3 19 DABFECABFEDBACDEFAB
+4 NO SOLUTION
+5 29 BCDEBCAFBCAFBCEDFAECBAFDCBAFE
+6 NO SOLUTION
+7 19 CBFACBFACDEFACDEFAB
+8 NO SOLUTION
+9 13 CDAFBEDCBEDCB
+10 NO SOLUTION
+11 21 DAEBDAEBDCFEBDCABEFAB
+12 16 FAEDBCAFBCAFEDCB</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2009 Greater New York Regional&source=1&searchmode=source'> 2009 Greater New York Regional </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>zhuweicong</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3287'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3287'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3287">Discuss</a> | <a href='note/note.php?pid=3287'>Note</a><br></td></tr></div></body></html>

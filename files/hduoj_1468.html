@@ -1,0 +1,26 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 1468</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Instant Complexity</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 71&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 25<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Analyzing the run-time complexity of algorithms is an important tool for designing efficient programs that solve a problem. An algorithm that runs in linear time is usually much faster than an algorithm that takes quadratic time for the same task, and thus should be preferred. <br><br>Generally, one determines the run-time of an algorithm in relation to the `size' n of the input, which could be the number of objects to be sorted, the number of points in a given polygon, and so on. Since determining a formula dependent on n for the run-time of an algorithm is no easy task, it would be great if this could be automated. Unfortunately, this is not possible in general, but in this problem we will consider programs of a very simple nature, for which it is possible. Our programs are built according to the following rules (given in BNF), where &lt; number &gt; can be any non-negative integer: <br><br>&lt; Program &gt; ::= &quot;BEGIN&quot; &lt; Statementlist &gt; &quot;END&quot; <br>&lt; Statementlist &gt; ::= &lt; Statement &gt; | &lt; Statement &gt; &lt; Statementlist &gt; <br>&lt; Statement &gt; ::= &lt; LOOP-Statement &gt; | &lt; OP-Statement &gt; <br>&lt; LOOP-Statement &gt; ::= &lt; LOOP-Header &gt; &lt; Statementlist &gt; &quot;END&quot; <br>&lt; LOOP-Header &gt; ::= &quot;LOOP&quot; &lt; number &gt; | &quot;LOOP n&quot; <br>&lt; OP-Statement &gt; ::= &quot;OP&quot; &lt; number &gt;<br><br>The run-time of such a program can be computed as follows: the execution of an OP-statement costs as many time-units as its parameter specifies. The statement list enclosed by a LOOP-statement is executed as many times as the parameter of the statement indicates, i.e., the given constant number of times, if a number is given, and n times, if n is given. The run-time of a statement list is the sum of the times of its constituent parts. The total run-time therefore generally depends on n. <br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input starts with a line containing the number k of programs in the input. Following this are k programs which are constructed according to the grammar given above. Whitespace and newlines can appear anywhere in a program, but not within the keywords BEGIN, END, LOOP and OP or in an integer value. The nesting depth of the LOOP-operators will be at most 10. <br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each program in the input, first output the number of the program, as shown in the sample output. Then output the run-time of the program in terms of n; this will be a polynomial of degree Y &lt;= 10. Print the polynomial in the usual way, i.e., collect all terms, and print it in the form ``Runtime = a*n^10+b*n^9+ . . . +i*n^2+ j*n+k'', where terms with zero coefficients are left out, and factors of 1 are not written. If the runtime is zero, just print ``Runtime = 0''. <br>Output a blank line after each test case. <br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+BEGIN
+LOOP n
+OP 4
+LOOP 3
+LOOP n
+OP 1
+END
+OP 2
+END
+OP 1
+END
+OP 17
+END
+BEGIN
+OP 1997 LOOP n LOOP n OP 1 END END
+END</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Program #1
+Runtime = 3*n^2+11*n+17
+
+Program #2
+Runtime = n^2+1997</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=ACM暑期集训队练习赛（九）&source=1&searchmode=source'> ACM暑期集训队练习赛（九） </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1468'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1468'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1468">Discuss</a> | <a href='note/note.php?pid=1468'>Note</a><br></td></tr></div></body></html>

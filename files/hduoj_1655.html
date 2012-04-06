@@ -1,0 +1,31 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 1655</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Pascal Program Lengths</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 0&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 0<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Your local computer user's group publishes a quarterly newsletter, and in each issue there is a small Turbo Pascal programming problem to be solved by the membership. Members submit their solutions to the problem to the newsletter editor, and the member submitting the shortest solution to the problem receives a prize. <br><br><br>The length of a program is measured in units. The unit count is determined by counting all occurrences of reserved words, identifiers, constants, left parentheses, left brackets, and the following operators: +, -, *, /, =, &lt;, &gt;, &lt;=, &gt;=, &lt;&gt;, @, ^, and :=. Comments are ignored, as are all other symbols not falling into one of the categories mentioned above. The program with the lowest unit count is declared the winner. Two or more programs with equal unit counts split the prize for the quarter. <br><br><br>In an effort to speed the judging of the contest, your team has been asked to write a program that will determine the length of a series of Pascal programs and print the number of units in each. <br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>Input to your program will be a series of Turbo Pascal programs. Each program will be terminated by a line containing tilde characters in the first two columns, followed by the name of the submitting member. Each of these programs will be syntactically correct and use the standard symbols for comments (braces) and subscripts (square brackets). <br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each program, you are print a separate line containing the name of the submitting member and the unit count of the program. Use a format identical to that of the sample below.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">PROGRAM SAMPLEINPUT;
+
+VAR
+  TEMP : RECORD
+    FIRST, SECOND : REAL;
+    END;
+
+BEGIN {Ignore this }
+TEMP.FIRST := 5.0E-2;
+READLN (TEMP.SECOND); 
+WRITELN ('THE ANSWER IS', TEMP.FIRST * TEMP.SECOND : 7 : 3)
+END.
+~~A. N. Onymous</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Program by A. N. Onymous contains 29 units.
+
+
+Note: Here are some additional notes on Turbo Pascal for those not familiar with the language: 
+
+Identifiers start with an underscore (_) or a letter (upper or lower case) which is followed by zero or more characters that are underscores, letters or digits.
+The delimiter for the beginning and ending of a string constant is the single forward quote ('). Each string is entirely on a single source line (that is a string constant cannot begin on one line and continue on the next). If '' appears within a string then it represents a single ' character that is part of the string. A string constant consisting of a single ' character is, therefore, represented by '''' in a Turbo Pascal program. The empty string is allowed.
+The most general form of a numeric constant is illustrated by the constant 10.56E-15. The 10 is the integral part (1 or more digits) and is always present. The .56 is the decimal part and is optional. The E-15 is the exponent and it is also optional. It begins with an upper or lower case E, which is followed by a sign (+ or -). The sign is optional.
+Turbo Pascal supports hexadecimal integer constants which consist of a $ followed by one or more hex digits (`0' to `9', `a' to `f', `A' to `F'). For example, $a9F is a legal integer constant in Turbo Pascal.
+The only comment delimiters that you should recognise are {}, and not (**). Comments do not nest.
+`+' and `-' should be considered as operators wherever possible. For example in 
+x := -3 the `-' and the `3' are separate tokens.
+Subranges of ordinal types can be expressed as lower..upper. For example, 1..10 is a subrange involving the integers from 1 to 10.
+All tokens not mentioned anywhere above consist of a single character. </div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=uva&source=1&searchmode=source'> uva </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>zl</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1655'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1655'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1655">Discuss</a> | <a href='note/note.php?pid=1655'>Note</a><br></td></tr></div></body></html>

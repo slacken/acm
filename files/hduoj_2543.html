@@ -1,0 +1,15 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 2543</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>飞镖</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 10000/3000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 75&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 6<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>飞镖是在欧洲颇为流行的一项运动。它的镖盘上分为20个扇形区域，分别标有1到20的分值，每个区域中有单倍、双倍和三倍的区域，打中对应的区域会得到分值乘以倍数所对应的分数。例如打中18分里面的三倍区域，就会得到54分。另外，在镖盘的中央，还有“小红心”和“大红心”，分别是25分和50分。<br>通常的飞镖规则还有一条，那就是在最后一镖的时候，必须以双倍结束战斗，才算获胜。也就是说，当还剩12分的时候，必须打中双倍的6才算赢，而打中单倍的12或者三倍的4则不算。特别的，“大红心”也算双倍(双倍的25)。<br>在这样的规则下，3镖能解决的最多分数是170分(两个三倍的20，最后用大红心结束)。<br>类似的，可以把原来的1到20分的分值扩大为1到K分，同时把小红心的分数扩大为M分(大红心是其双倍)，现在3镖能解决的最多分数就不一定是170分了。<br>在本题中，输入给出K和M，同时给出一个分数C，你需要解决的是能否在3镖内（可以不一定用满3镖）解决C分。同样的，最后一镖必须是双倍，包括大红心。<br><br><br><img src=../../../data/images/2543-1.jpg> </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>输入包含多组数据。每组数据是包含3个整数K，M，C(20&lt;=K,M,C&lt;=10^8)的一行，意义如上面所说。K=M=C=0代表输入结束。</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>对每组输入，输出一行。如果可以解决，输出’Yes’，否则输出’No’。</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">20 25 170
+30 60 360
+30 40 360
+0 0 0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Yes
+Yes
+No
+
+提示：
+本题输入、输出都非常多，建议使用printf和scanf代替cout和cin。
+暴力的算法将很可能会超过时间限制(Time Limit Exceeded)。</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=UESTC 6th Programming Contest Online&source=1&searchmode=source'> UESTC 6th Programming Contest Online </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2543'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2543'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2543">Discuss</a> | <a href='note/note.php?pid=2543'>Note</a><br></td></tr></div></body></html>

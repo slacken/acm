@@ -1,0 +1,28 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 3877</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Special sort</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 674&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 217<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>We all know a+b=c,but now there is a new rule in equations:                        <br>           if a&gt;b,then it's equal to [&gt;c];<br>           if a=b,then it's equal to [=c];<br>           if a&lt;b,then it's equal to [&lt;c];<br>a sample: <br><br>1+1=[=2] <br>2+0=[&gt;2]<br>0+2=[&lt;2]<br>1+2=[&lt;3]<br><br>and     [&gt;c]  &gt;  [=c]  &gt;  [&lt;c].<br>For every [n],<br>          [n+1] &gt; [n] &gt;[n-1].<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input consists of T cases.The first line of the input contains only positive integer T (0&lt;T&lt;=100).Then follows the cases.Each case begins with a line containing exactly one integer N (0&lt;N&lt;=10000).Then there are N lines, each with two integers a and b (0&lt;a,b&lt;2^31-1).<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each case, calculate each value of a+b(as a+b=[?])  and output a+b=[?] in descending order sorted by [?]. If there exists some pair of a,b whose order can not be determined by the rules above, output them with the order of the input. A blank line should be printed after each case. <br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+5
+1 5
+5 1
+3 3
+4 5
+5 6
+5
+1 6
+6 1
+2 4
+4 2
+3 3</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">5+6=[&lt;11]
+4+5=[&lt;9]
+5+1=[>6]
+3+3=[=6]
+1+5=[&lt;6]
+
+6+1=[>7]
+1+6=[&lt;7]
+4+2=[>6]
+3+3=[=6]
+2+4=[&lt;6]</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2011 Multi-University Training Contest 4 - Host by SDU&source=1&searchmode=source'> 2011 Multi-University Training Contest 4 - Host by SDU </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3877'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3877'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3877">Discuss</a> | <a href='note/note.php?pid=3877'>Note</a><br></td></tr></div></body></html>

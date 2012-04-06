@@ -1,0 +1,25 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 3995</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Perfect Faceless Void</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 15000/5000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 123&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 56<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>DotA is a popular game now. There is a hero called Faceless Void (Darkterror,FV). The hero has a powerful skill called “Chronosphere”. This skill is described as follows: FV can create a Time Enchantment that neither the enemy units nor the friend units in it can move except FV himself. We can treat the Time Enchantment as a circle. Any unit which is in the circle or just on the edge of the circle can't move.<br><br>Now a new Crazy (Imba) version of the game has been issued. In the new version, FV can control the size of the Time Enchantment (the radius of the circle). More bigger the circle is, more mana(magic value, blue) FV costs. What's more, there is a new set about the unit which is just on the edge of the circle: if the unit is an enemy, it must remain stationary. Otherwise, the unit is free of the skill. Certainly, a unit in the circle must remain stationary whether it is an enemy or a friend.<br><center><img src=../../data/images/C366-1004-1.jpg></center> <br>Then come the problem, there are n (1 &lt;= n &lt;= 10000) enemy units and m (1 &lt;= m &lt;= 10000) friend units in the two dimensional plane, every unit can be treated as a point which is described by a coordinate (x,y). As a perfect player, FV must make sure that all the n enemy units are affected by the skill and all the m friend units are free of it. In additional, FV should choose a solution that cost least mana. How to set the center of the Time Enchantment and the radius of it? It is ensured that there always exists a solution.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>There are several test cases (about 50). The first line consists of two integers n and m (1&lt;= n, m &lt;= 10000) indicate the number of enemy units and the number of friend units. Then there are n+m lines, first n lines describe the coordinates of the n enemy units, and the last m lines describe the coordinates of the m friend units. Every line contains two real numbers. </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>Output the best solution described above. The first line contains two real numbers indicate the coordinate of the center, the second line contains just one real number indicate the radius. The results are exact to 3 decimal places.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2 1
+0.0 0.0
+2.0 0.0
+1.0 2.0
+
+2 1
+0.0 0.0 
+2.0 0.0
+1.0 1.0
+
+2 2
+0.0 0.0
+4.0 0.0
+2.0 1.0
+2.0 2.0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">1.000 0.000
+1.000
+1.000 0.000
+1.000
+2.000 -1.500
+2.500</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2011 Multi-University Training Contest 16 - Host by TJU&source=1&searchmode=source'> 2011 Multi-University Training Contest 16 - Host by TJU </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3995'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3995'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3995">Discuss</a> | <a href='note/note.php?pid=3995'>Note</a><br></td></tr></div></body></html>

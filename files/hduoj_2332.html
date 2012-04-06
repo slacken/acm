@@ -1,0 +1,36 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 2332</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Hypertheseus</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 6000/2000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 1&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 1<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>For one of their clients, ACM prepares a TV advertisement that features ancient heroes, for example Prometheus, Achilles, Odysseus and many others. To demonstrate how difficult was life for these heroes, ACMruns computer simulations of their most famous tasks. In this problem, we will try to solve the problem of Theseus.<br><br>Theseus was an Athenian hero who killed Minotaur, the half-man, half-bull monster residing in an inescapable Labyrinth constructed by Daedalus. The hardest part of Theseus’ task was not killing the monster — the legend says Minotaur was just sleeping when Theseus came to him. Thus, the hero was able to batter the monster with his bare hands. But then the real challenge came: to find the way out. As you may know, Ariadne, beautiful daughter of king Minos, played an important role in this part. But that’s a different story.<br><br>As the technology advanced a lot since the ancient times, there are several important differences in today’s simulations:<br><br>1. Labyrinth-making skills advanced as well. Two-dimensional labyrinths are not a big challenge anymore. Thus, our labyrinth is d-dimensional. It looks like a regular ”grid” of n1×n2×. . .×nd (hyper)cubes, each of them being either empty (corridor) or filled with a rock (wall). Theseus moves in steps, each step means travelling between two neighboring empty hypercubes in any dimension. Two hypercubes are considered neighboring, if and only if the difference in their<br>space coordinates is exactly one in one dimension, and zero in all other dimensions.<br><br>2. Our Minotaur is stronger, thus, it is no more possible to batter him with bare hands. Theseus must use a sword which lies somewhere inside the labyrinth. Note that before he takes the sword, he cannot go through the hypercube where Minotaur resides!</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>Input Specification<br><br>The input consists of several labyrinth descriptions. Each description begins with a line containing a single integer number d (2 ≤ d ≤ 20) — the number of dimensions. On the second line of each description, there are d integer numbers n1, n2, . . ., nd separated by spaces. These numbers give the size of the labyrinth in every dimension, measured in unit hypercubes (&amp;#8704;i : 2 ≤ ni). You may assume that the total number of hypercubes in any labyrinth will not exceed 220 = 1048576.<br><br>Then a labyrinth map follows, the description is defined recursively: Two-dimensional labyrinth (of the size n1 × n2) is described by n2 lines containing n1 characters each. Every character describes a single hypercube (”square” in the case of 2 dimensions) and is either “#” (rock), “.” (free space), or one of uppercase letters “T” (Theseus’ position), “M” (Minotaur), and ’S’ (sword). Each of these three objects will appear exactly once in the whole labyrinth. The hypercubes<br>containing the letters are considered ”empty” otherwise, i.e., Theseus can walk (and must walk) through them.<br><br>For better clarity of the input, each two-dimensional map is followed by one empty line.<br><br>For d &gt; 2, any d-dimensional labyrinth is a sequence of nd ”layers”, each layer being a description of a (d &amp;#8722; 1)-dimensional labyrinth.<br><br>The last labyrinth description is followed by a line containing zero. This line terminates the input and no output should be produced for it.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each labyrinth, output the sentence “Theseus needs S steps.”, where S is the smallest possible amount of steps needed to reach the hypercube with the sword, the hypercube with Minotaur, and then back to the original Theseus’ position (where the exit is supposed to be). It is not possible to leave the labyrinth area, i.e., all hypercubes outside the labyrinth are considered rocks. Exit may appear in an inner hypercube, it may not reside on the “border”.<br><br>If it is not possible to solve the situation at all, output sentences “No solution. Poor Theseus!”</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+3 3
+T..
+M#.
+S..
+
+2
+3 2
+T#S
+..M
+
+3
+4 4 3
+#S..
+###.
+#M..
+###.
+
+.###
+.###
+.###
+....
+
+....
+###.
+###T
+####
+
+0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Theseus needs 8 steps.
+No solution. Poor Theseus!
+Theseus needs 40 steps.</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=CTU Open Contest 2007&source=1&searchmode=source'> CTU Open Contest 2007 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>teddy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2332'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2332'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2332">Discuss</a> | <a href='note/note.php?pid=2332'>Note</a><br></td></tr></div></body></html>

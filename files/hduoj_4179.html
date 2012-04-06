@@ -1,0 +1,32 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 4179</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Difficult Routes</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 5000/2000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 53&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 20<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>In preparation for the coming Olympics, you have been asked to propose bicycle training routes for your country's team. The training committee wants to identify routes for traveling between pairs of locations in multiple sites around the country. Each route must have a desired level of difficulty based on the steepness of its hills. <br>You will be given a road map with the elevation data superimposed upon it. Each intersection, where two or more roads meet, is identified by its x- , y- , and z-coordinates. Each road starts and ends at an intersection, is straight, and does not contain bridges over or tunnels under other roads. The difficulty level, d, of cycling a road is 0 if the road is level or travelled in the downhill direction. The difficulty of a non-level road when travelled in the uphill direction is<img src=../../data/images/C388-1002-1.jpg>100*rise / run<img src=../../data/images/C388-1002-2.jpg> . Here rise is the absolute value of change in elevation and run is the distance between its two intersection points in its horizontal projection to the 2D-plane at elevation zero. Note that the level of difficulty for cycling a descending road is zero.<br>A route, which is a sequence of roads such that a successor road continues from the same intersection where its predecessor road finishes, has a level of difficulty d if the maximum level of difficulty for cycling among all its roads equals d. The committee is also interested in the chosen route between two selected locations, if such a route with the desired difficulty level exists, being the one with the shortest possible distance to travel.<br>Reminder: The floor function <img src=../../data/images/C388-1002-3.jpg>X<img src=../../data/images/C388-1002-4.jpg> means X truncated to an integer.<br>The figure shows a road map with three intersections for the three sample inputs.<br><center><img src=../../data/images/C388-1002-5.jpg></center><br>The edge labels of the darker shaded surface give the level of difficulty of going up hill. The lighter shaded surface is the horizontal projection to the 2D-plane at elevation zero.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>Input consists of many road maps. Each map description begins with two non-negative integers N and M, separated by a space on a line by themselves, that represent the number of intersections and the number of roads, respectively. 0 &lt; N, M &lt;= 10000. A value of both N and M equal to zero denotes the end of input data.<br>Each of the next N lines contains three integers, separated by single spaces, which represent the x-, y- and z-coordinates of an intersection. The integers have values between 0 and 10000, inclusive. Intersections are numbered in order of their appearance starting with the value one. Each of the following M lines contains two integers that represent start and end intersections of a road.<br>Finally, three integers s, t and d that represents the desired starting intersection number s, the finishing intersection number t and the level of difficulty d for a training route are given on line by themselves. A valid training route must have at least one road with a difficulty level of d, and no road with a difficulty level greater than d. 0 &lt;= d &lt;= 10. If the training route is meant to form a closed circuit, then s and t are the same intersection numbers.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each road map and desired route, the output consists of a single line that contains:<br>1. number denoting the shortest length of a training route rounded to one decimal places, or<br>2. the single word “None” if no feasible route exists.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">3 3
+0 0 0
+100 100 6
+200 0 7
+1 2
+2 3
+3 1
+1 2 3
+3 3
+0 0 0
+100 100 6
+200 0 7
+1 2
+2 3
+3 1
+1 1 4
+3 3
+0 0 0
+100 100 6
+200 0 7
+1 2
+2 3
+3 1
+2 1 5
+0 0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">341.5
+283.1
+None</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=The 2011 South Pacific Programming Contest&source=1&searchmode=source'> The 2011 South Pacific Programming Contest </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=4179'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=4179'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=4179">Discuss</a> | <a href='note/note.php?pid=4179'>Note</a><br></td></tr></div></body></html>

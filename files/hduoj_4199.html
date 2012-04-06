@@ -1,0 +1,25 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 4199</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Find the Treasure</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 4000/2000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 2&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 2<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Four hundred years ago, a group of pirates hid a treasure on an island in an archipelago that consists of many very small islands. Unfortunately, these pirates were particularly bad navigators and cartographers. Therefore, instead of a map, they made drawings of views from the top of the mountain on the treasure island. Each view shows two or more other islands of the archipelago that can be seen from the treasure island, ordered from left to right. The views also contain lots of fog, so the drawings may fail to show some islands that must have been in the field of view between the islands that appear in the drawing. For example, in Figure 2 below, if the treasure is hidden on Rummet, then the pirates could have drawn a view showing (from left to right) Wisket, Ginnet and Vinnet, or a view showing (from left to right) Liquorel and Cidrel. The pirates are known to have had acute vision, with a viewing angle of 180 degrees, but bad drawing skills: the distances between Wisket, Ginnet and Vinnet in their drawing are meaningless, and Liquorel may be drawn far to the left of Cidrel while in the actual view from Rummet, Liquorel must have been only slightly to the left of Cidrel, even obscuring part of it. Fortunately, all islands in the drawings can be identied easily thanks to the unique towers on top of each island.<br><center><img src=../../data/images/C392-1003-1.png></center><br>Now, four hundred years later, you have got the pirates' drawings and an excellent, accurate map of the archipelago, showing all islands. On which island is the treasure hidden?</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The first line of the input contains a single number: the number of archipelagos to follow. Each archipelago has the following format:<br>1.One line with an integer n, satisfying 1 &lt;= n &lt;= 125,000: the number of islands in the archipelago.<br>2.n lines, each with two integers xi and yi, satisfying 0 &lt; xi &lt; 2^29 and 0 &lt; yi &lt; 2^29: these are the coordinates of the tower Ti on each island.<br>3.One line with an integer k: the number of test cases for this archipelago. Each test case hasthe following format:<br>----One line with an integer m, satisfying 0 &lt;= m &lt;= 10,000: the number of pairs of islands that appear in the pirates' drawings.<br>----m lines, each with two integers l and r such that 1 &lt;= l &lt;= n, 1 &lt;= r &lt;= n, l != r, meaning that the tower Tl is drawn to the left of tower Tr.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For every test case in the input, the output should contain:<br>1.One line with an integer i (1 &lt;= i &lt;= n), identifying the i-th island in the archipelago, for each island that could be the treasure island. These lines need to be in increasing order.<br>2.One line containing the number 0.<br>The following input describes one archipelago with one test case, namely the information corre-sponding to the map and the views shown in Figure 2. The potential treasure islands are Rummet, Alet, and Schnahpsum.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">1
+9
+28 34
+32 30
+12 29
+27 22
+42 23
+18 18
+5 14
+26 12
+34 5
+1
+4
+1 2
+1 9
+2 9
+4 5</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">6
+7
+8
+0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=BAPC 2011&source=1&searchmode=source'> BAPC 2011 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=4199'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=4199'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=4199">Discuss</a> | <a href='note/note.php?pid=4199'>Note</a><br></td></tr></div></body></html>

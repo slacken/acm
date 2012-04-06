@@ -1,0 +1,26 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 1388</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Input</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 58&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 24<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>In a recent programming contest, one of the problems was about tiling floors with rectangular tiles. The input specification reads like this:<br><br>The input contains several floors. The first line of the input gives the number of floors.<br><br>Each floor is described in several lines. The first line contains two positive integers: the length and width of the floor, in millimeters. A floor is at most 40 000 mm long or wide. The next line contains a single number: the number t of tiles (1 &lt;= t &lt;= 100). The following t lines each contain the description of a tile. A tile is given as four integers: <br><br>xl yl xh yh <br><br>where (xl, yl) are the coordinates of the lower left corner of the tile, and (xh, yh) are the coordinates of the upper rightmost corner of the tile. A tile always has a positive area. The order of the coordinates of the floor and those of the tile coincide, of course.<br><br>You may assume that the tiles are mutually disjoint, and cover the floor, the whole floor, and nothing but the floor.<br><br>The last line of this specification raised some problems. Not for the contestants, but for the judges. Some of the test cases consist of many tiles. How can we be sure that our input file meets this condition? What we need is a checking program that verifies this condition.<br><br>Given an input file in the above format, find out for each floor whether the tiles<br><br>1. are disjoint, <br>2. do not lie outside the floor, <br>3. do cover the floor. <br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input contains several floors. The first line of the input gives the number of floors. Each floor is described in several lines. The first line contains two positive integers: the length and width of the floor, in millimeters. A floor is at most 40 000 mm long or wide. The next line contains a single number: the number t of tiles (1 &lt;= t &lt;= 100). The following t lines each contain the description of a tile. A tile is given as four integers: <br><br>xl yl xh yh <br><br>where (xl, yl) are the coordinates of the lower left corner of the tile, and (xh, yh) are the coordinates of the upper rightmost corner of the tile. A tile always has a positive area. The order of the coordinates of the floor and those of the tile coincide, of course.<br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each floor the output contains a single line, containing one of the following words: <br><br>NONDISJOINT if overlapping tiles occur; <br><br>NONCONTAINED if no overlapping tiles occur, but some tiles go outside the floor; <br><br>NONCOVERING if no overlapping tiles occur, and no tiles go outside the floor, but some parts of the floor are not covered; <br><br>OK if none of these is true. <br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">4 
+4 3 
+2 
+0 0 2 2 
+1 1 5 5 
+4 3 
+2 
+0 0 2 2 
+-2 2 5 5 
+4 3 
+2 
+0 0 2 2 
+2 0 4 2 
+4 3 
+3 
+0 0 2 2 
+2 0 4 2 
+0 2 4 3 </div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">NONDISJOINT 
+NONCONTAINED 
+NONCOVERING 
+OK </div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=Northwestern Europe 2002&source=1&searchmode=source'> Northwestern Europe 2002 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>Eddy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1388'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1388'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1388">Discuss</a> | <a href='note/note.php?pid=1388'>Note</a><br></td></tr></div></body></html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 3937</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>商品检索</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 15000/5000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/65526 K (Java/Others)<br>Total Submission(s): 549&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 132<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>沃尔玛公司由美国零售业的传奇人物山姆&amp;#8226;沃尔顿先生于1962年在阿肯色州成立。经过四十多年的发展，沃尔玛公司已经成为美国最大的私人雇主和世界上最大 的连锁最大零售企业目前，沃尔玛在全球开设了7500家商场，员工总数210万人，分布在全球14个国家。每周光临沃尔玛的顾客1.75亿人次。<br>    当然，每天卖出去的东西也是挺多的。那么就需要一个强大的商品检索系统了，能够快速的找到想找的商品，并且能够准确的给出此件商品的数目。假若，山姆先生找到了身为程序员的你，让你帮忙写个程序来完成这个--------人很难完成的任务。任务书如下：<br><br>任务名称               商品检索系统<br>任务提交方式         程序源码<br>任务输入      商品条形码      |   输入误差            5%<br>任务输出      对应商品数目   |   输出允许误差      0%<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>输入包括若干组测试数据，每组测试数据第一行两个正整数N，M。N代表所有商品的总件数，M代表要查询的商品件数。接下来N行，每行一个字符串S[ i ]，代表第i个商品的名称。之后是M组条形码，每组条形码第一行一个数字n，代表条形码的条数，接下来n行，每行一条条形码，代表了一个字符，每组条形码代表了要查询的一种商品的名称。正确的商品名称中仅包含大写字母，小写字母以及数字。</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>每组测试数据中，对于每个输入的条形码，输出一行数字，代表以查询的商品名称为前缀的商品的总件数,如果输入的条形码是错误的，则输出“wrong barcode!”<br><br>数据范围说明：<br>N [1 , 10^5] 整数<br>M[1 , 10^6] 整数<br>Length(S[i]) [1 , 30] 整数<br>条形码条数[10 , 10^5] 实数<br><br>条形码输入说明：<br>    输入的条形码，由两部分组成，第一部分是一个数字n，代表每组条形码的条数，接下来n行，每行由宽度不等的多个黑条和白条组成，黑条和白条的宽度与其标准值的误差不会超过5%，黑条代表1，白条代表0，白条标准条的宽度是黑条标准条宽度的一半。每8个黑白条占一行组成一个2进制的ASCII码，表示其所对应的字符。描述一个商品名称的正确条形码总是从“begin”开始，然后以“end”结束。</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">4 1
+Onepiece
+Chair
+Plant
+Pen
+16
+10 20 20 10 10 10 20 10
+10 20 20 10 10 20 10 20
+10 20 20 10 10 20 20 20
+10 20 20 10 20 10 10 20
+10 20 20 10 20 20 20 10
+10 20 10 10 20 20 20 20
+10 20 20 10 20 20 20 10
+10 20 20 10 10 20 10 20
+10 20 20 20 10 10 10 10
+10 20 20 10 20 10 10 20
+10 20 20 10 10 20 10 20
+10 20 20 10 10 10 20 20
+10 20 20 10 10 20 10 20
+10 20 20 10 10 20 10 20
+10 20 20 10 20 20 20 10
+10 20 20 10 10 20 10 10</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">1</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>3937</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2011 Multi-University Training Contest 10 - Host by HRBEU&source=1&searchmode=source'> 2011 Multi-University Training Contest 10 - Host by HRBEU </a> </div> <div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3937'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3937'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3937">Discuss</a> | <a href='note/note.php?pid=3937'>Note</a><br></td></tr></div></body></html>

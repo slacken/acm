@@ -1,0 +1,24 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 1469</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Video Surveillance</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 35&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 17<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>A friend of yours has taken the job of security officer at the Star-Buy Company, a famous depart- ment store. One of his tasks is to install a video surveillance system to guarantee the security of the customers (and the security of the merchandise of course) on all of the store's countless floors. As the company has only a limited budget, there will be only one camera on every floor. But these cameras may turn around to look in every direction. <br><br>The first problem is to choose where to install the camera for every floor. The only requirement is that every part of the room must be visible from there. In the following figure the left floor can be completely surveyed from the position indicated by a dot, while for the right floor, there is no such position, the given position failing to see the lower left part of the floor. <br><br><img src=data/images/1469-1.gif><br><br>Before trying to install the cameras, your friend first wants to know whether there is indeed a suitable position for them. He therefore asks you to write a program that, given a ground plan, de- termines whether there is a position from which the whole floor is visible. All floor ground plans form rectangular polygons, whose edges do not intersect each other and touch each other only at the corners. <br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input contains several floor descriptions. Every description starts with the number n of vertices that bound the floor (4 &lt;= n &lt;= 100). The next n lines contain two integers each, the x and y coordinates for the n vertices, given in clockwise order. All vertices will be distinct and at corners of the polygon. Thus the edges alternate between horizontal and vertical. <br><br>A zero value for n indicates the end of the input. <br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For every test case first output a line with the number of the floor, as shown in the sample output. Then print a line stating &quot;Surveillance is possible.'' if there exists a position from which the entire floor can be observed, or print &quot;Surveillance is impossible.'' if there is no such position. <br><br>Print a blank line after each test case. </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">4
+0 0
+0 1
+1 1
+1 0
+8
+0 0
+0 2
+1 2
+1 1
+2 1
+2 2
+3 2
+3 0
+0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Floor #1
+Surveillance is possible.
+
+Floor #2
+Surveillance is impossible.</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=ACM暑期集训队练习赛（九）&source=1&searchmode=source'> ACM暑期集训队练习赛（九） </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1469'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1469'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1469">Discuss</a> | <a href='note/note.php?pid=1469'>Note</a><br></td></tr></div></body></html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 3338</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Kakuro Extension</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 413&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 133<br><font color=red>Special Judge</font></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content><font color=red>If you solved problem like <a href=http://acm.sgu.ru/problem.php?contest=0&amp;problem=454>this</a>, forget it.Because you need to use a completely different algorithm to solve the following one.</font><br>Kakuro puzzle is played on a  grid of &quot;black&quot; and &quot;white&quot; cells. Apart from the top row and leftmost column which are entirely black, the grid has some amount of white cells which form &quot;runs&quot; and some amount of black cells. &quot;Run&quot; is a vertical or horizontal maximal one-lined block of adjacent white cells. Each row and column of the puzzle can contain more than one &quot;run&quot;. Every white cell belongs to exactly two runs — one horizontal and one vertical run. Each horizontal &quot;run&quot; always has a number in the black half-cell to its immediate left, and each vertical &quot;run&quot; always has a number in the black half-cell immediately above it. These numbers are located in &quot;black&quot; cells and are called &quot;clues&quot;.The rules of the puzzle are simple: <br><br>1.place a single digit from 1 to 9 in each &quot;white&quot; cell<br>2.for all runs, the sum of all digits in a &quot;run&quot; must match the clue associated with the &quot;run&quot;<br><br>Given the grid, your task is to find a solution for the puzzle.<br>　　　　　　　　<img src=http://acm.hdu.edu.cn/data/images/D5353-1001-1.png> 　　　　　<img src=http://acm.hdu.edu.cn/data/images/D5353-1001-2.png><br>　　　　　　　　Picture of the first sample input　　　　　　　　　　　　Picture of the first sample output</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The first line of input contains two integers n and m (2 ≤ n,m ≤ 100) — the number of rows and columns correspondingly. Each of the next n lines contains descriptions of m cells. Each cell description is one of the following 7-character strings: <br><br>.......— &quot;white&quot; cell;<br>XXXXXXX— &quot;black&quot; cell with no clues;<br>AAA\BBB— &quot;black&quot; cell with one or two clues. AAA is either a 3-digit clue for the corresponding vertical run, or XXX if there is no associated vertical run. BBB is either a 3-digit clue for the corresponding horizontal run, or XXX if there is no associated horizontal run.<br>The first row and the first column of the grid will never have any white cells. The given grid will have at least one &quot;white&quot; cell.It is guaranteed that the given puzzle has at least one solution.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>Print n lines to the output with m cells in each line. For every &quot;black&quot; cell print '_' (underscore), for every &quot;white&quot; cell print the corresponding digit from the solution. Delimit cells with a single space, so that each row consists of 2m-1 characters.If there are many solutions, you may output any of them.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">6 6
+XXXXXXX XXXXXXX 028\XXX 017\XXX 028\XXX XXXXXXX
+XXXXXXX 022\022 ....... ....... ....... 010\XXX
+XXX\034 ....... ....... ....... ....... .......
+XXX\014 ....... ....... 016\013 ....... .......
+XXX\022 ....... ....... ....... ....... XXXXXXX
+XXXXXXX XXX\016 ....... ....... XXXXXXX XXXXXXX
+5 8
+XXXXXXX 001\XXX 020\XXX 027\XXX 021\XXX 028\XXX 014\XXX 024\XXX
+XXX\035 ....... ....... ....... ....... ....... ....... .......
+XXXXXXX 007\034 ....... ....... ....... ....... ....... .......
+XXX\043 ....... ....... ....... ....... ....... ....... .......
+XXX\030 ....... ....... ....... ....... ....... ....... XXXXXXX</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">_ _ _ _ _ _
+_ _ 5 8 9 _
+_ 7 6 9 8 4
+_ 6 8 _ 7 6
+_ 9 2 7 4 _
+_ _ 7 9 _ _
+_ _ _ _ _ _ _ _
+_ 1 9 9 1 1 8 6
+_ _ 1 7 7 9 1 9
+_ 1 3 9 9 9 3 9
+_ 6 7 2 4 9 2 _</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>NotOnlySuccess@HDU</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=HDOJ Monthly Contest – 2010.03.06&source=1&searchmode=source'> HDOJ Monthly Contest – 2010.03.06 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3338'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3338'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3338">Discuss</a> | <a href='note/note.php?pid=3338'>Note</a><br></td></tr></div></body></html>

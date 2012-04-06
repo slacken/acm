@@ -1,0 +1,22 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 1704</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Rank</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 1000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 805&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 279<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>there are N ACMers in HDU team.<br>  ZJPCPC Sunny Cup 2007 is coming, and lcy want to select some excellent ACMers to attend the contest. There have been M matches since the last few days(No two ACMers will meet each other at two matches, means between two ACMers there will be at most one match). lcy also asks&quot;Who is the winner between A and B?&quot; But sometimes you can't answer lcy's query, for example, there are 3 people, named A, B, C.and 1 match was held between A and B, in the match A is the winner, then if lcy asks &quot;Who is the winner between A and B&quot;, of course you can answer &quot;A&quot;, but if lcy ask &quot;Who is the winner between A and C&quot;, you can't tell him the answer.<br> As lcy's assistant, you want to know how many queries at most you can't tell lcy(ask A B, and ask B A is the same; and lcy won't ask the same question twice).</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input contains multiple test cases.<br>The first line has one integer,represent the number of test cases.<br>Each case first contains two integers N and M(N , M &lt;= 500), N is the number of ACMers in HDU team, and M is the number of matchs have been held.The following M lines, each line means a match and it contains two integers A and B, means A wins the match between A and B.And we define that if A wins B, and B wins C, then A wins C.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case, output a integer which represent the max possible number of queries that you can't tell lcy.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">3
+3 3
+1 2
+1 3
+2 3
+3 2
+1 2
+2 3
+4 2
+1 2
+3 4</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">0
+0
+4
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>
+in the case3, if lcy ask (1 3 or 3 1) (1 4 or 4 1) (2 3 or 3 2) (2 4 or 4 2), then you can't tell him who is the winner.
+</div><i style='font-size:1px'> </i></div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=2007省赛集训队练习赛（1）&source=1&searchmode=source'> 2007省赛集训队练习赛（1） </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1704'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1704'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1704">Discuss</a> | <a href='note/note.php?pid=1704'>Note</a><br></td></tr></div></body></html>

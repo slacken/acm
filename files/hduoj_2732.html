@@ -1,0 +1,41 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 2732</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Leapin' Lizards</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 389&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 148<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Your platoon of wandering lizards has entered a strange room in the labyrinth you are exploring. As you are looking around for hidden treasures, one of the rookies steps on an innocent-looking stone and the room's floor suddenly disappears! Each lizard in your platoon is left standing on a fragile-looking pillar, and a fire begins to rage below... Leave no lizard behind! Get as many lizards as possible out of the room, and report the number of casualties.<br>The pillars in the room are aligned as a grid, with each pillar one unit away from the pillars to its east, west, north and south. Pillars at the edge of the grid are one unit away from the edge of the room (safety). Not all pillars necessarily have a lizard. A lizard is able to leap onto any unoccupied pillar that is within d units of his current one. A lizard standing on a pillar within leaping distance of the edge of the room may always leap to safety... but there's a catch: each pillar becomes weakened after each jump, and will soon collapse and no longer be usable by other lizards. Leaping onto a pillar does not cause it to weaken or collapse; only leaping off of it causes it to weaken and eventually collapse. Only one lizard may be on a pillar at any given time.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input file will begin with a line containing a single integer representing the number of test cases, which is at most 25. Each test case will begin with a line containing a single positive integer n representing the number of rows in the map, followed by a single non-negative integer d representing the maximum leaping distance for the lizards. Two maps will follow, each as a map of characters with one row per line. The first map will contain a digit (0-3) in each position representing the number of jumps the pillar in that position will sustain before collapsing (0 means there is no pillar there). The second map will follow, with an 'L' for every position where a lizard is on the pillar and a '.' for every empty pillar. There will never be a lizard on a position where there is no pillar.Each input map is guaranteed to be a rectangle of size n x m, where 1 ≤ n ≤ 20 and 1 ≤ m ≤ 20. The leaping distance is<br>always 1 ≤ d ≤ 3.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each input case, print a single line containing the number of lizards that could not escape. The format should follow the samples provided below.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">4
+3 1
+1111
+1111
+1111
+LLLL
+LLLL
+LLLL
+3 2
+00000
+01110
+00000
+.....
+.LLL.
+.....
+3 1
+00000
+01110
+00000
+.....
+.LLL.
+.....
+5 2
+00000000
+02000000
+00321100
+02000000
+00000000
+........
+........
+..LLLL..
+........
+........</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Case #1: 2 lizards were left behind.
+Case #2: no lizard was left behind.
+Case #3: 3 lizards were left behind.
+Case #4: 1 lizard was left behind.</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=Mid-Central USA 2005&source=1&searchmode=source'> Mid-Central USA 2005 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>zty</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2732'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2732'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2732">Discuss</a> | <a href='note/note.php?pid=2732'>Note</a><br></td></tr></div></body></html>

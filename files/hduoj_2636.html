@@ -1,0 +1,20 @@
+<!DOCTYPE html><html>
+				<head><meta charset=gb2312 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 2636</title></head>
+				<body><div id="hduoj_c"><tr><td align=center><h1 style='color:#1A5CC8'>Installing Software</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 242&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 142<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content> Installing software in Windows is a piece of cake: just download and install the software, then you can use it. Although installing a software in Linux only needs typing yum install thename in the command lines in some Linux distribution,especially Fedora/Red Hat,it requires a lot extra time in a process called resolving dependency(means the period of downloading the other packages it depends on in order to install itself completely and successfully).<br>      The problem is designed like this:<br>Suppose Samuel needs to install software A,A depends on B,C,D,E,and Samuel has already installed package E in his system so in the command lines there only will appear the packages B,C,D,we can say it needs 3 packages to finish the installation. </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The number of test cases t,each of the case has an integer m means m packages to depend on if want to install X successfully and completely. Then the next line will contain m(m&lt;=26 the letters are A-Z only) letters represent the name of each packages. The an integer n(n&lt;=26 the letters are A-Z only too),means n packages have been installed in the desktop of Samuel.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>Your task is to output how many packages Samuel needs to install in the process of resolving dependency except the ones have already been installed,and display their names using the format (if s&gt;0,s the number of the packages) like this:”Samuel has to install another s package(s) in addition,the packages is/are *,*.”(use , between the two names)or(s=0)”Samuel can install the software without installing anything else.”</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">3
+3
+A B C
+2
+A B
+5
+A B E D F
+3
+A B F
+2
+A B
+2
+A B</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Samuel has to install another 1 package(s) in addition,the packages is/are C.
+Samuel has to install another 2 package(s) in addition,the packages is/are E,D.
+Samuel can install the software without installing anything else.</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>Samuel</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href='/search.php?field=problem&key=灰色橙子 专场&source=1&searchmode=source'> 灰色橙子 专场 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>zty</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2636'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2636'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2636">Discuss</a> | <a href='note/note.php?pid=2636'>Note</a><br></td></tr></div></body></html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html><html>
+				<head><meta charset=utf-8 />
+				<link rel="stylesheet" type=text/css href="../style.css" />
+				<script type="text/javascript" src="../js.js"></script>
+				<title>Problem 1363</title></head>
+				<body><div id="jobdu_c"><dl class="main-title-mod mb10">
+            <dt class="title-hd">
+                题目1363：欢乐斗地主
+            </dt>
+            <dd class="title-bd">
+            	                <div class="pl20 mb10 f14 topic-desc-mod">
+                    <div class="topic-desc-hd">
+                        <p style="width:140px;"><b>时间限制：</b>1 秒</p>
+                        <p style="width:140px;"><b>内存限制：</b>32 兆</p>
+                        <p style="width:100px;"><b>特殊判题：</b>否</p>
+                        <p style="width:130px;"><b>提交：</b>254</p>
+                        <p style="width:130px;"><b>解决：</b>51</p>
+                    </div>
+                   	<div class="topic-desc-bd">
+                   	<dl>
+                       <dt>
+                           <b>题目描述：</b>
+                       </dt>
+                       <dd>
+                           <p class="MsoNormal"><span lang="EN-US"><span style="mso-tab-count: 1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></span><span style="font-family: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">如果大家玩过欢乐斗地主这个游戏，就一定知道有一个具有&ldquo;提示&rdquo;功能的按钮。如果你不知道你现在手里的牌有没有比上家大的牌，并且你也懒得去一张一张地看你手中的牌。这时候你就可以点&ldquo;提示&rdquo;按钮，系统会告诉你是否有这样的牌。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal"><span lang="EN-US"><span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-family: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">如果你是一个喜欢挑战的人，你就一定会想，能不能写一个程序，让它实现欢乐斗地主中的&ldquo;提示&rdquo;按钮的功能。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal"><span lang="EN-US"><span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-family: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">现在，我们把&ldquo;提示&rdquo;按钮所具有的功能简化，它只需要找出在上家出的牌是&ldquo;三带一对&rdquo;的情况下你手中的牌是否比上家的牌大。</span></p>
+<p class="MsoNormal" style="text-align: center"><img alt="" width="553" height="399" src="/upload/201112/image/%E6%AC%A2%E4%B9%90%E6%96%97%E5%9C%B0%E4%B8%BB.jpg" /></p>
+<p class="MsoNormal"><span lang="EN-US"><o:p></o:p></span></p>
+<p></p>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>输入：</b>
+                       </dt>
+                       <dd>
+                           <p class="MsoNormal"><span lang="EN-US"><span style="mso-tab-count: 1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></span><span style="font-family: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">每组测试数据可能有多组输入，对于每一组输入，</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal"><span lang="EN-US"><span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-family: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">输入的第一行包括一个整数</span><span lang="EN-US">N(1&lt;=N&lt;=18)</span><span style="font-family: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">，代表你手中现在还剩下的扑克牌的张数。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal"><span lang="EN-US"><span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-family: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">接下来的一行包括</span><span lang="EN-US">N</span><span style="font-family: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">个数字（</span><span lang="EN-US">1-13</span><span style="font-family: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">，分别代表扑克牌中的</span><span lang="EN-US">A-K</span><span style="font-family: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">），给你的这</span><span lang="EN-US">N</span><span style="font-family: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">个数字是无序的。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal"><span lang="EN-US"><span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-family: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">接下来的一行包括五个数字，前三个数字是相同的，后两个数字是相同的，代表上家出的&ldquo;三带一对&rdquo;。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p></p>
+                       </dd>
+                   	</dl>
+                       <dl>
+                       <dt>
+                           <b>输出：</b>
+                       </dt>
+                       <dd>
+                           <p class="MsoNormal"><span lang="EN-US"><span style="mso-tab-count: 1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></span><span style="font-family: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">如果你手中的牌有比上家的&ldquo;三带一对&rdquo;大的，输出这样的牌，输出的格式与输入中的第三行相同，即五个数字：前三个是一样的，后两个是一样的，代表你手中的&ldquo;三带一对&rdquo;。如果你手中没有比上家的&ldquo;三带一对&rdquo;大的牌，请输出&ldquo;</span><span lang="EN-US">My God</span><span style="font-family: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">&rdquo;。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p></p>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>样例输入：</b>
+                       </dt>
+                       <dd>
+                           <pre>8
+1 6 4 8 4 7 6 4
+3 3 3 9 9
+8
+1 6 4 8 4 7 6 4
+8 8 8 2 2
+</pre>
+                       </dd>
+                   	</dl>
+                   	<dl>
+                       <dt>
+                           <b>样例输出：</b>
+                       </dt>
+                       <dd>
+                           <pre>4 4 4 6 6
+My God
+</pre>
+                       </dd>
+                   	</dl>
+                   	                   	<dl>
+                       <dt>
+                           <b>提示：</b>
+                       </dt>
+                       <dd class="lBlue">
+                           <p class="MsoNormal"><span lang="EN-US"><span style="mso-tab-count: 1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>1.</span><span style="font-family: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">&ldquo;三带一对&rdquo;：三张同样数字的牌</span><span lang="EN-US">+</span><span style="font-family: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">两张同样数字的牌，此时这五张牌可以同时出。&ldquo;三带一对&rdquo;比大小的规则如下&mdash;&mdash;只需要比较三张同样数字的牌的数字的大小，而不需要考虑两张同样数字的牌的数字的大小。比如：&ldquo;三个</span><span lang="EN-US">5</span><span style="font-family: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">带两个</span><span lang="EN-US">3</span><span style="font-family: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">&rdquo;，比&ldquo;三个</span><span lang="EN-US">4</span><span style="font-family: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">带两个</span><span lang="EN-US">8</span><span style="font-family: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">&rdquo;要大。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal"><span lang="EN-US"><span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>2.</span><span style="font-family: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">大家都知道，在扑克牌中</span><span lang="EN-US">A</span><span style="font-family: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">和</span><span lang="EN-US">2</span><span style="font-family: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">要比</span><span lang="EN-US">3-K</span><span style="font-family: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">都要大，请大家在程序中进行处理。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal" style="text-indent: 21pt"><span lang="EN-US">3.</span><span style="font-family: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">如果你手中的牌有多种出法能够比上家的&ldquo;三带一对&rdquo;大，你需要选择&ldquo;三带一对&rdquo;中三张相同的牌数字较小的那种出法。比如说，如果上家出的牌是</span><span lang="EN-US">3 3 3 4 4</span><span style="font-family: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">，而你现在手中有</span><span lang="EN-US">6 6 6 7 7 7</span><span style="font-family: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">这</span><span lang="EN-US">6</span><span style="font-family: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">张牌，你需要出的牌是</span><span lang="EN-US">6 6 6 7 7</span><span style="font-family: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">，而不是</span><span lang="EN-US">7 7 7 6 6，如果三带最小的有多个，则需要输出一对值最小的那个结果</span><span style="font-family: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal" style="text-indent: 21pt"><span lang="EN-US">4.</span><span style="font-family: 宋体; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">你可以放心，我们发的牌以及出的牌中不会出现大小王。</span></p>
+                       </dd>
+                   	</dl>
+                   	                   		             			                       <dl>
+	                       <dt>
+	                           <b>答疑：</b>
+	                       </dt>
+	                       <dd class="lBlue">
+	                           解题遇到问题?分享解题心得?讨论本题请访问：<a class="cBlue" href="http://t.jobdu.com/thread-8086-1-1.html" target="_blank">http://t.jobdu.com/thread-8086-1-1.html</a>
+	                       </dd>
+                       </dl>
+                                       	</div>
+                </div>
+                            </dd>
+		</dl></div></body></html>
