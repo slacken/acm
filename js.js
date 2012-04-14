@@ -14,4 +14,8 @@ $(document).ready(function(){
 		//$(this).text('fuck');
 	});
 	$("span,div,center").removeAttr("style");
+	
+	$(".lBlue a").each(function(){
+		$(this).attr('href','http://ac.jobdu.com/' + $(this).attr('href'));
+	});
 });

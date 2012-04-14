@@ -4,12 +4,7 @@
 *http://www.creatist.cn
 */
 
-.f{
-	text-decoration:underline;
-}
-.u:after{
-	content:"*";
-}
+
 .right{float:right;}
 .clear{clear:both;}
 body{
