@@ -8,3 +8,10 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
 
 
 /*Javascript code goes here...*/
+$(document).ready(function(){
+	$("#hduoj_c center a").each(function(){
+		$(this).attr('href','http://acm.hdu.edu.cn/' + $(this).attr('href'));
+		//$(this).text('fuck');
+	});
+	$("span,div,center").removeAttr("style");
+});

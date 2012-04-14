@@ -33,12 +33,15 @@ body,dt,dd,dl,form{
 	background-color:white;
 	margin-top:20px;
 	padding-bottom:5px;
-	
+	line-height:20px;
 }
 #jobdu_c,#hduoj_c{
 	border-radius:5px 10px;
 	margin-bottom:20px;
 	box-shadow:0px 0px 20px #aaf;
+}
+#hduoj_c{
+	padding:5px;
 }
 .main-title-mod{
 	
@@ -54,13 +57,20 @@ b{
 	font-size:1.2em;
 }
 .title-hd{
-	font-size:2em;
-	font-weight:bold;
 	background-color:blue;
 	border-radius:5px 5px 0 0;
 	color:white;
+	font-size:16px;
 	padding:8px 5px;
 }
+.title-hd a{
+	color:#ccc;
+	font-size:14px;
+}
+.title-hd a:hover{
+	color:#fff;
+}
+
 .topic-desc-hd{
 	background-color:#f4f4f4;
 	padding:3px 5px;
@@ -88,6 +98,21 @@ b{
 }
 
 
+#hduoj_c b{
+	font-weight:normal;
+	font-size:1em;
+	display:block;
+	padding:5px 3px;;
+	background-color:#eee;
+	border-radius:5px;
+}
+.panel_title{
+	border-top:1px dashed #ddd;
+}
+.panel_bottom{
+	display:none;
+}
+
 
 .link_i{
 	border:1px solid #aaa;
@@ -102,7 +127,7 @@ b{
 	display:inline-block;
 	width:42px;
 	text-align:center;
-	text-shadow:1px 1px 1px rgba(0,0,0,0.3);
+	
 }
 .link_i a:visited{
 	color:green;
