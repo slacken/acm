@@ -1,6 +1,6 @@
 ###ACM problems offline
 
-This repo is a collection of problems from Jobdu/HDUOJ ect.
+This repo is a collection of problems from Jobdu&HDUOJ,ect.
 
 You can visit <http://huntist.cn/acm/> to view and down all these problems
 
@@ -17,3 +17,8 @@ More problems is __being__ added to this repo.
 It's convenient especially for those who prefer working in the school with a fucking poor network however.
 
 :)
+
+####Todo List
+1. Add more problems set, such as POJ.
+2. Collect problem solutions.
+3. ect.
