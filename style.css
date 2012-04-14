@@ -27,7 +27,7 @@ body,dt,dd,dl,form{
 	padding:0;
 }
 
-#content,#jobdu_c{
+#content,#jobdu_c,#hduoj_c{
 	width:900px;
 	margin:0 auto;
 	background-color:white;
@@ -35,7 +35,7 @@ body,dt,dd,dl,form{
 	padding-bottom:5px;
 	
 }
-#jobdu_c{
+#jobdu_c,#hduoj_c{
 	border-radius:5px 10px;
 	margin-bottom:20px;
 	box-shadow:0px 0px 20px #aaf;
