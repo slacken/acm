@@ -27,11 +27,18 @@ body,dt,dd,dl,form{
 	padding:0;
 }
 
-#content{
+#content,#jobdu_c{
 	width:900px;
 	margin:0 auto;
 	background-color:white;
 	margin-top:20px;
+	padding-bottom:5px;
+	
+}
+#jobdu_c{
+	border-radius:5px 10px;
+	margin-bottom:20px;
+	box-shadow:0px 0px 20px #aaf;
 }
 .main-title-mod{
 	
@@ -50,6 +57,7 @@ b{
 	font-size:2em;
 	font-weight:bold;
 	background-color:blue;
+	border-radius:5px 5px 0 0;
 	color:white;
 	padding:8px 5px;
 }
@@ -57,10 +65,16 @@ b{
 	background-color:#f4f4f4;
 	padding:3px 5px;
 }
-.topic-desc-hd,.topic-desc-bd{
-	
+.topic-desc-hd{
+	height:45px;
 }
-.topic-desc-hd p{display:inline-block;}
+.topic-desc-hd p{
+	float:left;
+	width:25%;
+}
+.topic-desc-bd{
+	clear:both;
+}
 .topic-desc-bd p{
 	font-size:12px;
 }
