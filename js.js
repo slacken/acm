@@ -1,3 +1,8 @@
+/*
+*By Slacken Zeng(xinkiang@gmail.com)
+*http://www.creatist.cn
+*/
+	
 /*Javascript code*/
 
 /*! jQuery v1.7.2 jquery.com | jquery.org/license */
