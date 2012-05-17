@@ -2,7 +2,7 @@
 
 This repo is a collection of problems from Jobdu&HDUOJ,ect.
 
-You can visit <http://huntist.cn/acm/> to view and down all these problems
+You can visit <http://huntist.cn/acm/> to see what it is and download all these problems
 
 Solutions are provided under ./solution directory.
 
